@@ -1,0 +1,104 @@
+/* ===============================================================
+	GENERAL CSS
+=============================================================== */
+body {
+	overflow-x: hidden;
+	max-width: 1920px;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* -- Cursor -- */
+p, h1, h2, h3, h4, h5, h6, div, input, ul {
+	cursor: default;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* -- Border Outline -- */
+* {
+	outline: none;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+
+
+/* ===============================================================
+	BTN DEFAULT
+=============================================================== */
+.btn-default {
+	background-color: transparent;
+	border-color: #fff;
+	color: #fff;
+	font-size: 18px;
+	padding: 8px 12px;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+	background-color: transparent;
+	border-color: #fff;
+	color: #fff;
+}
+
+
+
+/* ===============================================================
+	MENU / NAVBAR
+=============================================================== */
+.navbar, .navbar-default {
+	background-color: #fff;
+	border: none;
+	min-height: 0;
+	margin: 0;
+	padding: 10px;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+			border-radius: 0;
+	-webkit-box-shadow: 0 0 3px rgba(55, 55, 55, 0.6);
+	   -moz-box-shadow: 0 0 3px rgba(55, 55, 55, 0.6);
+			box-shadow: 0 0 3px rgba(55, 55, 55, 0.6);
+}
+
+	/* ----- Title ----- */
+	.navbar-default .navbar-brand {
+		width: 210px;
+		color: #555;
+		float: left;
+		font-size: 30px;
+		font-weight: 200;
+		margin: 0;
+	}
+
+	/* ----- Links ----- */
+	.navbar-default .collapse {
+		font-weight: 500;
+	}
+
+		.navbar-default .collapse a {
+			color: #555;
+			font-size: 13px;
+		}
+
+	/* ----- Dropdown ----- */
+	.navbar-default .navbar-nav > .open > a {
+		background-color: transparent;
+	}
+
+		.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-toggle:focus {
+			background-color: transparent;
+		}
+
+
+
+/* ===============================================================
+	HOME
+=============================================================== */
+
+	/* ----- HELLO ----- */
+	.home-hello {
+		text-align: center;
+		font-weight: 200;
+	}
