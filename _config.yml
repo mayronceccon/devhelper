@@ -1,0 +1,14 @@
+# Site settings
+title: WP Starter Framework
+email: your-email@domain.com
+description: Construindo temas WordPress de forma simples e eficaz.
+url: "http://mattdeveloper.github.io/wpstarter/" # the base hostname & protocol for your site
+github_username:  mattdeveloper
+
+# Build settings
+markdown: kramdown
+
+# Assets Folders
+#css_folder: 'assets/css'
+#js_folder: 'assets/js'
+#img_folder: 'assets/images'
