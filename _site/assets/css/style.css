@@ -198,9 +198,16 @@ footer.global {
 
 /* ----- FEATURES ----- */
 .home-features {
-	padding: 80px 0 0;
+	padding: 130px 0 0;
 	text-align: center;
 }
+
+	/* -- Title -- */
+	.home-features h4 {
+		margin: 0 0 50px;
+		font-size: 50px;
+		font-weight: 200;
+	}
 
 	/* -- Items -- */
 	.home-features .item {
@@ -242,7 +249,7 @@ footer.global {
 		color: #e74c3c;
 		font-size: 20px;
 
-		margin: 0 0 80px 0;
+		margin: 0 0 130px 0;
 		padding: 10px 70px;
 		display: inline-block;
 
@@ -270,7 +277,7 @@ footer.global {
 
 	/* -- Title -- */
 	.home-screenshots h4 {
-		margin: 0 0 30px;
+		margin: 0 0 50px;
 		font-size: 50px;
 		font-weight: 200;
 	}
