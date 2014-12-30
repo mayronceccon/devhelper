@@ -13,6 +13,17 @@ p, h1, h2, h3, h4, h5, h6, div, input, ul {
 	font-family: 'Raleway', sans-serif;
 }
 
+/* -- Links -- */
+a {
+	color: #e74c3c;
+	text-decoration: none;
+}
+
+	a:hover, a:focus {
+		color: #e74c3c;
+		text-decoration: underline;
+	}
+
 /* -- Border Outline -- */
 * {
 	outline: none;
@@ -94,154 +105,178 @@ p, h1, h2, h3, h4, h5, h6, div, input, ul {
 
 
 /* ===============================================================
+	FOOTER
+=============================================================== */
+footer.global {
+	border-top: 1px solid #eee;
+	text-align: center;
+
+	width: 96%;
+	margin: 0 0 0 2%;
+	padding: 20px 0;
+}
+
+	footer.global p {
+		color: #aaa;
+		margin: 5px 0;
+		font-size: 13px;
+	}
+
+	footer.global p.version {
+		margin-top: 20px;
+	}
+
+
+
+/* ===============================================================
 	HOME
 =============================================================== */
 
-	/* ----- HELLO ----- */
-	.home-hello {
-		background: #e74c3c;
-		
-		color: #fff;
-		text-align: center;
+/* ----- HELLO ----- */
+.home-hello {
+	background: #e74c3c;
 
-		padding: 200px 0;
+	color: #fff;
+	text-align: center;
+
+	padding: 200px 0;
+}
+
+	/* -- Title -- */
+	.home-hello h1 {
+		margin: 0;
+		font-size: 100px;
+		font-weight: 200;
 	}
 
-		/* -- Title -- */
-		.home-hello h1 {
-			margin: 0;
-			font-size: 100px;
-			font-weight: 200;
+		/* Framework */
+		.home-hello h1 span {
+			font-size: 60px;
+			display: block;
 		}
 
-			/* Framework */
-			.home-hello h1 span {
-				font-size: 60px;
-				display: block;
-			}
+	/* -- Building themes in a simple way -- */
+	.home-hello h2 {
+		font-size: 18px;
+		font-weight: 200;
 
-		/* -- Building themes in a simple way -- */
-		.home-hello h2 {
-			font-size: 18px;
-			font-weight: 200;
+		margin: 0 0 50px;
+	}
 
-			margin: 0 0 50px;
+	/* -- Version -- */
+	.home-hello p {
+		margin: 10px 0;
+		color: rgba(255, 255, 255, 0.4);
+		font-size: 12px;
+		font-family: Arial, sans-serif;
+	}
+
+	/* -- Download -- */
+	.home-hello a {
+		border: 1px solid #fff;
+
+		color: #fff;
+		font-size: 20px;
+
+		padding: 10px 70px;
+		display: inline-block;
+
+		-webkit-border-radius: 5px;
+		   -moz-border-radius: 5px;
+				border-radius: 5px;
+
+		-webkit-transition: all .2s linear;
+		   -moz-transition: all .2s linear;
+				transition: all .2s linear;
+	}
+
+		.home-hello a:hover {
+			background: #fff;
+			color: #e74c3c;
+			text-decoration: none;
 		}
 
-		/* -- Version -- */
-		.home-hello p {
-			margin: 10px 0;
-			color: rgba(255, 255, 255, 0.4);
-			font-size: 12px;
-			font-family: Arial, sans-serif;
+/* ----- FEATURES ----- */
+.home-features {
+	padding: 80px 0 0;
+	text-align: center;
+}
+
+	/* -- Items -- */
+	.home-features .item {
+		margin-bottom: 80px;
+	}
+
+	/* -- Title -- */
+	.home-features h3 {
+		margin: 0;
+		font-size: 20px;
+		font-weight: 200;
+	}
+
+	/* -- Icons -- */
+	.home-features span {
+		border: 1px solid #eee;
+
+		width: 150px;
+		height: 150px;
+
+		margin: 20px 0;
+		display: inline-block;
+
+		-webkit-border-radius: 50%;
+		   -moz-border-radius: 50%;
+				border-radius: 50%;
+	}
+
+		.home-features span i {
+			display: block;
+			font-size: 60px;
+			line-height: 150px;
 		}
 
-		/* -- Download -- */
-		.home-hello a {
-			border: 1px solid #fff;
+	/* -- Repository -- */
+	.home-features a.repository {
+		border: 1px solid #e74c3c;
+
+		color: #e74c3c;
+		font-size: 20px;
+
+		margin: 0 0 80px 0;
+		padding: 10px 70px;
+		display: inline-block;
+
+		-webkit-border-radius: 5px;
+		   -moz-border-radius: 5px;
+				border-radius: 5px;
+
+		-webkit-transition: all .2s linear;
+		   -moz-transition: all .2s linear;
+				transition: all .2s linear;
+	}
+
+		.home-features a.repository:hover {
+			background: #e74c3c;
 
 			color: #fff;
-			font-size: 20px;
-
-			padding: 10px 70px;
-			display: inline-block;
-
-			-webkit-border-radius: 5px;
-			   -moz-border-radius: 5px;
-					border-radius: 5px;
-
-			-webkit-transition: all .2s linear;
-			   -moz-transition: all .2s linear;
-					transition: all .2s linear;
+			text-decoration: none;
 		}
 
-			.home-hello a:hover {
-				background: #fff;
-				color: #e74c3c;
-				text-decoration: none;
-			}
+/* ----- SCREENSHOTS ----- */
+.home-screenshots {
+	padding: 0 0 80px;
+	text-align: center;
+}
 
-	/* ----- FEATURES ----- */
-	.home-features {
-		padding: 80px 0 0;
-		text-align: center;
+	/* -- Title -- */
+	.home-screenshots h4 {
+		margin: 0 0 30px;
+		font-size: 50px;
+		font-weight: 200;
 	}
 
-		/* -- Items -- */
-		.home-features .item {
-			margin-bottom: 80px;
-		}
-
-		/* -- Title -- */
-		.home-features h3 {
-			margin: 0;
-			font-size: 20px;
-			font-weight: 200;
-		}
-
-		/* -- Icons -- */
-		.home-features span {
-			border: 1px solid #eee;
-
-			width: 150px;
-			height: 150px;
-
-			margin: 20px 0;
-			display: inline-block;
-
-			-webkit-border-radius: 50%;
-			   -moz-border-radius: 50%;
-					border-radius: 50%;
-		}
-
-			.home-features span i {
-				display: block;
-				font-size: 60px;
-				line-height: 150px;
-			}
-
-		/* -- Repository -- */
-		.home-features a.repository {
-			border: 1px solid #e74c3c;
-
-			color: #e74c3c;
-			font-size: 20px;
-
-			margin: 0 0 80px 0;
-			padding: 10px 70px;
-			display: inline-block;
-
-			-webkit-border-radius: 5px;
-			   -moz-border-radius: 5px;
-					border-radius: 5px;
-
-			-webkit-transition: all .2s linear;
-			   -moz-transition: all .2s linear;
-					transition: all .2s linear;
-		}
-
-			.home-features a.repository:hover {
-				background: #e74c3c;
-
-				color: #fff;
-				text-decoration: none;
-			}
-
-	/* ----- SCREENSHOTS ----- */
-	.home-screenshots {
-		padding: 0 0 80px;
-		text-align: center;
+	/* -- Images -- */
+	.home-screenshots a {
+		display: inline-block;
+		margin-bottom: 50px;
 	}
-
-		/* -- Title -- */
-		.home-screenshots h4 {
-			margin: 0 0 30px;
-			font-size: 50px;
-			font-weight: 200;
-		}
-
-		/* -- Images -- */
-		.home-screenshots a {
-			display: inline-block;
-			margin-bottom: 50px;
-		}
