@@ -287,3 +287,73 @@ footer.global {
 		display: inline-block;
 		margin-bottom: 50px;
 	}
+
+
+/* ===============================================================
+		HOME
+=============================================================== */
+#doc {
+
+}
+
+/* ----- PAGE TITLE ----- */
+#doc h2.title {
+	background: #e74c3c;
+
+	color: #FFF;
+	font-size: 50px;
+	font-weight: 200;
+
+	margin: 0px;
+	padding: 30px 0px;
+}
+
+/* ----- SIDEBAR ----- */
+#doc #docs-navbar {
+
+}
+
+	#doc .docs-navbar ul {
+		margin: 0;
+		padding: 0;
+	}
+
+		#doc .docs-navbar ul li {
+			font-size: 13px;
+			list-style: none;
+
+			display: block;
+			margin: 2px 0px;
+		}
+
+		#doc .docs-navbar ul li:hover > ul {
+			display: block;
+		}
+
+			#doc .docs-navbar ul li a {
+				background: none;
+				color: #888;
+				display: block;
+				padding: 3px 0px 3px 5px;
+			}
+
+			#doc .docs-navbar ul li a:hover {
+				color: #e74c3c;
+				text-decoration: none;
+			}
+
+			#doc .docs-navbar ul li ul {
+				display: none;
+				margin: 0 0 2px 15px;
+				padding: 0;
+			}
+
+				#doc .docs-navbar ul li ul li {
+					list-style: none;
+				}
+
+/* ----- CONTENT ----- */
+#content {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
