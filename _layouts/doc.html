@@ -14,11 +14,13 @@
 
 
 
-<div class="container" id="content">
+<div class="container" style="margin-top: 30px; margin-bottom: 30px;">
 <div class="row">
 <div class="col-md-12">
 
-  <!-- <div class="hidden-sm hidden-xs"><div class="space col-md-3" style="display: none;"></div></div> -->
+
+  <!-- NAVBAR -->
+  <div class="hidden-sm hidden-xs"><div class="space col-md-3" style="display: none;"></div></div>
   <nav class="col-md-3 hidden-sm hidden-xs docs-navbar">
     <ul class="nav">
       <li><a href="#getting-started">Iniciando</a>
@@ -54,6 +56,46 @@
       </li>
     </ul>
   </nav><!-- end .docs-navbar -->
+
+
+  <!-- CONTENT -->
+  <article class="content col-md-9">
+
+    <!-- GETTING STARTED -->
+    <section id="getting-started" class="first">
+      <h2 class="section-title">Iniciando</h2>
+      <p>Não iremos ensinar como instalar o WordPress pois essa é uma tarefa básica de todo desenvolvedor. Falaremos aqui do mínimo preciso para iniciar os seus trabalhos e ter uma ideia de como funciona o WP Starter Framework.</p>
+    </section><!-- end .getting-started -->
+
+      <!-- GETTING STARTED -> Download -->
+      <section id="download">
+        <h3 class="section-title"> - Download</h4>
+        <p>Baixe a última versão <sup>(0.9.0)</sup> do WP Starter <a href="https://github.com/mattdeveloper/wpstarter/archive/master.zip" target="_blank">clicando aqui</a> ou clone o <a href="https://github.com/mattdeveloper/wpstarter" target="_blank">repositório git</a>.</p>
+        <pre>git clone https://github.com/mattdeveloper/wpstarter.git</pre>
+      </section><!-- end #download -->
+
+      <!-- GETTING STARTED -> Install -->
+      <section id="install">
+        <h3 class="section-title"> - Instalação</h4>
+        <p>Mude o nome da pasta <b>wp-starter-framework</b> para o nome do seu tema, por exemplo <b>meu-tema</b>. Jogue a pasta do tema para <b>/wp-content/themes/</b> no local onde instalou o WordPress. Após feito a upload dos arquivos para o WordPress ative o tema em seu painel de administração.</p>
+      </section><!-- end #install -->
+
+    <!-- DEVELOPERS -->
+    <section id="developers">
+      <h2 class="section-title">Desenvolvedores</h2>
+      <p>Quando o tema estiver ativo em seu WordPress será adicionado um novo link chamado <strong>Desenvolvedores</strong> no menu da esquerda do painel de administração. Na página que é aberta quando clicado o link você terá algumas opções com detalhes sobre elas para agilizar o desenvolvimento do seu tema e lhe poupar de escrever algumas linhas de codigo.</p>
+      <p>Caso queira esconder o link <b>Desenvolvedores</b> do menu do painel adicione a linha de código abaixo em qualquer lugar no arquivo <b>functions.php</b> do seu tema.</p>
+      <pre>hide_developers();</pre>
+    </section><!-- end #developers -->
+
+    <!-- THEME OPTIONS -->
+    <section id="theme-options">
+      <h2 class="section-title">Opções do Tema</h2>
+      <p>As <strong>Opções do Tema</strong> servem para que você edite textos, imagens, links, etc. do seu tema direto do painel do WordPress. Para criar um sistema de <strong>Opções de Tema</strong> no WordPress é preciso digitar bastante código, por este motivo o WP Starter Framework já vem com esse código integrado.</p>
+      <p>Desenvolvemos um código para as Opções do Tema e criamos algumas funções para que você não precise digitar nem uma linha de código, sendo assim, tudo será criado através da página <strong>Desenvolvedores</strong> que está localizada no menu do painel de administração do WordPress.</p>
+    </section><!-- end #theme-options -->
+
+  </article><!-- end .content -->
 
 </div><!-- end .col-md-12 -->
 </div><!-- end .row -->
