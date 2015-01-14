@@ -376,6 +376,16 @@ footer.global {
 					list-style: none;
 				}
 
+					#doc .docs-navbar ul li ul li.active {
+						border-left: 2px solid red;
+						margin-left: -15px;
+						padding-left: 12px;
+					}
+
+						#doc .docs-navbar ul li ul li.active a {
+							color: #e74c3c;
+						}
+
 /* ----- Sections ----- */
 #doc .content section {
 	margin-bottom: 40px;
