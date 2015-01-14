@@ -29,23 +29,7 @@
           <li><a href="#install">Instalação</a></li>
         </ul>
       </li>
-
       <li><a href="#developers">Desenvolvedores</a></li>
-
-      <li><a href="#theme-options">Opções do Tema</a>
-        <ul>
-          <li><a href="#active-theme-options">Ativando</a></li>
-          <li><a href="#create-theme-options">Criando Campos</a></li>
-          <li><a href="#show-theme-options">Exibindo No Tema</a></li>
-        </ul>
-      </li>
-
-      <li><a href="#custom-post-types">Tipos de Post</a>
-        <ul>
-          <li><a href="#create-post-types">Criando</a></li>
-        </ul>
-      </li>
-
       <li><a href="#enqueue-scripts">Incluindo Arquivos</a>
         <ul>
           <li><a href="#enqueue-css">CSS</a></li>
@@ -54,6 +38,27 @@
           <li><a href="#enqueue-javascript-page">JavaScript - Única Página</a></li>
         </ul>
       </li>
+      <li><a href="#seo">SEO</a></li>
+      <li><a href="#thumbnails">Thumbnails</a></li>
+      <li><a href="#theme-options">Opções do Tema</a>
+        <ul>
+          <li><a href="#active-theme-options">Ativando</a></li>
+          <li><a href="#create-theme-options">Criando Campos</a></li>
+          <li><a href="#show-theme-options">Exibindo No Tema</a></li>
+        </ul>
+      </li>
+      <li><a href="#custom-post-types">Custom Post Types</a>
+        <ul>
+          <li><a href="#create-post-types">Criando</a></li>
+        </ul>
+      </li>
+      <li><a href="#custom-fields">Custom Fields</a></li>
+      <li><a href="#wplogin">WP Login</a></li>
+      <li><a href="#footer">Rodapé</a></li>
+      <li><a href="#remove-menus">Remover Menus</a></li>
+      <li><a href="#reorder-menus">Reordenar Menu</a></li>
+      <li><a href="#admin-bar">Admin Bar</a></li>
+      <li><a href="#advanced">Avançado</a></li>
     </ul>
   </nav><!-- end .docs-navbar -->
 
@@ -87,6 +92,13 @@
       <p>Caso queira esconder o link <b>Desenvolvedores</b> do menu do painel adicione a linha de código abaixo em qualquer lugar no arquivo <b>functions.php</b> do seu tema.</p>
       <pre>hide_developers();</pre>
     </section><!-- end #developers -->
+
+    <!-- ENQUEUE-SCRIPTS-->
+    <section id="enqueue-scripts">
+      <h2 class="section-title">Incluindo Arquivos</h2>
+      <p>Para incluir arquivos css e javascript utilizando o <a href="http://codex.wordpress.org/Function_Reference/wp_enqueue_script" target="_blank">wp_enqueue_scripts</a> do WordPress pode ser um pouco confuso para alguns, por isso tentamos simplificar essa tarefa o máximo possível.</p>
+      <p>Recomendamos que utilize as funções do WP Starter Framework em vez de incluir os scripts direto no <b>header.php</b> ou no <b>footer.php</b> por ter mais controle e deixar o código HTML do seu tema mais “limpo”.</p>
+    </section><!-- end #enqueue-scripts -->
 
     <!-- THEME OPTIONS -->
     <section id="theme-options">
