@@ -210,13 +210,40 @@ use_css('page-home', 'is_home');
       <!-- ENQUEUE SCRIPTS -> JS -->
       <section id="enqueue-javascript">
         <h3 class="section-title"> - JS</h3>
-        <p>Em construção.</p>
+        <p>A inclusão de arquivos JavaScript é feita da mesma forma que a inclusão de arquivos CSS. A única diferença em relação ao CSS são os nomes das funções que mudam para <b>new_js</b> e <b>use_js</b>.</p>
+        <p>Recomendamos que leia primeiro sobre a inclusão de <a href="#enqueue-css">CSS</a> para depois incluir os arquivos JavaScript. Abaixo um exemplo de uso das funções referentes ao JavaScript.</p>
+        <pre>&lt;?php
+
+// Arquivo JS dentro da pasta JS do tema.
+// Não precisa incluir get_bloginfo('template-directory') na hora de especificar o caminho do javascript
+new_js('main', 'js/main.js');
+use_js('main');
+
+// Arquivo JS em outro servidor
+// A função new_js irá reconhecer automaticamente que o arquivo é externo
+// Sempre inclua http:// ou https:// antes da url
+new_js('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js');
+use_js('jquery');
+
+?></pre>
       </section><!-- end #enqueue-js -->
 
       <!-- ENQUEUE SCRIPTS -> JS - Unique Page -->
       <section id="enqueue-javascript-page">
         <h3 class="section-title"> - JS - Única Página</h3>
-        <p>Em construção.</p>
+        <p> inclusão de arquivos JavaScript em uma única página é feita da mesma forma que a inclusão de arquivos CSS. A única diferença em relação ao CSS são os nomes das funções que mudam para <b>new_js</b> e <b>use_js</b>.</p>
+        <p>Recomendamos que leia primeiro sobre a inclusão de <a href="#enqueue-css-page">CSS - Única Página</a> para depois incluir os arquivos JavaScript.</p>
+        <pre>&lt;?php
+
+// Abaixo incluímos o arquivo apenas quando a página acessada for a de busca
+new_js('page-search', 'js/script-search.js');
+use_js('page-search', 'is_search');
+
+// Abaixo incluímos o arquivo apenas quando a página for uma single
+new_js('all-single', 'js/script-single.js');
+use_js('all-single', 'is_single');
+
+?></pre>
       </section><!-- end #enqueue-js-page -->
 
     <!-- SEO -->
@@ -253,7 +280,7 @@ use_css('page-home', 'is_home');
       <!-- THEME OPTIONS -> Active -->
       <section id="theme-options-active">
         <h3 class="section-title"> - Ativando</h3>
-        <p>Em construção.</p>
+        <p>As opções do tema já vem ativadas por padrão, porém, não são exibidas e não tem nenhum campo com dados para exibir no tema. Para ativar por completo as <strong>Opções do Tema</strong> é bem simples. Vá para a página <b>Desenvolvedores</b> que se encontra no menu do painel de administração do <strong>WordPress</strong>, com a página já aberta clique em <strong>Opções do Tema</strong> e em seguida marque a opção <b>Mostrar</b> como <b>Sim</b>.</p>
       </section><!-- end #theme-options-active -->
 
       <!-- THEME OPTIONS -> Create -->
