@@ -39,24 +39,29 @@
         </ul>
       </li>
       <li><a href="#seo">SEO</a></li>
-      <li><a href="#thumbnails">Thumbnails</a></li>
+      <li><a href="#thumbnails">Thumbnails</a>
+        <ul>
+          <li><a href="#thumbnails-native">Nativa</a></li>
+          <li><a href="#thumbnails-timthumb">TimThumb</a></li>
+        </ul>
+      </li>
       <li><a href="#theme-options">Opções do Tema</a>
         <ul>
-          <li><a href="#active-theme-options">Ativando</a></li>
-          <li><a href="#create-theme-options">Criando Campos</a></li>
-          <li><a href="#show-theme-options">Exibindo No Tema</a></li>
+          <li><a href="#theme-options-active">Ativando</a></li>
+          <li><a href="#theme-options-create">Criando Campos</a></li>
+          <li><a href="#theme-options-show">Exibindo No Tema</a></li>
         </ul>
       </li>
       <li><a href="#custom-post-types">Custom Post Types</a>
         <ul>
-          <li><a href="#create-post-types">Criando</a></li>
+          <li><a href="#custom-post-types-create">Criando</a></li>
         </ul>
       </li>
       <li><a href="#custom-fields">Custom Fields</a></li>
-      <li><a href="#wplogin">WP Login</a></li>
+      <li><a href="#wp-login">WP Login</a></li>
       <li><a href="#footer">Rodapé</a></li>
       <li><a href="#remove-menus">Remover Menus</a></li>
-      <li><a href="#reorder-menus">Reordenar Menu</a></li>
+      <li><a href="#reorder-menu">Reordenar Menu</a></li>
       <li><a href="#admin-bar">Admin Bar</a></li>
       <li><a href="#advanced">Avançado</a></li>
     </ul>
@@ -93,12 +98,103 @@
       <pre>hide_developers();</pre>
     </section><!-- end #developers -->
 
-    <!-- ENQUEUE-SCRIPTS-->
+    <!-- ENQUEUE SCRIPTS -->
     <section id="enqueue-scripts">
       <h2 class="section-title">Incluindo Arquivos</h2>
       <p>Para incluir arquivos css e javascript utilizando o <a href="http://codex.wordpress.org/Function_Reference/wp_enqueue_script" target="_blank">wp_enqueue_scripts</a> do WordPress pode ser um pouco confuso para alguns, por isso tentamos simplificar essa tarefa o máximo possível.</p>
       <p>Recomendamos que utilize as funções do WP Starter Framework em vez de incluir os scripts direto no <b>header.php</b> ou no <b>footer.php</b> por ter mais controle e deixar o código HTML do seu tema mais “limpo”.</p>
     </section><!-- end #enqueue-scripts -->
+
+      <!-- ENQUEUE SCRIPTS -> CSS -->
+      <section id="enqueue-css">
+        <h3 class="section-title"> - CSS</h3>
+        <p>Utilize as funções de css no arquivo <b>functions.php</b> do seu tema.</p>
+        <p>Para registrar novos css utilize a função <b>new_css(‘nome-do-estilo’, ‘local-do-estilo.css’)</b>. Você precisa passar dois parâmetros nessa função sendo que o primeiro é o nome do estilo para quando for chamado e o segundo é o local onde está o arquivo. Para exibir o css no tema utilize a função <b>use_css(‘nome-do-estilo’)</b>.</p>
+        <p>Normalmente para incluir arquivos no seu tema você precisa utilizar alguma função como por exemplo: <i>get_bloginfo('template_directory')</i> para que possa pegar o diretório do template, com a função <b>new_css</b> isso não é preciso, lhe poupando mais código. Abaixo daremos um exemplo de inclusão de css interno(dentro do tema) e externo(em outro lugar na internet).</p>
+        <pre>&lt;?php
+
+// Arquivo CSS dentro da pasta CSS do tema.
+// Não precisa incluir get_bloginfo('template-directory') na hora de especificar o caminho do css
+new_css('page-home', 'css/page-home.css');
+use_css('page-home');
+
+// Arquivo CSS em outro servidor
+// A função new_css irá reconhecer automaticamente que o arquivo é externo
+new_css('font-raleway', 'http://fonts.googleapis.com/css?family=Raleway:400,200,500,700,800');
+use_css('font-raleway');
+
+?></pre>
+      </section><!-- end #enqueue-css -->
+
+      <!-- ENQUEUE SCRIPTS -> CSS - Unique Page -->
+      <section id="enqueue-css-page">
+        <h3 class="section-title"> - CSS - Única Página</h3>
+        <p>É recomendável que você carregue o arquivo css apenas nas páginas precise, no WP Starter Framework isso é feito de uma forma muito simples.</p>
+        <p>Quando for chamar usando a função use_css você pode passar dois parâmetros a mais tirando o nome do arquivo. O primeiro parâmetro como vimos anteriormente é o nome do arquivo, o segundo é a condição e o terceiro é o valor a ser validado.</p>
+        <p>Exemplo de uso:</p>
+        <pre>&lt;?php
+
+// Abaixo incluímos o arquivo apenas quando a página é um template
+// e quando esse template é o do arquivo contato.php
+new_css('page-contato', 'css/page-contato.css');
+use_css('page-contato', 'is_page_template', 'contato.php');
+
+// Abaixo incluímos o arquivo apenas quando o usuário estiver acessando a home do site
+new_css('page-home', 'css/page-home.css');
+use_css('page-home', 'is_home');
+
+?></pre>
+
+        <p>Condições aceitas no segundo parâmetro da função use_css e suas documentações.</p>
+        <ul>
+          <li><strong>is_home</strong> -&nbsp;<a title="Abrir link em uma nova guia." href="https://codex.wordpress.org/Function_Reference/is_home" target="_blank">Codex</a></li>
+          <li><strong>is_front_page</strong> – <a title="Abrir link em uma nova guia." href="https://codex.wordpress.org/Function_Reference/is_front_page" target="_blank">Codex</a></li>
+          <li><strong>is_single</strong> – <a title="Abrir link em uma nova guia." href="https://codex.wordpress.org/Function_Reference/is_single" target="_blank">Codex</a></li>
+					<li><strong>is_singular</strong> – <a title="Abrir link em uma nova guia." href="https://codex.wordpress.org/Function_Reference/is_singular" target="_blank">Codex</a></li>
+          <li><strong>is_category</strong> – <a title="Abrir link em uma nova guia." href="https://codex.wordpress.org/Function_Reference/is_category" target="_blank">Codex</a></li>
+          <li><strong>is_archive</strong> – <a title="Abrir link em uma nova guia." href="https://codex.wordpress.org/Function_Reference/is_archive" target="_blank">Codex</a></li>
+          <li><strong>is_page</strong> – <a title="Abrir link em uma nova guia." href="https://codex.wordpress.org/Function_Reference/is_page" target="_blank">Codex</a></li>
+          <li><strong>is_page_template</strong> – <a title="Abrir link em uma nova guia." href="https://codex.wordpress.org/Function_Reference/is_page_template" target="_blank">Codex</a></li>
+          <li><strong>is_search</strong> – <a title="Abrir link em uma nova guia." href="https://codex.wordpress.org/Function_Reference/is_search" target="_blank">Codex</a></li>
+          <li><strong>is_admin</strong> – <a title="Abrir link em uma nova guia." href="https://codex.wordpress.org/Function_Reference/is_admin" target="_blank">Codex</a></li>
+        </ul>
+      </section><!-- end #enqueue-css-page -->
+
+      <!-- ENQUEUE SCRIPTS -> JS -->
+      <section id="enqueue-javascript">
+        <h3 class="section-title"> - JS</h3>
+        <p>Em construção.</p>
+      </section><!-- end #enqueue-js -->
+
+      <!-- ENQUEUE SCRIPTS -> JS - Unique Page -->
+      <section id="enqueue-javascript-page">
+        <h3 class="section-title"> - JS - Única Página</h3>
+        <p>Em construção.</p>
+      </section><!-- end #enqueue-js-page -->
+
+    <!-- SEO -->
+    <section id="seo">
+      <h2 class="section-title">SEO</h2>
+      <p>Em construção.</p>
+    </section><!-- end #seo -->
+
+    <!-- THUMBNAILS -->
+    <section id="thumbnails">
+      <h2 class="section-title">Thumbnails</h2>
+      <p>Em construção.</p>
+    </section><!-- end #thumbnails -->
+
+      <!-- THUMBNAILS -> Native -->
+      <section id="thumbnails-native">
+        <h3 class="section-title"> - Nativa</h3>
+        <p>Em construção.</p>
+      </section><!-- end #thumbnails-native -->
+
+      <!-- THUMBNAILS -> Timthumb -->
+      <section id="thumbnails-timthumb">
+        <h3 class="section-title"> - TimThumb</h3>
+        <p>Em construção.</p>
+      </section><!-- end #thumbnails-timthumb -->
 
     <!-- THEME OPTIONS -->
     <section id="theme-options">
@@ -106,6 +202,78 @@
       <p>As <strong>Opções do Tema</strong> servem para que você edite textos, imagens, links, etc. do seu tema direto do painel do WordPress. Para criar um sistema de <strong>Opções de Tema</strong> no WordPress é preciso digitar bastante código, por este motivo o WP Starter Framework já vem com esse código integrado.</p>
       <p>Desenvolvemos um código para as Opções do Tema e criamos algumas funções para que você não precise digitar nem uma linha de código, sendo assim, tudo será criado através da página <strong>Desenvolvedores</strong> que está localizada no menu do painel de administração do WordPress.</p>
     </section><!-- end #theme-options -->
+
+      <!-- THEME OPTIONS -> Active -->
+      <section id="theme-options-active">
+        <h3 class="section-title"> - Ativando</h3>
+        <p>Em construção.</p>
+      </section><!-- end #theme-options-active -->
+
+      <!-- THEME OPTIONS -> Create -->
+      <section id="theme-options-create">
+        <h3 class="section-title"> - Criando</h3>
+        <p>Em construção.</p>
+      </section><!-- end #theme-options-create -->
+
+      <!-- THEME OPTIONS -> Show -->
+      <section id="theme-options-show">
+        <h3 class="section-title"> - Exibindo Opções</h3>
+        <p>Em construção.</p>
+      </section><!-- end #theme-options-show -->
+
+    <!-- CUSTOM POST TYPES -->
+    <section id="custom-post-types">
+      <h2 class="section-title">Custom Post Types</h2>
+      <p>Em construção.</p>
+    </section><!-- end #custom-post-types -->
+
+      <!-- CUSTOM POST TYPES -> Criando -->
+      <section id="custom-post-types-create">
+        <h3 class="section-title"> - Criando</h3>
+        <p>Em construção.</p>
+      </section><!-- end #custom-post-types-creates -->
+
+    <!-- CUSTOM FIELDS -->
+    <section id="custom-fields">
+      <h2 class="section-title">Custom Fields</h2>
+      <p>Em construção.</p>
+    </section><!-- end #custom-fields -->
+
+    <!-- WP LOGIN -->
+    <section id="wp-login">
+      <h2 class="section-title">WP Login</h2>
+      <p>Em construção.</p>
+    </section><!-- end #wp-login -->
+
+    <!-- FOOTER -->
+    <section id="footer">
+      <h2 class="section-title">Rodapé</h2>
+      <p>Em construção.</p>
+    </section><!-- end #footer -->
+
+    <!-- REMOVE MENUS -->
+    <section id="remove-menus">
+      <h2 class="section-title">Remover Menus</h2>
+      <p>Em construção.</p>
+    </section><!-- end #remove-menus -->
+
+    <!-- REORDER MENU -->
+    <section id="reorder-menu">
+      <h2 class="section-title">Reorder Menu</h2>
+      <p>Em construção.</p>
+    </section><!-- end #reorder-menus -->
+
+    <!-- ADMIN BAR -->
+    <section id="admin-bar">
+      <h2 class="section-title">Admin Bar</h2>
+      <p>Em construção.</p>
+    </section><!-- end #admin-bar -->
+
+    <!-- ADVANCED -->
+    <section id="advanced">
+      <h2 class="section-title">Avançado</h2>
+      <p>Em construção.</p>
+    </section><!-- end #advanced -->
 
   </article><!-- end .content -->
 
