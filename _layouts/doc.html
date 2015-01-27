@@ -223,19 +223,33 @@ use_js('all-single', 'is_single');
     <!-- THUMBNAILS -->
     <section id="thumbnails">
       <h2 class="section-title">Thumbnails</h2>
-      <p>Em construção.</p>
+      <p>O WordPress vem com um suporte padrão a Thumbnails, você pode criar diversos tamanhos para suas imagens, porém, adicionamos também a opção de que você possa gerar as <strong>Thumbnails</strong> com uma classe PHP chamada TimThumb. Criamos uma função chamada <b>thumb</b> que explicaremos adiante como funciona.</p>
     </section><!-- end #thumbnails -->
 
       <!-- THUMBNAILS -> Native -->
       <section id="thumbnails-native">
         <h3 class="section-title"> - Nativa</h3>
-        <p>Em construção.</p>
+        <p>As <strong>Thumbnails nativas</strong> do WordPress são ótimas, porém, geram diversos arquivos com os tamanhos que você quer e isso não a torna inutilizável, muito pelo contrário! Para ativar as <strong>Thumbnails</strong> do WordPress você precisa inserir uns códigos no arquivo <b>functions.php</b> de seu tema e também alguns códigos para definir os tamanhos das imagens. Com o WP Starter você pode acessar a aba <strong>Thumbnails</strong> dentro da página <b>Desenvolvedor</b> e marcar a opção <b>Ativar THumbnails</b> como <b>Sim</b>.</p>
+        <p>Para definir os tamanhos das <strong>Thumbnails</strong> você pode clicar no botão <b>Adicionar Novo</b> abaixo de onde se ativa as <strong>Thumbnails</strong> e inserir quantos tamanhos quiser. Os valores devem ser inseridos separados por uma / e com 4 parâmetros que são eles: ID do tamanho da Thumbnail, largura, altura e um valor booleano indicando se deseja cortar a imagem ou não.</p>
+        <p>Abaixo um exemplo de valor para uma thumbnail com 400x200 que deve ser cortada para sempre ter este tamanho:</p>
+        <pre>thumb-movies/400/200/true</pre>
       </section><!-- end #thumbnails-native -->
 
       <!-- THUMBNAILS -> Timthumb -->
       <section id="thumbnails-timthumb">
         <h3 class="section-title"> - TimThumb</h3>
-        <p>Em construção.</p>
+        <p>Antes de usar o <a href="https://code.google.com/p/timthumb/" target="_blank" title="Abrir link em uma nova guia.">TimThumb</a> você precisa ter certeza de que a pasta <b>_framework/thumb/cache</b> tem permissões de leitura e escrita.</p>
+        <p>As vantagens em utilizar o <strong>TimThumb</strong> em seu tema <strong>WordPress</strong> são que você pode utilizar apenas uma imagem grande economizando espaço em seu servidor e todas as miniaturas são guardadas na pasta <b>_framework/thumb/cache</b> do seu tema. Você pode definir os tamanhos, tipos de corte e a qualidade das imagens também.</p>
+        <p>Para o utilizar o <strong>TimThumb</strong> em seu tema é bem simples, basta utilizar a função <b>thumb('caminho-da-imagem.jpg', largura, altura, corte, qualidade)</b>. Por padrão os valores de corte e qualidade são <b>1</b> e <b>60</b> respectivamente.</p>
+        <p>Abaixo alguns exemplos de uso para o <strong>TimThumb</strong>:</p>
+        <pre>&lt;?php
+
+thumb( 'http://example.com/my_image.png' , 300, 300, 1 ); // Será gerada uma imagem de 300x300 cortada.
+thumb( 'http://example.com/my_image.png' , 300, 300, 2 ); // A imagem terá 300x300 porém não será cortada e terá uma borda se preciso.
+thumb( 'http://example.com/my_image.png' , 300, 300, 3 ); // Gera uma imagem com no máximo 300 de largura e 300 de altura.
+thumb( 'http://example.com/my_image.png' , 300, 300, 3, 80 ); // A qualidade da imagem será de 80 entre 1 e 100.
+
+?></pre>
       </section><!-- end #thumbnails-timthumb -->
 
     <!-- THEME OPTIONS -->
@@ -248,7 +262,7 @@ use_js('all-single', 'is_single');
       <!-- THEME OPTIONS -> Active -->
       <section id="theme-options-active">
         <h3 class="section-title"> - Ativando</h3>
-        <p>As opções do tema já vem ativadas por padrão, porém, não são exibidas e não tem nenhum campo com dados para exibir no tema. Para ativar por completo as <strong>Opções do Tema</strong> é bem simples. Vá para a página <b>Desenvolvedores</b> que se encontra no menu do painel de administração do <strong>WordPress</strong>, com a página já aberta clique em <strong>Opções do Tema</strong> e em seguida marque a opção <b>Mostrar</b> como <b>Sim</b>.</p>
+        <p>Em construção.</p>
       </section><!-- end #theme-options-active -->
 
       <!-- THEME OPTIONS -> Create -->
