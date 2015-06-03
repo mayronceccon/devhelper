@@ -1,4 +1,4 @@
-# [Dev Helper Plugin - 0.0.1]
+# [Dev Helper Plugin - 0.0.1](http://mattdeveloper.github.io/devhelper)
 
 De programadores para programadores. Desenvolva os seus temas WordPress com mais facilidade. O plugin Dev Helper inclui várias funções para agilizar o desenvolvimento do seu tema. Lhe poupando
 algumas linhas de códigos um pouco chatas as vezes e também instalação de muitos plugins pelo fato de ele ter bastante funções já incluidas e prontas para uso.
