@@ -196,7 +196,7 @@ if( devOpt('wplogin_image', false) != '' ){
 	$devhelper_login['img'] = wp_get_attachment_image_src( devOpt('wplogin_image', false), 'full' );
 	$devhelper_login['img'] = $devhelper_login['img'][0];
 }else{
-	$devhelper_login['img'] = THEMEROOT.'/_framework/wpstarter/_assets/img/wplogin-devhelper.png';
+	$devhelper_login['img'] = DEVHELPER__PLUGIN_URL.'framework/devhelper/_assets/img/wplogin-devhelper.png';
 }
 
 /* ----- CSS: Background Color ----- */
@@ -433,8 +433,8 @@ function devhelper_adminbar_leggo_link(){
 
 	$wp_admin_bar->add_menu( array(
 		'id'      => 'linkwpstarter',
-		'title'   => '<img src="'.THEMEROOT.'/_framework/wpstarter/_assets/img/adminbar-wpstarter.png" alt="'.__('Dev Helper', 'devhelper').'">',
-		'href'    => 'https://mattdeveloper.github.com/wpstarter',
+		'title'   => '<img src="'.DEVHELPER__PLUGIN_URL.'framework/devhelper/_assets/img/adminbar-devhelper.png" alt="'.__('Dev Helper', 'devhelper').'">',
+		'href'    => 'https://mattdeveloper.github.com/devhelper',
 		'meta'    => array(
 				'target' => '_blank',
 				'title'  => __('Dev Helper - Construindo temas de forma simples e eficaz!', 'devhelper')
@@ -496,8 +496,8 @@ if( is_array(devOpt('adminbar_add_links', false)) AND sizeof(devOpt('adminbar_ad
 				if( str_replace(' ', '', $thefield['id']) != '' AND str_replace(' ', '', $thefield['content']) != '' AND str_replace(' ', '', $thefield['href']) != '' ){
 					$wp_admin_bar->add_menu( array(
 						'id'      => $thefield['id'],
-						'title'   => str_replace('[siteurl]', get_bloginfo('url'), str_replace('[themeroot]', THEMEROOT, $thefield['content'])),
-						'href'    => str_replace('[siteurl]', get_bloginfo('url'), str_replace('[themeroot]', THEMEROOT, $thefield['href'])),
+						'title'   => str_replace('[siteurl]', get_bloginfo('url'), str_replace('[DEVHELPER__PLUGIN_URL]', DEVHELPER__PLUGIN_URL, $thefield['content'])),
+						'href'    => str_replace('[siteurl]', get_bloginfo('url'), str_replace('[DEVHELPER__PLUGIN_URL]', DEVHELPER__PLUGIN_URL, $thefield['href'])),
 						'meta'    => array(
 								'class'  => $thefield['class'],
 								'target' => $thefield['target'],
@@ -522,8 +522,8 @@ if( is_array(devOpt('adminbar_add_links', false)) AND sizeof(devOpt('adminbar_ad
 				if( str_replace(' ', '', $thefield['id']) != '' AND str_replace(' ', '', $thefield['content']) != '' AND str_replace(' ', '', $thefield['href']) != '' ){
 					$wp_admin_bar->add_menu( array(
 						'id'      => $thefield['id'],
-						'title'   => str_replace('[siteurl]', get_bloginfo('url'), str_replace('[themeroot]', THEMEROOT, $thefield['content'])),
-						'href'    => str_replace('[siteurl]', get_bloginfo('url'), str_replace('[themeroot]', THEMEROOT, $thefield['href'])),
+						'title'   => str_replace('[siteurl]', get_bloginfo('url'), str_replace('[DEVHELPER__PLUGIN_URL]', DEVHELPER__PLUGIN_URL, $thefield['content'])),
+						'href'    => str_replace('[siteurl]', get_bloginfo('url'), str_replace('[DEVHELPER__PLUGIN_URL]', DEVHELPER__PLUGIN_URL, $thefield['href'])),
 						'meta'    => array(
 								'class'  => $thefield['class'],
 								'target' => $thefield['target'],

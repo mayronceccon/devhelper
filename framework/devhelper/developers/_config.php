@@ -96,7 +96,7 @@ function devhelper_developer_page(){
 		<!-- BUTTONS -->
 		<div class="buttons">
 			<div class="left">
-				<?php _e('Este é um projeto Open Source. Ajude-nos a melhorá-lo', 'devhelper'); ?> <a href="https://github.com/mattdeveloper/devhelper" target="_blank">https://github.com/mattdeveloper/wpstarter</a>.
+				<?php _e('Este é um projeto Open Source. Ajude-nos a melhorá-lo', 'devhelper'); ?>: <a href="https://github.com/mattdeveloper/devhelper" target="_blank">https://github.com/mattdeveloper/devhelper</a>
 			</div><!-- end .left -->
 
 			<div class="right">

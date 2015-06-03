@@ -46,7 +46,7 @@ load_theme_textdomain( 'devhelper', DEVHELPER__PLUGIN_DIR.'languages' );
 /* ===============================================================
 	02. THEME PATH/ROOT
 =============================================================== */
-define( 'THEMEPATH', DEVHELPER__PLUGIN_DIR ); // For Includes With PHP
+define( 'THEMEPATH', get_stylesheet_directory() ); // For Includes With PHP
 define( 'THEMEROOT', get_template_directory_uri() ); // For HTML Path
 
 
@@ -124,7 +124,7 @@ require_once( DEVHELPER__PLUGIN_DIR.'framework/devhelper/wp-enqueue-styles.php' 
 	09. TIMTHUMB CONFIG
 =============================================================== */
 function thumb($src='', $width=100, $height=100, $crop=1, $quality=80){
-	return THEMEROOT.'framework/thumb/?src='.$src.'&w='.$width.'&h='.$height.'&zc='.$crop.'&q='.$quality;
+	return DEVHELPER__PLUGIN_URL.'framework/thumb/?src='.$src.'&w='.$width.'&h='.$height.'&zc='.$crop.'&q='.$quality;
 }
 
 ?>
