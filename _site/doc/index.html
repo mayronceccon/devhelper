@@ -75,7 +75,7 @@
           <li><a href="#install">Instalação</a></li>
         </ul>
       </li>
-      <li><a href="#developers">Desenvolvedores</a></li>
+      <li><a href="#developer">Desenvolvedor</a></li>
       <li><a href="#enqueue-scripts">Incluindo Arquivos</a>
         <ul>
           <li><a href="#enqueue-css">CSS</a></li>
@@ -136,19 +136,19 @@
         <p>Jogue a pasta <b>devhelper</b> para a pasta <b>wp-content/plugins</b> do WordPress, ative o plugin no painel de Administração do WordPress e você já pode começar a usufruir das diversar funcionalidades que o plugin disponibiliza para você.</p>
       </section><!-- end #install -->
 
-    <!-- DEVELOPERS -->
-    <section id="developers">
-      <h2 class="section-title">Desenvolvedores</h2>
-      <p>Quando o plugin estiver ativo em seu WordPress será adicionado um novo link chamado <strong>Desenvolvedores</strong> no menu esquerdo do painel de administração. Na página que é aberta quando clicado o link você terá algumas opções com detalhes sobre elas para agilizar o desenvolvimento do seu tema e lhe poupar de escrever algumas linhas de codigo.</p>
-      <p>Caso queira esconder o link <b>Desenvolvedores</b> do menu do painel adicione a linha de código abaixo em qualquer lugar no arquivo <b>functions.php</b> do seu tema.</p>
+    <!-- DEVELOPER -->
+    <section id="developer">
+      <h2 class="section-title">Desenvolvedor</h2>
+      <p>Quando o plugin estiver ativo em seu WordPress será adicionado um novo link chamado <strong>Desenvolvedor</strong> no menu esquerdo do painel de administração. Na página que é aberta quando clicado o link você terá algumas opções com detalhes sobre elas para agilizar o desenvolvimento do seu tema e lhe poupar de escrever algumas linhas de codigo.</p>
+      <p>Caso queira esconder o link <b>Desenvolvedor</b> do menu do painel adicione a linha de código abaixo em qualquer lugar no arquivo <b>functions.php</b> do seu tema.</p>
       <pre>hide_developer();</pre>
-    </section><!-- end #developers -->
+    </section><!-- end #developer -->
 
     <!-- ENQUEUE SCRIPTS -->
     <section id="enqueue-scripts">
       <h2 class="section-title">Incluindo Arquivos</h2>
-      <p>Para incluir arquivos css e javascript utilizando o <a href="http://codex.wordpress.org/Function_Reference/wp_enqueue_script" target="_blank">wp_enqueue_scripts</a> do WordPress pode ser um pouco confuso para alguns, por isso tentamos simplificar essa tarefa o máximo possível.</p>
-      <p>Recomendamos que utilize as funções do WP Starter Framework em vez de incluir os scripts direto no <b>header.php</b> ou no <b>footer.php</b> por ter mais controle e deixar o código HTML do seu tema mais “limpo”.</p>
+      <p>Incluir arquivos css e javascript utilizando o <a href="http://codex.wordpress.org/Function_Reference/wp_enqueue_script" target="_blank">wp_enqueue_scripts</a> do WordPress pode ser um pouco confuso para alguns, por isso tentamos simplificar essa tarefa o máximo possível.</p>
+      <p>Recomendamos que utilize as funções do plugin Dev Helper em vez de incluir os scripts direto no <b>header.php</b> ou no <b>footer.php</b> por ter mais controle e deixar o código HTML do seu tema mais “limpo”.</p>
     </section><!-- end #enqueue-scripts -->
 
       <!-- ENQUEUE SCRIPTS -> CSS -->
@@ -175,7 +175,7 @@ use_css('font-raleway');
       <!-- ENQUEUE SCRIPTS -> CSS - Unique Page -->
       <section id="enqueue-css-page">
         <h3 class="section-title"> - CSS - Única Página</h3>
-        <p>É recomendável que você carregue o arquivo css apenas nas páginas precise, no WP Starter Framework isso é feito de uma forma muito simples.</p>
+        <p>É recomendável que você carregue o arquivo css apenas nas páginas que precise, com o plugin Dev Helper isso é feito de uma forma muito simples.</p>
         <p>Quando for chamar usando a função use_css você pode passar dois parâmetros a mais tirando o nome do arquivo. O primeiro parâmetro como vimos anteriormente é o nome do arquivo, o segundo é a condição e o terceiro é o valor a ser validado.</p>
         <p>Exemplo de uso:</p>
         <pre>&lt;?php
@@ -261,21 +261,21 @@ use_js('all-single', 'is_single');
     <!-- SEO -->
     <section id="seo">
       <h2 class="section-title">SEO</h2>
-      <p>As configurações de SEO são bem básicas, porém bem úteis para qualquer tipo de site. Você pode utilizar outro plugin de SEO como o <a href="https://wordpress.org/plugins/wordpress-seo/" target="_blank">WordPress SEO by Yoast</a>. Para isto basta desativar o SEO do WP Starter atráves da aba SEO na página Desenvolvedor.</p>
-      <p>Para ativar as opções de SEO do WP Starter basta marcar a opção <strong>Ativar SEO</strong> como <b>Sim</b> na aba SEO da página Desenvolvedor. Você também irá precisar especificar quais tipos de posts você quer que os campos de SEO apareçam no input <b>Post Types</b>.</p>
+      <p>As configurações de SEO são bem básicas, porém bem úteis para qualquer tipo de site. Você pode utilizar outro plugin de SEO como o <a href="https://wordpress.org/plugins/wordpress-seo/" target="_blank">WordPress SEO by Yoast</a>. Para isto basta deixar desativado o SEO do plugin Dev Helper atráves da aba SEO na página Desenvolvedor.</p>
+      <p>Para ativar as opções de SEO do plugin Dev Helper basta marcar a opção <strong>Ativar SEO</strong> como <b>Sim</b> na aba SEO da página Desenvolvedor. Você também irá precisar especificar quais tipos de posts você quer que os campos de SEO apareçam no input <b>Post Types</b>.</p>
       <p>Adicione sua página do Facebook e Google+ para vincula-las ao seu site. Vincule sua conta do <strong>Google Webmasters</strong> inserindo o código da sua conta no input <strong>Google Webmasters</strong>.</p>
     </section><!-- end #seo -->
 
     <!-- THUMBNAILS -->
     <section id="thumbnails">
       <h2 class="section-title">Thumbnails</h2>
-      <p>O WordPress vem com um suporte padrão a Thumbnails, você pode criar diversos tamanhos para suas imagens, porém, adicionamos também a opção de que você possa gerar as <strong>Thumbnails</strong> com uma classe PHP chamada TimThumb. Criamos uma função chamada <b>thumb</b> que explicaremos adiante como funciona.</p>
+      <p>O WordPress vem com um suporte padrão a Thumbnails, você pode criar diversos tamanhos para suas imagens, porém, adicionamos também a opção de que você possa gerar as <strong>Thumbnails</strong> com uma classe PHP chamada <strong>TimThumb</strong>. Criamos uma função chamada <b>thumb</b> que explicaremos adiante como funciona.</p>
     </section><!-- end #thumbnails -->
 
       <!-- THUMBNAILS -> Native -->
       <section id="thumbnails-native">
         <h3 class="section-title"> - Nativa</h3>
-        <p>As <strong>Thumbnails nativas</strong> do WordPress são ótimas, porém, geram diversos arquivos com os tamanhos que você quer e isso não a torna inutilizável, muito pelo contrário! Para ativar as <strong>Thumbnails</strong> do WordPress você precisa inserir uns códigos no arquivo <b>functions.php</b> de seu tema e também alguns códigos para definir os tamanhos das imagens. Com o WP Starter você pode acessar a aba <strong>Thumbnails</strong> dentro da página <b>Desenvolvedor</b> e marcar a opção <b>Ativar THumbnails</b> como <b>Sim</b>.</p>
+        <p>As <strong>Thumbnails nativas</strong> do WordPress são ótimas, porém, geram diversos arquivos com os tamanhos que você quer, isso não a torna inutilizável, muito pelo contrário! Para ativar as <strong>Thumbnails</strong> do WordPress você precisa inserir uns códigos no arquivo <b>functions.php</b> de seu tema e também alguns códigos para definir os tamanhos das imagens. Com o plugin Dev Helper você pode acessar a aba <strong>Thumbnails</strong> dentro da página <b>Desenvolvedor</b> e marcar a opção <b>Ativar THumbnails</b> como <b>Sim</b>.</p>
         <p>Para definir os tamanhos das <strong>Thumbnails</strong> você pode clicar no botão <b>Adicionar Novo</b> abaixo de onde se ativa as <strong>Thumbnails</strong> e inserir quantos tamanhos quiser. Os valores devem ser inseridos separados por uma / e com 4 parâmetros que são eles: ID do tamanho da Thumbnail, largura, altura e um valor booleano indicando se deseja cortar a imagem ou não.</p>
         <p>Abaixo um exemplo de valor para uma thumbnail com 400x200 que deve ser cortada para sempre ter este tamanho:</p>
         <pre>thumb-movies/400/200/true</pre>
@@ -284,8 +284,8 @@ use_js('all-single', 'is_single');
       <!-- THUMBNAILS -> Timthumb -->
       <section id="thumbnails-timthumb">
         <h3 class="section-title"> - TimThumb</h3>
-        <p>Antes de usar o <a href="https://code.google.com/p/timthumb/" target="_blank" title="Abrir link em uma nova guia.">TimThumb</a> você precisa ter certeza de que a pasta <b>_framework/thumb/cache</b> tem permissões de leitura e escrita.</p>
-        <p>As vantagens em utilizar o <strong>TimThumb</strong> em seu tema <strong>WordPress</strong> são que você pode utilizar apenas uma imagem grande economizando espaço em seu servidor e todas as miniaturas são guardadas na pasta <b>_framework/thumb/cache</b> do seu tema. Você pode definir os tamanhos, tipos de corte e a qualidade das imagens também.</p>
+        <p>Antes de usar o <a href="https://code.google.com/p/timthumb/" target="_blank" title="Abrir link em uma nova guia.">TimThumb</a> você precisa ter certeza de que a pasta <b>framework/thumb/cache</b> tem permissões de leitura e escrita.</p>
+        <p>As vantagens em utilizar o <strong>TimThumb</strong> em seu tema <strong>WordPress</strong> são que você pode utilizar apenas uma imagem grande economizando espaço em seu servidor e todas as miniaturas são guardadas na pasta <b>framework/thumb/cache</b> do seu plugin. Você pode definir os tamanhos, tipos de corte e a qualidade das imagens também.</p>
         <p>Para o utilizar o <strong>TimThumb</strong> em seu tema é bem simples, basta utilizar a função <b>thumb('caminho-da-imagem.jpg', largura, altura, corte, qualidade)</b>. Por padrão os valores de corte e qualidade são <b>1</b> e <b>60</b> respectivamente.</p>
         <p>Abaixo alguns exemplos de uso para o <strong>TimThumb</strong>:</p>
         <pre>&lt;?php
@@ -301,20 +301,21 @@ thumb( 'http://example.com/my_image.png' , 300, 300, 3, 80 ); // A qualidade da 
     <!-- THEME OPTIONS -->
     <section id="theme-options">
       <h2 class="section-title">Opções do Tema</h2>
-      <p>As <strong>Opções do Tema</strong> servem para que você edite textos, imagens, links, etc. do seu tema direto do painel do WordPress. Para criar um sistema de <strong>Opções de Tema</strong> no WordPress é preciso digitar bastante código, por este motivo o WP Starter Framework já vem com esse código integrado.</p>
-      <p>Desenvolvemos um código para as Opções do Tema e criamos algumas funções para que você não precise digitar nem uma linha de código, sendo assim, tudo será criado através da página <strong>Desenvolvedores</strong> que está localizada no menu do painel de administração do WordPress.</p>
+      <p>As <strong>Opções do Tema</strong> servem para que você edite textos, imagens, links, etc. do seu tema direto do painel do WordPress. Para criar um sistema de <strong>Opções de Tema</strong> no WordPress é preciso digitar bastante código, por este motivo o plugin Dev Helper já vem com este código integrado.</p>
+      <p>Desenvolvemos um código para as <strong>Opções do Tema</strong> e criamos algumas funções para que você não precise digitar nem uma linha de código, sendo assim, tudo será criado através da página <strong>Desenvolvedor</strong> que está localizada no menu do painel de administração do WordPress.</p>
     </section><!-- end #theme-options -->
 
       <!-- THEME OPTIONS -> Active -->
       <section id="theme-options-active">
         <h3 class="section-title"> - Ativando</h3>
-        <p>Em construção.</p>
+        <p>Clique na aba <strong>Opções do Tema</strong> dentro da página Desenvolvedor e na opção <i>Mostrar</i> selecione <i>Sim</i>. Salve as alterações e as Opções do Tema já estaram ativas.</p>
       </section><!-- end #theme-options-active -->
 
       <!-- THEME OPTIONS -> Create -->
       <section id="theme-options-create">
         <h3 class="section-title"> - Criando</h3>
-        <p>Em construção.</p>
+        <p>Não basta apenas ativar as Opções do Tema para que elas funcionem, bom, na teoria sim, porém você precisa criar alguns menus e adicionar novas opções.</p>
+        <p>Antes de adicionar novas opções cria algum menu para que você possa selecioná-lo mais tarde. Dentro da página Desenvolvedor selecione a aba Opções do Tema e adicione novos menus clicando em Adicionar Novo na seção Menus.</p>
       </section><!-- end #theme-options-create -->
 
       <!-- THEME OPTIONS -> Show -->
