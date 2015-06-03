@@ -2,7 +2,6 @@
 
 add_action( 'admin_init', 'wpstarterDeveloper_footer_settings' );
 function wpstarterDeveloper_footer_settings(){
-	global $wpstarterversion;
 
 	// Register the settings with Validation callback
 	register_setting( 'wpstarterDeveloper', 'wpstarterDeveloper', '' );

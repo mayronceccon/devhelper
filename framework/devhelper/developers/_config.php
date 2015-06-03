@@ -22,7 +22,6 @@ function devhelper_menu_developer(){
 	DEVELOPER HTML
 =============================================================== */
 function devhelper_developer_page(){
-global $wpstarterversion;
 ?>
 <div class="wrap">
 	<form class="devhelper-developer" method="post" enctype="multipart/form-data" action="options.php">
@@ -48,7 +47,7 @@ global $wpstarterversion;
 		<div class="buttons">
 			<div class="left">
 				<?php _e('Precisa de ajuda?', 'devhelper'); ?>
-				<a href="http://mattdeveloper.github.io/wpstarter/" target="_blank" title="<?php _e('Saiba mais sobre o Dev Helper', 'devhelper'); echo ' v'.$wpstarterversion; ?>"><?php _e('Clique aqui', 'devhelper'); ?></a>.
+				<a href="http://mattdeveloper.github.io/devhelper/" target="_blank" title="<?php _e('Saiba mais sobre o Dev Helper', 'devhelper'); echo ' v'.DEVHELPER_VERSION; ?>"><?php _e('Clique aqui', 'devhelper'); ?></a>.
 			</div><!-- end .left -->
 
 			<div class="right">

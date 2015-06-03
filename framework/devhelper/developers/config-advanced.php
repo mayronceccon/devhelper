@@ -2,7 +2,6 @@
 
 add_action( 'admin_init', 'wpstarterDeveloper_advanced_settings' );
 function wpstarterDeveloper_advanced_settings(){
-	global $wpstarterversion;
  
 	// Register the settings with Validation callback
 	register_setting( 'wpstarterDeveloper', 'wpstarterDeveloper', '' );

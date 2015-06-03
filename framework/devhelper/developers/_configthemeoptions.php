@@ -208,7 +208,6 @@ function themeopt_loop_menu(){
 	THEMEOPTIONS HTML
 =============================================================== */
 function devhelper_themeoptions_page(){
-global $wpstarterversion;
 ?>
 <div class="wrap">
 	<form class="devhelper-developer" method="post" enctype="multipart/form-data" action="options.php">
