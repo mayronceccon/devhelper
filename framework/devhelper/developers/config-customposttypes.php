@@ -12,7 +12,7 @@
 		clique no botão abaixo.', 'devhelper'); ?></p>
 
 	<!-- PAGE -->
-	<p><a class="button" href="<?php echo admin_url(); ?>edit.php?post_type=customposttypes"><?php _e('Página de Custom Post Types', 'devhelper'); ?></a></p>
+	<p><a class="button" href="<?php echo admin_url(); ?>edit.php?post_type=customposttypes" target="_blank"><?php _e('Página de Custom Post Types', 'devhelper'); ?></a></p>
 
 	<!-- FIELDS -->
 	<p><?php _e('Depois de criar os Custom Post Types você precisa criar os campos dele, para isso existe o plugin'); ?>
