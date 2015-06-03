@@ -24,10 +24,14 @@
 =============================================================== */
 function devOpt($string, $echo=true){ // 1. Developer Option // 2. True to Echo
 	$option = get_option('wpstarterDeveloper');
-	if( $echo == true ){ // Echo Option
-		echo $option[$string];
-	}else{ // Return Option
-		return $option[$string];
+	if( !isset($option[$string]) ){
+		$option[$string] = '';
+	}else{
+		if( $echo == true ){ // Echo Option
+			echo $option[$string];
+		}else{ // Return Option
+			return $option[$string];
+		}
 	}
 }
 
