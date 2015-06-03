@@ -31,6 +31,4 @@ algumas linhas de códigos um pouco chatas as vezes e também instalação de mu
 
 * **Passo 04:** Ative o plugin no painel de administração.
 
-* **Passo 05:** Crie uma página chamada *Home* no seu WordPress.
-
-* **Passo 06:** Agora que tudo está pronto você já pode começar a desenvolver o seu tema. Você pode acessar as configurações do plugin Dev Helper na página *Desenvolvedor* que foi adicionada no menu lateral do painel de administração do WordPress.
+* **Passo 05:** Agora que tudo está pronto você já pode começar a desenvolver o seu tema. Você pode acessar as configurações do plugin Dev Helper na página *Desenvolvedor* que foi adicionada no menu lateral do painel de administração do WordPress.
