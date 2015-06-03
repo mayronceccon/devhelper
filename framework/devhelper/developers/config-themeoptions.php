@@ -42,7 +42,7 @@ function devhelperDeveloper_themeoptions_settings(){
 		'name' => 'themeoptions_button',
 		'desc' => __('Clique no botão acima para adicionar/editar/excluir opções do tema.', 'devhelper'),
 		'text' => __('Gerenciar Opções', 'devhelper'),
-		'href' => admin_url().'edit.php?post_type=wpthemeoptions'
+		'href' => admin_url().'edit.php?post_type=wpthemeoptions" target="_blank"'
 	); add_settings_field( 'themeoptions_button', __('Opções do Tema', 'devhelper'), 'devhelper_developer_display_setting', 'devhelper_page', 'developer-themeoptions', $field_args );
 
 } // End Function
@@ -50,8 +50,7 @@ function devhelperDeveloper_themeoptions_settings(){
 
 
 function devhelper_developer_display_section_themeoptions(){
-	echo __('As opções do tema são muito úteis em qualquer site. Você pode criar valores que são alterados direto pelo painel e chamá-los utilizar a seguinte
-		função no php: ');
+	echo __('As opções do tema são muito úteis em qualquer site. Você pode criar valores que são alterados direto pelo painel e chamá-los utilizar a seguinte função no php: ');
 	echo "options('options_slug'); ".__('para exibir o valor e', 'devhelper')." options('options_slug', false) para resgatar o valor.";
 }
 
