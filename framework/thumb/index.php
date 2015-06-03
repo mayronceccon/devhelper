@@ -1,5 +1,5 @@
 <?php
-if( !isset($_GET['src']) ){ exit; } // Change by WP Starter
+if( !isset($_GET['src']) ){ exit; } // Change by Dev Helper
 /**
  * TimThumb by Ben Gillbanks and Mark Maunder
  * Based on work done by Tim McDaniels and Darren Hoyt

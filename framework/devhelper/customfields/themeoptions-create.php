@@ -1,10 +1,10 @@
 <?php
 /* -- Clean Values -- */
-$wpstarter_themeoptions_menus = devOpt('themeoptions_menus', false);
-if( is_array($wpstarter_themeoptions_menus) ){
-	foreach( $wpstarter_themeoptions_menus as $key=>$value ){
+$devhelper_themeoptions_menus = devOpt('themeoptions_menus', false);
+if( is_array($devhelper_themeoptions_menus) ){
+	foreach( $devhelper_themeoptions_menus as $key=>$value ){
 		if( $value == '' ){
-			unset($wpstarter_themeoptions_menus[$key]);
+			unset($devhelper_themeoptions_menus[$key]);
 		}
 	}
 }
@@ -13,43 +13,43 @@ if( is_array($wpstarter_themeoptions_menus) ){
 /* -- Create Import Files -- */
 if(function_exists("register_field_group"))
 {
-	if( sizeof($wpstarter_themeoptions_menus) >= 1 ){
+	if( sizeof($devhelper_themeoptions_menus) >= 1 ){
 		register_field_group(array (
 			'id' => 'acf_detalhes-da-opcao',
-			'title' => __('Detalhes da Opção', 'wpstarter'),
+			'title' => __('Detalhes da Opção', 'devhelper'),
 			'fields' => array (
 				/* array (
 					'key' => 'field_541dc41842d90',
-					'label' => __('Mensagem', 'wpstarter'),
+					'label' => __('Mensagem', 'devhelper'),
 					'name' => '',
 					'type' => 'message',
-					'message' => __('Mensagem de teste...', 'wpstarter'),
+					'message' => __('Mensagem de teste...', 'devhelper'),
 				), */
 				array (
 					'key' => 'field_541ef7174b00d',
-					'label' => __('Básico', 'wpstarter'),
+					'label' => __('Básico', 'devhelper'),
 					'name' => '',
 					'type' => 'tab',
 				),
 				array (
 					'key' => 'field_541dc288a5f9a',
-					'label' => __('Menu', 'wpstarter'),
+					'label' => __('Menu', 'devhelper'),
 					'name' => 'wpthemeoptions_menu',
 					'type' => 'select',
-					'instructions' => __('Para criar os menus você precisa ir em <b>Desenvolvedor</b>, depois <b>Opções do Tema</b>. Você não pode criar novas opções do tema sem antes criar os menus.', 'wpstarter'),
+					'instructions' => __('Para criar os menus você precisa ir em <b>Desenvolvedor</b>, depois <b>Opções do Tema</b>. Você não pode criar novas opções do tema sem antes criar os menus.', 'devhelper'),
 					'required' => 1,
-					'choices' => $wpstarter_themeoptions_menus,
+					'choices' => $devhelper_themeoptions_menus,
 					'default_value' => '',
 					'allow_null' => 0,
 					'multiple' => 0,
 				),
 				array (
 					'key' => 'field_541dc44fce21f',
-					'label' => __('Slug / ID', 'wpstarter'),
+					'label' => __('Slug / ID', 'devhelper'),
 					'name' => 'wpthemeoptions_slug',
 					'type' => 'text',
 					'instructions' => __('<b>Exemplo:</b> telefone<br>
-		<b>Atenção:</b> Não use caracteres especiais nem espaços neste campo. Para exibir os valores de um campo personalizado utilize a seguinte função no php: <i>echo options(\'field_id\', false);</i>', 'wpstarter'),
+		<b>Atenção:</b> Não use caracteres especiais nem espaços neste campo. Para exibir os valores de um campo personalizado utilize a seguinte função no php: <i>echo options(\'field_id\', false);</i>', 'devhelper'),
 					'required' => 1,
 					'default_value' => '',
 					'placeholder' => '',
@@ -60,23 +60,23 @@ if(function_exists("register_field_group"))
 				),
 				array (
 					'key' => 'field_541ef7374b00f',
-					'label' => __('Tipo', 'wpstarter'),
+					'label' => __('Tipo', 'devhelper'),
 					'name' => '',
 					'type' => 'tab',
 				),
 				array (
 					'key' => 'field_541dc4c98f5e6',
-					'label' => __('Tipo', 'wpstarter'),
+					'label' => __('Tipo', 'devhelper'),
 					'name' => 'wpthemeoptions_type',
 					'type' => 'select',
 					'required' => 1,
 					'choices' => array (
-						'text' => __('Texto', 'wpstarter'),
-						'textarea' => __('Textarea', 'wpstarter'),
-						'repeater' => __('Campo Repetido (Retorna um Array)', 'wpstarter'),
-						'select' => __('Seleção', 'wpstarter'),
-						'image' => __('Imagem (Retorna o ID)', 'wpstarter'),
-						'color-picker' => __('Seleção de Cor', 'wpstarter'),
+						'text' => __('Texto', 'devhelper'),
+						'textarea' => __('Textarea', 'devhelper'),
+						'repeater' => __('Campo Repetido (Retorna um Array)', 'devhelper'),
+						'select' => __('Seleção', 'devhelper'),
+						'image' => __('Imagem (Retorna o ID)', 'devhelper'),
+						'color-picker' => __('Seleção de Cor', 'devhelper'),
 					),
 					'default_value' => 'text',
 					'allow_null' => 0,
@@ -84,10 +84,10 @@ if(function_exists("register_field_group"))
 				),
 				array (
 					'key' => 'field_542d9166d6d7b',
-					'label' => __('Valores', 'wpstarter'),
+					'label' => __('Valores', 'devhelper'),
 					'name' => 'wpthemeoptions_select_values',
 					'type' => 'text',
-					'instructions' => __('Separe os valores por vírgula. Exemplo: valor 1, valor 2, valor 3.<br>O campo é obrigatório.', 'wpstarter'),
+					'instructions' => __('Separe os valores por vírgula. Exemplo: valor 1, valor 2, valor 3.<br>O campo é obrigatório.', 'devhelper'),
 					'required' => 1,
 					'conditional_logic' => array (
 						'status' => 1,
@@ -109,16 +109,16 @@ if(function_exists("register_field_group"))
 				),
 				array (
 					'key' => 'field_541ef7274b00e',
-					'label' => __('Outros', 'wpstarter'),
+					'label' => __('Outros', 'devhelper'),
 					'name' => '',
 					'type' => 'tab',
 				),
 				array (
 					'key' => 'field_541eece36e491',
-					'label' => __('Ordem', 'wpstarter'),
+					'label' => __('Ordem', 'devhelper'),
 					'name' => 'wpthemeoptions_order',
 					'type' => 'number',
-					'instructions' => __('Escolha a ordem que o campo será exibido na seção escolhida no campo Menu.', 'wpstarter'),
+					'instructions' => __('Escolha a ordem que o campo será exibido na seção escolhida no campo Menu.', 'devhelper'),
 					'required' => 1,
 					'default_value' => 1,
 					'placeholder' => '',
@@ -130,10 +130,10 @@ if(function_exists("register_field_group"))
 				),
 				array (
 					'key' => 'field_541dc54c8f5e7',
-					'label' => __('Descrição', 'wpstarter'),
+					'label' => __('Descrição', 'devhelper'),
 					'name' => 'wpthemeoptions_description',
 					'type' => 'text',
-					'instructions' => __('A descrição do campo aparece abaixo dele. O campo é opcional.', 'wpstarter'),
+					'instructions' => __('A descrição do campo aparece abaixo dele. O campo é opcional.', 'devhelper'),
 					'default_value' => '',
 					'placeholder' => '',
 					'prepend' => '',
@@ -182,10 +182,10 @@ if(function_exists("register_field_group"))
 			'fields' => array (
 				array (
 					'key' => 'field_541dc41842d90',
-					'label' => __('Erro', 'wpstarter'),
+					'label' => __('Erro', 'devhelper'),
 					'name' => '',
 					'type' => 'message',
-					'message' => __('Você não criou nenhum menu para as opções do tema. Vá para a página Desenvolvedor e na aba Opções do Tema crie pelo menos um menu.', 'wpstarter'),
+					'message' => __('Você não criou nenhum menu para as opções do tema. Vá para a página Desenvolvedor e na aba Opções do Tema crie pelo menos um menu.', 'devhelper'),
 				)
 			),
 			'location' => array (

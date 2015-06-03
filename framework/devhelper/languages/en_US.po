@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WP Starter\n"
+"Project-Id-Version: Dev Helper\n"
 "POT-Creation-Date: 2014-12-30 01:32-0300\n"
 "PO-Revision-Date: 2014-12-30 01:40-0300\n"
 "Last-Translator: Mattheus de Oliveira Machado <mattheus@leggocomunicacao.com."
@@ -143,7 +143,7 @@ msgid ""
 "Os Tipos de Post Customizados(Custom Post Types) são muito úteis para o \n"
 "\t\tdesenvolvimento de um Website, porém, você precisa digitar alguns "
 "códigos para fazê-los. Nossa ideia é\n"
-"\t\tque os desenvolvedores de temas que utilizam o WP Starter Framework "
+"\t\tque os desenvolvedores de temas que utilizam o Dev Helper Framework "
 "tenham uma facilidade maior em desenvolver seus\n"
 "\t\tprojetos, com isso você pode criar Custom Post Types direto do painel, "
 "lhe poupando tempo e códigos, deixando o\n"
@@ -300,11 +300,11 @@ msgstr "Google Webmasters"
 
 #: ../developers/config-seo.php:96
 msgid ""
-"As configurações de SEO do WP Starter incluem: <i>Título Forçado</i>, "
+"As configurações de SEO do Dev Helper incluem: <i>Título Forçado</i>, "
 "<i>Meta Description</i> e <i>configurações para Facebook e para o Google+</"
 "i>."
 msgstr ""
-"The settings of the WP Starter SEO include: <i>Forced title</i>, <i>Meta "
+"The settings of the Dev Helper SEO include: <i>Forced title</i>, <i>Meta "
 "Description</i> and <i>settings for Facebook and Google+</i>"
 
 #: ../developers/config-seo.php:100
@@ -637,8 +637,8 @@ msgid "Precisa de ajuda?"
 msgstr "Need help?"
 
 #: ../developers/_config.php:51
-msgid "Saiba mais sobre o WP Starter"
-msgstr "Learn more about WP Starter"
+msgid "Saiba mais sobre o Dev Helper"
+msgstr "Learn more about Dev Helper"
 
 #: ../developers/_config.php:51
 msgid "Clique aqui"
@@ -813,10 +813,10 @@ msgstr "Welcome"
 
 #: ../developers/config-general.php:6
 msgid ""
-"Você está utilizando o WP Starter versão 0.9.0 (Versão de Testes) para "
+"Você está utilizando o Dev Helper versão 0.9.0 (Versão de Testes) para "
 "facilitar o desenvolvimento de temas no WordPress"
 msgstr ""
-"You are using WP Starter version 0.9.0(Beta) to facilitate the development "
+"You are using Dev Helper version 0.9.0(Beta) to facilitate the development "
 "of themes in WordPress"
 
 #: ../developers/config-general.php:7

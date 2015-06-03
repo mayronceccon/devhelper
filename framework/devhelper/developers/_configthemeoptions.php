@@ -11,14 +11,14 @@
 /* ===============================================================
 	THEME OPTIONS LINK/PAGE
 =============================================================== */
-add_action( 'admin_menu', 'wpstarter_menu_themeoptions' );
-function wpstarter_menu_themeoptions(){
+add_action( 'admin_menu', 'devhelper_menu_themeoptions' );
+function devhelper_menu_themeoptions(){
 	add_menu_page(
-		__('Opções do Tema', 'wpstarter'), // Page title
-		__('Opções do Tema', 'wpstarter'), // Menu Title
+		__('Opções do Tema', 'devhelper'), // Page title
+		__('Opções do Tema', 'devhelper'), // Menu Title
 		'manage_options', // Capability
-		'wpstarter_themeoptions', // admin.php?page=thisfield
-		'wpstarter_themeoptions_page', // Function
+		'devhelper_themeoptions', // admin.php?page=thisfield
+		'devhelper_themeoptions_page', // Function
 		'dashicons-admin-generic', // Icon Name (http://melchoyce.github.io/dashicons)
 		200 // Menu Position
 	);
@@ -32,7 +32,7 @@ function wpstarter_menu_themeoptions(){
 add_action( 'admin_menu', 'remove_themeoptions_page', 999 );
 function remove_themeoptions_page(){
 	if( devOpt('themeoptions_display', false) != 'yes' ){
-		remove_menu_page( 'wpstarter_themeoptions' );
+		remove_menu_page( 'devhelper_themeoptions' );
 	}
 }
 
@@ -41,7 +41,7 @@ function remove_themeoptions_page(){
 /* ===============================================================
 	RECREATE FUNCTION ADD SETTINGS SECTION // From WP v4.0
 =============================================================== */
-function wpstarter_add_settings_section($id, $title, $callback, $page) {
+function devhelper_add_settings_section($id, $title, $callback, $page) {
 	global $wp_settings_sections;
 
 	if ( 'misc' == $page ) {
@@ -62,7 +62,7 @@ function wpstarter_add_settings_section($id, $title, $callback, $page) {
 /* ===============================================================
 	RECREATE FUNCTION ADD SETTINGS FIELD // From WP v4.0
 =============================================================== */
-function wpstarter_add_settings_field($id, $title, $callback, $page, $section = 'default', $args = array()) {
+function devhelper_add_settings_field($id, $title, $callback, $page, $section = 'default', $args = array()) {
 	global $wp_settings_fields;
 
 	if ( 'misc' == $page ) {
@@ -100,7 +100,7 @@ function wpstarterDeveloperions_config($key, $name){
 	if( $sql_fields->have_posts() ) :
 
 	// Add settings section
-	wpstarter_add_settings_section( 'themeoptions-'.$key, $name, 'wpstarter_developer_display_section', 'wpstarter_themeoptions' ); 
+	devhelper_add_settings_section( 'themeoptions-'.$key, $name, 'devhelper_developer_display_section', 'devhelper_themeoptions' ); 
 
 	// Loop Fields
 	while( $sql_fields->have_posts() ) : $sql_fields->the_post();
@@ -121,7 +121,7 @@ function wpstarterDeveloperions_config($key, $name){
 					'name'      => $field_slug,
 					'desc'      => $field_desc,
 					'label_for' => $field_slug
-				); wpstarter_add_settings_field( $field_slug, $field_title, 'wpstarter_developer_display_setting', 'wpstarter_themeoptions', 'themeoptions-'.$key, $field_args );
+				); devhelper_add_settings_field( $field_slug, $field_title, 'devhelper_developer_display_setting', 'devhelper_themeoptions', 'themeoptions-'.$key, $field_args );
 			
 			/* -- If type IS SELECT -- */
 			}else if( get_post_meta(get_the_ID(), 'wpthemeoptions_type', true) == 'select' ){
@@ -159,7 +159,7 @@ function wpstarterDeveloperions_config($key, $name){
 					'desc'      => $field_desc,
 					'label_for' => $field_slug,
 					'fields'    => $select_values
-				); wpstarter_add_settings_field( $field_slug, $field_title, 'wpstarter_developer_display_setting', 'wpstarter_themeoptions', 'themeoptions-'.$key, $field_args );
+				); devhelper_add_settings_field( $field_slug, $field_title, 'devhelper_developer_display_setting', 'devhelper_themeoptions', 'themeoptions-'.$key, $field_args );
 			}
 
 		} // If is for this menu
@@ -169,7 +169,7 @@ function wpstarterDeveloperions_config($key, $name){
 		$themeopt_empty[] = '
 		<article class="themeoptions-'.$key.'">
 			<h3 class="title">'.$name.'</h3>
-			<p>'.__('As opções do tema não estão configuradas corretamente ou não foram criadas pelo desenvolvedor.', 'wpstarter').'</p>
+			<p>'.__('As opções do tema não estão configuradas corretamente ou não foram criadas pelo desenvolvedor.', 'devhelper').'</p>
 		</article><!-- end themeoptions-'.$key.' -->
 		';
 	endif;
@@ -184,19 +184,19 @@ function teste($input){
 /* ===============================================================
 	LOOP MENU TO CALL THE FUNCTION TO CREATE SETIONS AND FIELDS
 =============================================================== */
-$wpstarter_themeoptions_menus_first  = true;
-$wpstarter_themeoptions_menus        = devOpt('themeoptions_menus', false);
-$wpstarter_themeoptions_menus_exists = false;
+$devhelper_themeoptions_menus_first  = true;
+$devhelper_themeoptions_menus        = devOpt('themeoptions_menus', false);
+$devhelper_themeoptions_menus_exists = false;
 
 add_action('admin_init', 'themeopt_loop_menu', 1 );
 function themeopt_loop_menu(){
-	global $wpstarter_themeoptions_menus_first, $wpstarter_themeoptions_menus, $wpstarter_themeoptions_menus_exists;
+	global $devhelper_themeoptions_menus_first, $devhelper_themeoptions_menus, $devhelper_themeoptions_menus_exists;
 
-	if( is_array($wpstarter_themeoptions_menus) AND sizeof($wpstarter_themeoptions_menus) >= 1 ){
-		foreach( $wpstarter_themeoptions_menus as $key=>$value ){
+	if( is_array($devhelper_themeoptions_menus) AND sizeof($devhelper_themeoptions_menus) >= 1 ){
+		foreach( $devhelper_themeoptions_menus as $key=>$value ){
 			if( $value != '' ){
 				add_action( 'admin_init', wpstarterDeveloperions_config($key, $value), 10000, 2 );
-				$wpstarter_themeoptions_menus_exists = true;
+				$devhelper_themeoptions_menus_exists = true;
 			}
 		}
 	}
@@ -207,7 +207,7 @@ function themeopt_loop_menu(){
 /* ===============================================================
 	THEMEOPTIONS HTML
 =============================================================== */
-function wpstarter_themeoptions_page(){
+function devhelper_themeoptions_page(){
 global $wpstarterversion;
 ?>
 <div class="wrap">
@@ -218,7 +218,7 @@ global $wpstarterversion;
 		<div class="title">
 			<h2>
 				<i class="dashicons dashicons-admin-generic"></i>
-				<?php _e('Opções do Tema', 'wpstarter'); ?>
+				<?php _e('Opções do Tema', 'devhelper'); ?>
 				<span>(<?php bloginfo('name'); ?>)</span>
 			</h2>
 		</div><!-- end .title -->
@@ -226,18 +226,18 @@ global $wpstarterversion;
 
 		<!-- UPDATED TRUE -->
 		<div class="updated-true" <?php if( isset($_GET['settings-updated']) AND $_GET['settings-updated'] == 'true' ){ echo 'style="display: block;"'; } ?>>
-			<?php _e('Alterações salvas com sucesso.', 'wpstarter'); ?>
+			<?php _e('Alterações salvas com sucesso.', 'devhelper'); ?>
 		</div><!-- end .updated-true -->
 
 
 		<!-- BUTTONS -->
 		<div class="buttons">
 			<div class="left">
-				<?php _e('Aqui você pode alterar algumas opções do tema criadas pelo desenvolvedor.', 'wpstarter'); ?>
+				<?php _e('Aqui você pode alterar algumas opções do tema criadas pelo desenvolvedor.', 'devhelper'); ?>
 			</div><!-- end .left -->
 
 			<div class="right">
-				<input type="submit" class="button-primary" value="<?php _e('Salvar Alterações', 'wpstarter'); ?>" />
+				<input type="submit" class="button-primary" value="<?php _e('Salvar Alterações', 'devhelper'); ?>" />
 			</div><!-- end .right -->
 		<br class="clear">
 		</div><!-- end .buttons -->
@@ -250,19 +250,19 @@ global $wpstarterversion;
 				<ul>
 					<?php
 					/* -- Clean Values -- */
-					$wpstarter_themeoptions_menus = devOpt('themeoptions_menus', false);
-					if( is_array($wpstarter_themeoptions_menus) ){
-						foreach( $wpstarter_themeoptions_menus as $key=>$value ){
+					$devhelper_themeoptions_menus = devOpt('themeoptions_menus', false);
+					if( is_array($devhelper_themeoptions_menus) ){
+						foreach( $devhelper_themeoptions_menus as $key=>$value ){
 							if( $value == '' ){
-								unset($wpstarter_themeoptions_menus[$key]);
+								unset($devhelper_themeoptions_menus[$key]);
 							}
 						}
 					}
 
 					/* -- Get Values -- */
 					$first_menu = true;
-					if( sizeof($wpstarter_themeoptions_menus) >= 1 ){
-						foreach( $wpstarter_themeoptions_menus as $key=>$value ){
+					if( sizeof($devhelper_themeoptions_menus) >= 1 ){
+						foreach( $devhelper_themeoptions_menus as $key=>$value ){
 							echo '
 							<li'.( ($first_menu == true) ? ' class="active"' : '' ).'>
 								<a href="javascript:void(0);" data-section="'.$key.'">
@@ -275,7 +275,7 @@ global $wpstarterversion;
 						echo '
 						<li class="active">
 							<a href="javascript:void(0);" data-section="generalempty">
-								'.__('Erro', 'wpstarter').'
+								'.__('Erro', 'devhelper').'
 							</a>
 						</li>
 						';
@@ -286,13 +286,13 @@ global $wpstarterversion;
 
 			<!-- Content Sections -->
 			<div class="fields">
-				<?php settings_fields('wpstarterDeveloper'); wpstarter_do_settings_sections('wpstarter_themeoptions'); ?>
-				<div style="display:none;"><?php wpstarter_do_settings_sections('wpstarter_developer'); ?></div>
+				<?php settings_fields('wpstarterDeveloper'); devhelper_do_settings_sections('devhelper_themeoptions'); ?>
+				<div style="display:none;"><?php devhelper_do_settings_sections('devhelper_page'); ?></div>
 
-				<?php if( $GLOBALS['wpstarter_themeoptions_menus_exists'] == false ){ // If is empty ?>
+				<?php if( $GLOBALS['devhelper_themeoptions_menus_exists'] == false ){ // If is empty ?>
 					<article class="themeoptions-errorempty" style="display: block;">
-						<h3 class="title"><?php _e('Erro', 'wpstarter'); ?></h3>
-						<p><?php _e('As opções do tema não estão configuradas corretamente ou não foram criadas pelo desenvolvedor.', 'wpstarter'); ?></p>
+						<h3 class="title"><?php _e('Erro', 'devhelper'); ?></h3>
+						<p><?php _e('As opções do tema não estão configuradas corretamente ou não foram criadas pelo desenvolvedor.', 'devhelper'); ?></p>
 					</article><!-- end themeoptions-generalempty -->
 				<?php }?>
 
@@ -315,11 +315,11 @@ global $wpstarterversion;
 		<!-- BUTTONS -->
 		<div class="buttons">
 			<div class="left">
-				<?php _e('Opções criadas com o', 'wpstarter'); ?> <a href="http://getwpstarter.com/" target="_blank">WP Starter</a>.
+				<?php _e('Opções criadas com o', 'devhelper'); ?> <a href="http://getwpstarter.com/" target="_blank">Dev Helper</a>.
 			</div><!-- end .left -->
 
 			<div class="right">
-				<input type="submit" class="button-primary" value="<?php _e('Salvar Alterações', 'wpstarter'); ?>" />
+				<input type="submit" class="button-primary" value="<?php _e('Salvar Alterações', 'devhelper'); ?>" />
 			</div><!-- end .right -->
 		<br class="clear">
 		</div><!-- end .buttons -->
@@ -329,7 +329,7 @@ global $wpstarterversion;
 </div><!-- end .wrap -->
 
 <?php
-} // End function wpstarter_themeoptions_page
+} // End function devhelper_themeoptions_page
 
 
 

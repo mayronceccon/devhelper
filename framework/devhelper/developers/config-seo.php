@@ -7,7 +7,7 @@ function wpstarterDeveloper_seo_settings(){
 	register_setting( 'wpstarterDeveloper', 'wpstarterDeveloper', '' );
 
 	// Add settings section
-	add_settings_section( 'developer-seo', __('SEO', 'wpstarter'), 'wpstarter_developer_display_section_seo', 'wpstarter_developer' ); 
+	add_settings_section( 'developer-seo', __('SEO', 'devhelper'), 'devhelper_developer_display_section_seo', 'devhelper_page' ); 
 
 	/* ===============================================================
 		FIELD: ACTIVE SEO
@@ -16,12 +16,12 @@ function wpstarterDeveloper_seo_settings(){
 		'type'      => 'select',
 		'id'        => 'active_seo',
 		'name'      => 'active_seo',
-		'fields'    => array('no'=>__('Não', 'wpstarter'), 'yes'=>__('Sim', 'wpstarter')),
-		'desc'      => '<b><i class="dashicons dashicons-megaphone"></i> '.__('Atenção', 'wpstarter').':</b> '.__('Caso esteja usando algum plugin para SEO como por exemplo o', 'wpstarter').'
-					   <a href="https://wordpress.org/plugins/wordpress-seo/" target="_blank" title="'.__('Abrir em nova guia.', 'wpstarter').'">WordPress SEO by Yoast</a> '.
-					   __('deixe a opção marcada como não.', 'wpstarter'),
+		'fields'    => array('no'=>__('Não', 'devhelper'), 'yes'=>__('Sim', 'devhelper')),
+		'desc'      => '<b><i class="dashicons dashicons-megaphone"></i> '.__('Atenção', 'devhelper').':</b> '.__('Caso esteja usando algum plugin para SEO como por exemplo o', 'devhelper').'
+					   <a href="https://wordpress.org/plugins/wordpress-seo/" target="_blank" title="'.__('Abrir em nova guia.', 'devhelper').'">WordPress SEO by Yoast</a> '.
+					   __('deixe a opção marcada como não.', 'devhelper'),
 		'label_for' => 'active_seo'
-	); add_settings_field( 'active_seo', __('Ativar SEO', 'wpstarter'), 'wpstarter_developer_display_setting', 'wpstarter_developer', 'developer-seo', $field_args );
+	); add_settings_field( 'active_seo', __('Ativar SEO', 'devhelper'), 'devhelper_developer_display_setting', 'devhelper_page', 'developer-seo', $field_args );
 
 	/* ===============================================================
 		FIELD: POST TYPES
@@ -46,11 +46,11 @@ function wpstarterDeveloper_seo_settings(){
 		'type'      => 'text',
 		'id'        => 'developer_seo_posttypes',
 		'name'      => 'developer_seo_posttypes',
-		'desc'      => __('Insira os post types que você quer que os campos de SEO apareçam. Insira os post types separados por vírgula.', 'wpstarter').'<br>'.
-					   __('Os post types atuais no seu tema são:', 'wpstarter').' '.get_registered_post_types().'<br>'.
-					   __('Os post types citados acima servem de exemplo de como devem ser inseridos no input com a vírgula.', 'wpstarter'),
+		'desc'      => __('Insira os post types que você quer que os campos de SEO apareçam. Insira os post types separados por vírgula.', 'devhelper').'<br>'.
+					   __('Os post types atuais no seu tema são:', 'devhelper').' '.get_registered_post_types().'<br>'.
+					   __('Os post types citados acima servem de exemplo de como devem ser inseridos no input com a vírgula.', 'devhelper'),
 		'label_for' => 'developer_seo_posttypes',
-	); add_settings_field( 'developer_seo_posttypes', __('Post Types', 'wpstarter'), 'wpstarter_developer_display_setting', 'wpstarter_developer', 'developer-seo', $field_args );
+	); add_settings_field( 'developer_seo_posttypes', __('Post Types', 'devhelper'), 'devhelper_developer_display_setting', 'devhelper_page', 'developer-seo', $field_args );
 
 	/* ===============================================================
 		FIELD: FACEBOOK PAGE
@@ -59,10 +59,10 @@ function wpstarterDeveloper_seo_settings(){
 		'type'      => 'text',
 		'id'        => 'developer_seo_facebook',
 		'name'      => 'developer_seo_facebook',
-		'desc'      => __('Caso tenha uma página ou conta no facebook insira a url aqui.', 'wpstarter').'<br>'.
-					   '<b>'.__('Exemplo', 'wpstarter').':</b> https://www.facebook.com/agleggo',
+		'desc'      => __('Caso tenha uma página ou conta no facebook insira a url aqui.', 'devhelper').'<br>'.
+					   '<b>'.__('Exemplo', 'devhelper').':</b> https://www.facebook.com/agleggo',
 		'label_for' => 'developer_seo_facebook',
-	); add_settings_field( 'developer_seo_facebook', __('Página no Facebook', 'wpstarter'), 'wpstarter_developer_display_setting', 'wpstarter_developer', 'developer-seo', $field_args );
+	); add_settings_field( 'developer_seo_facebook', __('Página no Facebook', 'devhelper'), 'devhelper_developer_display_setting', 'devhelper_page', 'developer-seo', $field_args );
 
 	/* ===============================================================
 		FIELD: GOOGLE+ PAGE
@@ -71,10 +71,10 @@ function wpstarterDeveloper_seo_settings(){
 		'type'      => 'text',
 		'id'        => 'developer_seo_google',
 		'name'      => 'developer_seo_google',
-		'desc'      => __('Caso tenha uma página no Google+ insira a url aqui.', 'wpstarter').'<br>'.
-					   '<b>'.__('Exemplo', 'wpstarter').':</b> http://google.com/+AgenciaLeggoComunicacao',
+		'desc'      => __('Caso tenha uma página no Google+ insira a url aqui.', 'devhelper').'<br>'.
+					   '<b>'.__('Exemplo', 'devhelper').':</b> http://google.com/+AgenciaLeggoComunicacao',
 		'label_for' => 'developer_seo_google',
-	); add_settings_field( 'developer_seo_google', __('Página no Google+', 'wpstarter'), 'wpstarter_developer_display_setting', 'wpstarter_developer', 'developer-seo', $field_args );
+	); add_settings_field( 'developer_seo_google', __('Página no Google+', 'devhelper'), 'devhelper_developer_display_setting', 'devhelper_page', 'developer-seo', $field_args );
 
 	/* ===============================================================
 		FIELD: GOOGLE WEBMASTERS
@@ -83,21 +83,21 @@ function wpstarterDeveloper_seo_settings(){
 		'type'      => 'text',
 		'id'        => 'developer_seo_google_webmasters',
 		'name'      => 'developer_seo_google_webmasters',
-		'desc'      => __('Quando você se cadastra no Google Webmaster você recebe um arquivo com um código(ou apenas o código), você pode inserir apenas este código aqui.', 'wpstarter').
-					   ' '.__('Campo opcional.', 'wpstarter'),
+		'desc'      => __('Quando você se cadastra no Google Webmaster você recebe um arquivo com um código(ou apenas o código), você pode inserir apenas este código aqui.', 'devhelper').
+					   ' '.__('Campo opcional.', 'devhelper'),
 		'label_for' => 'developer_seo_google_webmasters',
-	); add_settings_field( 'developer_seo_google_webmasters', __('Google Webmasters', 'wpstarter'), 'wpstarter_developer_display_setting', 'wpstarter_developer', 'developer-seo', $field_args );
+	); add_settings_field( 'developer_seo_google_webmasters', __('Google Webmasters', 'devhelper'), 'devhelper_developer_display_setting', 'devhelper_page', 'developer-seo', $field_args );
 
 } // End Function
 
 
-function wpstarter_developer_display_section_seo(){
+function devhelper_developer_display_section_seo(){
 	echo '<p>';
-	_e('As configurações de SEO do WP Starter incluem: <i>Título Forçado</i>, <i>Meta Description</i> e <i>configurações para Facebook e para o Google+</i>.', 'wpstarter');
+	_e('As configurações de SEO do Dev Helper incluem: <i>Título Forçado</i>, <i>Meta Description</i> e <i>configurações para Facebook e para o Google+</i>.', 'devhelper');
 
 	echo '<br>';
 
-	_e('As configurações citadas acima junto com as configurações nesta página só terão efeito se você marcar a opção <b>Ativar SEO</b> como <b>Sim</b>.', 'wpstarter');
+	_e('As configurações citadas acima junto com as configurações nesta página só terão efeito se você marcar a opção <b>Ativar SEO</b> como <b>Sim</b>.', 'devhelper');
 	echo '</p>';
 }
 

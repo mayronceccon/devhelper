@@ -3,14 +3,14 @@
 /* ===============================================================
 	DEVELOPER MENU LINK/PAGE
 =============================================================== */
-add_action( 'admin_menu', 'wpstarter_menu_developer' );
-function wpstarter_menu_developer(){
+add_action( 'admin_menu', 'devhelper_menu_developer' );
+function devhelper_menu_developer(){
 	add_menu_page(
-		__('Desenvolvedor', 'wpstarter'), // Page title
-		__('Desenvolvedor', 'wpstarter'), // Menu Title
+		__('Desenvolvedor', 'devhelper'), // Page title
+		__('Desenvolvedor', 'devhelper'), // Menu Title
 		'manage_options', // Capability
-		'wpstarter_developer', // admin.php?page=thisfield
-		'wpstarter_developer_page', // Function
+		'devhelper_page', // admin.php?page=thisfield
+		'devhelper_developer_page', // Function
 		'dashicons-media-code', // Icon Name (http://melchoyce.github.io/dashicons)
 		300 // Menu Position
 	);
@@ -21,7 +21,7 @@ function wpstarter_menu_developer(){
 /* ===============================================================
 	DEVELOPER HTML
 =============================================================== */
-function wpstarter_developer_page(){
+function devhelper_developer_page(){
 global $wpstarterversion;
 ?>
 <div class="wrap">
@@ -32,7 +32,7 @@ global $wpstarterversion;
 		<div class="title">
 			<h2>
 				<i class="dashicons dashicons-media-code"></i>
-				<?php _e('Opções do Desenvolvedor', 'wpstarter'); ?>
+				<?php _e('Opções do Desenvolvedor', 'devhelper'); ?>
 				<span>(<?php bloginfo('name'); ?>)</span>
 			</h2>
 		</div><!-- end .title -->
@@ -40,19 +40,19 @@ global $wpstarterversion;
 
 		<!-- UPDATED TRUE -->
 		<div class="updated-true" <?php if( isset($_GET['settings-updated']) AND $_GET['settings-updated'] == 'true' ){ echo 'style="display: block;"'; } ?>>
-			<?php _e('Alterações salvas com sucesso.', 'wpstarter'); ?>
+			<?php _e('Alterações salvas com sucesso.', 'devhelper'); ?>
 		</div><!-- end .updated-true -->
 
 
 		<!-- BUTTONS -->
 		<div class="buttons">
 			<div class="left">
-				<?php _e('Precisa de ajuda?', 'wpstarter'); ?>
-				<a href="http://mattdeveloper.github.io/wpstarter/" target="_blank" title="<?php _e('Saiba mais sobre o WP Starter', 'wpstarter'); echo ' v'.$wpstarterversion; ?>"><?php _e('Clique aqui', 'wpstarter'); ?></a>.
+				<?php _e('Precisa de ajuda?', 'devhelper'); ?>
+				<a href="http://mattdeveloper.github.io/wpstarter/" target="_blank" title="<?php _e('Saiba mais sobre o Dev Helper', 'devhelper'); echo ' v'.$wpstarterversion; ?>"><?php _e('Clique aqui', 'devhelper'); ?></a>.
 			</div><!-- end .left -->
 
 			<div class="right">
-				<input type="submit" class="button-primary" value="<?php _e('Salvar Alterações', 'wpstarter'); ?>" />
+				<input type="submit" class="button-primary" value="<?php _e('Salvar Alterações', 'devhelper'); ?>" />
 			</div><!-- end .right -->
 		<br class="clear">
 		</div><!-- end .buttons -->
@@ -63,29 +63,29 @@ global $wpstarterversion;
 			<!-- Sidebar -->
 			<aside class="sidebar">
 				<ul>
-					<li class="active"><a href="javascript:void(0);" data-section="general"><?php _e('Geral', 'wpstarter'); ?></a></li>
-					<li><a href="javascript:void(0);" data-section="seo"><?php _e('SEO', 'wpstarter'); ?></a></li>
-					<li><a href="javascript:void(0);" data-section="thumbnails"><?php _e('Thumbnails', 'wpstarter'); ?></a></li>
+					<li class="active"><a href="javascript:void(0);" data-section="general"><?php _e('Geral', 'devhelper'); ?></a></li>
+					<li><a href="javascript:void(0);" data-section="seo"><?php _e('SEO', 'devhelper'); ?></a></li>
+					<li><a href="javascript:void(0);" data-section="thumbnails"><?php _e('Thumbnails', 'devhelper'); ?></a></li>
 					<li class="divider"></li>
-					<li><a href="javascript:void(0);" data-section="themeoptions"><?php _e('Opções do Tema', 'wpstarter'); ?></a></li>
-					<li><a href="javascript:void(0);" data-section="customposttypes"><?php _e('Custom Post Types', 'wpstarter'); ?></a></li>
-					<li><a href="javascript:void(0);" data-section="customfields"><?php _e('Custom Fields', 'wpstarter'); ?></a></li>
+					<li><a href="javascript:void(0);" data-section="themeoptions"><?php _e('Opções do Tema', 'devhelper'); ?></a></li>
+					<li><a href="javascript:void(0);" data-section="customposttypes"><?php _e('Custom Post Types', 'devhelper'); ?></a></li>
+					<li><a href="javascript:void(0);" data-section="customfields"><?php _e('Custom Fields', 'devhelper'); ?></a></li>
 					<li class="divider"></li>
-					<li><a href="javascript:void(0);" data-section="wplogin"><?php _e('WP Login', 'wpstarter'); ?></a></li>
-					<li><a href="javascript:void(0);" data-section="footer"><?php _e('Rodapé', 'wpstarter'); ?></a></li>
+					<li><a href="javascript:void(0);" data-section="wplogin"><?php _e('WP Login', 'devhelper'); ?></a></li>
+					<li><a href="javascript:void(0);" data-section="footer"><?php _e('Rodapé', 'devhelper'); ?></a></li>
 					<li class="divider"></li>
-					<li><a href="javascript:void(0);" data-section="removemenus"><?php _e('Remover Menus', 'wpstarter'); ?></a></li>
-					<li><a href="javascript:void(0);" data-section="reordermenu"><?php _e('Reordenar Menu', 'wpstarter'); ?></a></li>
+					<li><a href="javascript:void(0);" data-section="removemenus"><?php _e('Remover Menus', 'devhelper'); ?></a></li>
+					<li><a href="javascript:void(0);" data-section="reordermenu"><?php _e('Reordenar Menu', 'devhelper'); ?></a></li>
 					<li class="divider"></li>
-					<li><a href="javascript:void(0);" data-section="adminbar"><?php _e('Admin Bar', 'wpstarter'); ?></a></li>
-					<li><a href="javascript:void(0);" data-section="advanced"><?php _e('Avançado', 'wpstarter'); ?></a></li>
+					<li><a href="javascript:void(0);" data-section="adminbar"><?php _e('Admin Bar', 'devhelper'); ?></a></li>
+					<li><a href="javascript:void(0);" data-section="advanced"><?php _e('Avançado', 'devhelper'); ?></a></li>
 				</ul>
 			</aside><!-- end .sidebar -->
 
 			<!-- Content Sections -->
 			<div class="fields">
-				<?php settings_fields('wpstarterDeveloper'); wpstarter_do_settings_sections('wpstarter_developer'); ?>
-				<div style="display:none;"><?php wpstarter_do_settings_sections('wpstarter_themeoptions'); ?></div>
+				<?php settings_fields('wpstarterDeveloper'); devhelper_do_settings_sections('devhelper_page'); ?>
+				<div style="display:none;"><?php devhelper_do_settings_sections('devhelper_themeoptions'); ?></div>
 
 				<?php require_once(DEVHELPER__PLUGIN_DIR.'framework/devhelper/developers/config-general.php'); ?>
 				<?php require_once(DEVHELPER__PLUGIN_DIR.'framework/devhelper/developers/config-customposttypes.php'); ?>
@@ -139,8 +139,8 @@ require_once(DEVHELPER__PLUGIN_DIR.'framework/devhelper/developers/config-advanc
 /* ===============================================================
 	DEVELOPER SHOW SECTIONS
 =============================================================== */
-function wpstarter_developer_display_section($section){}
-function wpstarter_do_settings_sections($page){  // Custom Do Settings Sections. Base: WordPress 4.0
+function devhelper_developer_display_section($section){}
+function devhelper_do_settings_sections($page){  // Custom Do Settings Sections. Base: WordPress 4.0
 	global $wp_settings_sections, $wp_settings_fields;
 
 	if( !isset($wp_settings_sections[$page]) ){
@@ -176,7 +176,7 @@ function wpstarter_do_settings_sections($page){  // Custom Do Settings Sections.
  * In future you can add multiple types to be display from this function,
  * Such as checkboxes, select boxes, file upload boxes etc.
 =============================================================== */
-function wpstarter_developer_display_setting($args)
+function devhelper_developer_display_setting($args)
 {
 	extract($args);
 
@@ -225,7 +225,7 @@ function wpstarter_developer_display_setting($args)
 					if( str_replace(' ', '', $value) != '' ){
 						echo "<div>
 								<input class='regular-text $class' type='text' id='$id' name='" . $option_name . "[$id][]' value='$value'>
-								<a href=\"javascript:void(0);\" class=\"remove-repeater-field\">".__('Remover', 'wpstarter')."</a>
+								<a href=\"javascript:void(0);\" class=\"remove-repeater-field\">".__('Remover', 'devhelper')."</a>
 							</div>
 						";
 					}
@@ -237,17 +237,17 @@ function wpstarter_developer_display_setting($args)
 			echo '<div class="copy_'.$id.'" style="display:none;">';
 			echo "<div>
 					<input class='regular-text $class' type='text' id='$id' name='" . $option_name . "[$id][]' value=''>
-					<a href=\"javascript:void(0);\" class=\"remove-repeater-field\">".__('Remover', 'wpstarter')."</a>
+					<a href=\"javascript:void(0);\" class=\"remove-repeater-field\">".__('Remover', 'devhelper')."</a>
 				</div>
 			";
 			echo '</div><!-- end .copy_* -->';
 
 			// Button to Add New Fields
-			echo '<a href="javascript:void(0);" class="button-primary add-repeater-field" data-id="'.$id.'">'.__('Adicionar Novo', 'wpstarter').'</a>';
+			echo '<a href="javascript:void(0);" class="button-primary add-repeater-field" data-id="'.$id.'">'.__('Adicionar Novo', 'devhelper').'</a>';
 
 			//Description
 			echo ($desc != '') ? "<br /><span class='description'>$desc<br>"."</span>" : "";
-			echo '<span class="description" style="display:block;"><b>'.__('Obs', 'wpstarter').":</b> ".__('Deixe um valor em branco e ele será excluído automaticamente.', 'wpstarter').'</span>';
+			echo '<span class="description" style="display:block;"><b>'.__('Obs', 'devhelper').":</b> ".__('Deixe um valor em branco e ele será excluído automaticamente.', 'devhelper').'</span>';
 		break;
 
 
@@ -263,7 +263,7 @@ function wpstarter_developer_display_setting($args)
 				echo "</select>";
 				echo ($desc != '') ? "<br /><span class='description'>$desc</span>" : "";
 			}else{
-				echo __('O desenvolvedor do site não especificou os valores para este campo.', 'wpstarter');
+				echo __('O desenvolvedor do site não especificou os valores para este campo.', 'devhelper');
 			}
 		break;
 
@@ -283,7 +283,7 @@ function wpstarter_developer_display_setting($args)
 				echo '</ul>';
 				echo ($desc != '') ? "<span class='description'>$desc</span>" : "";
 			}else{
-				echo __('O desenvolvedor do site não especificou os valores para este campo.', 'wpstarter');
+				echo __('O desenvolvedor do site não especificou os valores para este campo.', 'devhelper');
 			}
 		break;
 
@@ -321,8 +321,8 @@ function wpstarter_developer_display_setting($args)
 			$image_show    = ( $image_file != '' ) ? 'style="display:block;"' : '';
 			echo "<input type='hidden' id='$id' name='".$option_name."[$id]' value='$options[$id]'>"; // Image ID
 			echo '<input type="text" id="" disabled class="regular-text '.$id.'_imageurl image-url" value="'.$image_file.'"> '; // Image URL
-			echo '<input type="button" id="" data-id="'.$id.'" class="button add-image" value="'.__('Enviar Imagem', 'wpstarter').'">'; // Select Image
-			echo ' <input type="button" class="clean-image button" data-id="'.$id.'" value="'.__('Limpar', 'wpstarter').'">'; // Clean Image
+			echo '<input type="button" id="" data-id="'.$id.'" class="button add-image" value="'.__('Enviar Imagem', 'devhelper').'">'; // Select Image
+			echo ' <input type="button" class="clean-image button" data-id="'.$id.'" value="'.__('Limpar', 'devhelper').'">'; // Clean Image
 			echo ($desc != '') ? "<br /><span class='description'>$desc</span>" : ""; // Field Description
 			echo '<div class="img-preview imgprev_'.$id.'" '.$image_show.'><img src="'.$image_file.'" max-height="100" alt=""></div>'; // Image Preview
 		break;
@@ -387,7 +387,7 @@ function wpstarter_developer_display_setting($args)
 								$cnt_field_name++;
 							}
 
-							echo '<br style="clear:both;"><a href="javascript:void(0);" class="remove-repeater-field-more" style="display:block; margin-bottom:10px">'.__('Remover', 'wpstarter').'</a>';
+							echo '<br style="clear:both;"><a href="javascript:void(0);" class="remove-repeater-field-more" style="display:block; margin-bottom:10px">'.__('Remover', 'devhelper').'</a>';
 
 							// Clean loop count
 							$cnt_field_name = 0;
@@ -412,7 +412,7 @@ function wpstarter_developer_display_setting($args)
 					}
 
 					// Remove
-					echo "<br style=\"clear:both;\"><a href=\"javascript:void(0);\" class=\"remove-repeater-field-more\">".__('Remover', 'wpstarter')."</a>";
+					echo "<br style=\"clear:both;\"><a href=\"javascript:void(0);\" class=\"remove-repeater-field-more\">".__('Remover', 'devhelper')."</a>";
 				echo "</div>";
 				echo '</div><!-- end .copy_* -->';
 
@@ -421,7 +421,7 @@ function wpstarter_developer_display_setting($args)
 
 				//Description
 				echo ($desc != '') ? "<br /><span class='description'>$desc<br>"."</span>" : "";
-				echo '<span class="description" style="display:block;"><b>'.__('Obs', 'wpstarter').":</b> ".__('Deixe um valor em branco e ele será excluído automaticamente.', 'wpstarter').'</span>';
+				echo '<span class="description" style="display:block;"><b>'.__('Obs', 'devhelper').":</b> ".__('Deixe um valor em branco e ele será excluído automaticamente.', 'devhelper').'</span>';
 
 			} // End if validating fields
 		break;
@@ -434,7 +434,7 @@ function wpstarter_developer_display_setting($args)
  * Callback function to the register_settings function will pass through an input variable
  * You can then validate the values and the return variable will be the values stored in the database.
 =============================================================== */
-function wpstarter_validate_settings($input)
+function devhelper_validate_settings($input)
 {
   foreach($input as $k => $v)
   {

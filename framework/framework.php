@@ -23,15 +23,15 @@
 =============================================================== */
 add_action('plugins_loaded', 'remove_developer_from_admin_menu');
 function remove_developer_from_admin_menu(){
-$wpstarter_current_user_level = wp_get_current_user();
-	if( $wpstarter_current_user_level->user_level < 10 ){ // Show Developer link on menu only for users with level 10
+$devhelper_current_user_level = wp_get_current_user();
+	if( $devhelper_current_user_level->user_level < 10 ){ // Show Developer link on menu only for users with level 10
 		hide_developers();
 	}
 }
 
-function wpstarter_remove_developer_options(){ remove_menu_page( 'wpstarter_developer' ); }
+function devhelper_remove_developer_options(){ remove_menu_page( 'devhelper_page' ); }
 function hide_developers(){ // Cal this function to remove developer from admin side menu
-	add_action( 'admin_menu', 'wpstarter_remove_developer_options', 999 );
+	add_action( 'admin_menu', 'devhelper_remove_developer_options', 999 );
 }
 
 
@@ -40,7 +40,7 @@ function hide_developers(){ // Cal this function to remove developer from admin 
 	01. VERSION/LANGUAGE
 =============================================================== */
 $wpstarterversion = '0.9.0';
-load_theme_textdomain( 'wpstarter', DEVHELPER__PLUGIN_DIR.'framework/languages' );
+load_theme_textdomain( 'devhelper', DEVHELPER__PLUGIN_DIR.'framework/languages' );
 
 
 
@@ -55,7 +55,7 @@ define( 'THEMEROOT', get_template_directory_uri() ); // For HTML Path
 /* ===============================================================
 	03. ADMIN DEVELOPER STYLES & SCRIPTS
 =============================================================== */
-if( isset($_GET['page']) AND $_GET['page'] == 'wpstarter_developer' ){ add_action('admin_enqueue_scripts', 'devhelper_admin_scripts_developer'); }
+if( isset($_GET['page']) AND $_GET['page'] == 'devhelper_page' ){ add_action('admin_enqueue_scripts', 'devhelper_admin_scripts_developer'); }
 function devhelper_admin_scripts_developer(){
 	wp_enqueue_media(); // Cute Upload Media
 
@@ -73,7 +73,7 @@ function devhelper_admin_scripts_developer(){
 /* ===============================================================
 	04. ADMIN THEME OPTIONS STYLES & SCRIPTS
 =============================================================== */
-if( isset($_GET['page']) AND $_GET['page'] == 'wpstarter_themeoptions' ){ add_action('admin_enqueue_scripts', 'devhelper_admin_scripts_themeoptions'); }
+if( isset($_GET['page']) AND $_GET['page'] == 'devhelper_themeoptions' ){ add_action('admin_enqueue_scripts', 'devhelper_admin_scripts_themeoptions'); }
 function devhelper_admin_scripts_themeoptions(){
 	wp_enqueue_media(); // Cute Upload Media
 

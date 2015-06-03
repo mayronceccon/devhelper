@@ -35,9 +35,9 @@ if( $sql_custom_post_types->have_posts() ) : while( $sql_custom_post_types->have
 
 	$starter_posttype_supports[$post->ID][] = 'title';
 	if( is_array(get_post_meta($post->ID, 'post_supports', true)) ){ // OK
-		foreach( get_post_meta($post->ID, 'post_supports', true) as $wpstarter_supports_field => $wpstarter_supports_key ){
-			$starter_posttype_supports[$post->ID][] = $wpstarter_supports_key;
-		} unset($wpstarter_supports_field); unset($wpstarter_supports_key);
+		foreach( get_post_meta($post->ID, 'post_supports', true) as $devhelper_supports_field => $devhelper_supports_key ){
+			$starter_posttype_supports[$post->ID][] = $devhelper_supports_key;
+		} unset($devhelper_supports_field); unset($devhelper_supports_key);
 	}
 
 
@@ -105,10 +105,10 @@ if( $sql_custom_post_types->post_count >= 1 ){
 
 
 	/* -- Loop On Custom Posts -- */
-	$wpstarter_current_custom_post_type_cnt = 0;
+	$devhelper_current_custom_post_type_cnt = 0;
 	foreach( $starter_posttype as $starterposts_key => $starterposts_value ){
-		add_action('init', create_post($starterposts_key, $starter_posttype, $wpstarter_current_custom_post_type_cnt) );
-		// $wpstarter_current_custom_post_type_cnt++;
+		add_action('init', create_post($starterposts_key, $starter_posttype, $devhelper_current_custom_post_type_cnt) );
+		// $devhelper_current_custom_post_type_cnt++;
 	}
 
 
@@ -122,7 +122,7 @@ if( $sql_custom_post_types->post_count >= 1 ){
 // wp_reset_query();
 unset( $sql_custom_post_types ); // SQL Post Types
 unset( $starter_posttype ); // All Post Types
-unset( $wpstarter_taxonomies_field ); // All Taxonomies
-unset( $wpstarter_supports_field ); // All Supports
-unset( $wpstarter_current_custom_post_type_cnt ); // Count current post type list
+unset( $devhelper_taxonomies_field ); // All Taxonomies
+unset( $devhelper_supports_field ); // All Supports
+unset( $devhelper_current_custom_post_type_cnt ); // Count current post type list
 ?>

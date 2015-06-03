@@ -2,22 +2,22 @@
 /* ===============================================================
 	GET POST TYPES TO USE SEO
 =============================================================== */
-$wpstarter_use_seo_on_get = str_replace(' ', '', devOpt('developer_seo_posttypes', false)); // Get Post Types
-$wpstarter_use_seo_on_get = explode(',', $wpstarter_use_seo_on_get); // Make an Array With The Post Types
+$devhelper_use_seo_on_get = str_replace(' ', '', devOpt('developer_seo_posttypes', false)); // Get Post Types
+$devhelper_use_seo_on_get = explode(',', $devhelper_use_seo_on_get); // Make an Array With The Post Types
 
-$wpstarter_use_seo_on_get_cnt = 0;
+$devhelper_use_seo_on_get_cnt = 0;
 
 /* -- Loop and make the array for ACF with the post types -- */
-foreach( $wpstarter_use_seo_on_get as $post_type ){
-	$wpstarter_use_seo_on[][] = array(
+foreach( $devhelper_use_seo_on_get as $post_type ){
+	$devhelper_use_seo_on[][] = array(
 		'param' => 'post_type',
 		'operator' => '==',
 		'value' => $post_type,
 		'order_no' => 0,
-		'group_no' => $wpstarter_use_seo_on_get_cnt,
+		'group_no' => $devhelper_use_seo_on_get_cnt,
 	);
 
-	$wpstarter_use_seo_on_get_cnt++;
+	$devhelper_use_seo_on_get_cnt++;
 }
 
 
@@ -25,25 +25,25 @@ foreach( $wpstarter_use_seo_on_get as $post_type ){
 /* ===============================================================
 	PAGE TITLE
 =============================================================== */
-add_filter('wp_title', 'wpstarter_title', 1, 3);
-function wpstarter_title($title, $sep, $seplocation){
-	global $post, $wpstarter_title;
+add_filter('wp_title', 'devhelper_title', 1, 3);
+function devhelper_title($title, $sep, $seplocation){
+	global $post, $devhelper_title;
 
 	/* ----- Get Title Configs ----- */
-	$wpstarter_title['sep'] = $sep;
-	$wpstarter_title['seplocation'] = $seplocation;
+	$devhelper_title['sep'] = $sep;
+	$devhelper_title['seplocation'] = $seplocation;
 
 	/* ----- Get Site Name ----- */
 	$title .= get_bloginfo('name');
 
 	/* ----- Get Current Post ----- */
 	$post_id    = $post->ID;
-	$post_seo   = get_field( 'wpstarter_seo_enable', $post_id );
+	$post_seo   = get_field( 'devhelper_seo_enable', $post_id );
 	$global_seo = devOpt('active_seo', false);
 
 	/* ----- Force the Post/Page Title ----- */
-	if( $global_seo == 'yes' AND $post_seo == 'yes' AND str_replace(' ', '', get_field('wpstarter_seo_title', $post_id)) != '' ){ // Force title
-		$title = get_field('wpstarter_seo_title', $post_id);
+	if( $global_seo == 'yes' AND $post_seo == 'yes' AND str_replace(' ', '', get_field('devhelper_seo_title', $post_id)) != '' ){ // Force title
+		$title = get_field('devhelper_seo_title', $post_id);
 	/* ----- Don't force the Post/Page Title ----- */
 	}else{
 		return $title;
@@ -53,12 +53,12 @@ function wpstarter_title($title, $sep, $seplocation){
 	return $title;
 }
 
-function get_wpstarter_title($string){
-	global $wpstarter_title;
+function get_devhelper_title($string){
+	global $devhelper_title;
 	if( $string == 'sep' ){
-		return $wpstarter_title['sep'];
+		return $devhelper_title['sep'];
 	}else{
-		return $wpstarter_title['seplocation'];
+		return $devhelper_title['seplocation'];
 	}
 }
 
@@ -67,9 +67,9 @@ function get_wpstarter_title($string){
 /* ===============================================================
 	CONFIG FIELDS
 =============================================================== */
-add_action('wp_head', 'wpstarter_seo', 2);
-function wpstarter_seo(){
-	global $post, $wpstarter_use_seo_on_get;
+add_action('wp_head', 'devhelper_seo', 2);
+function devhelper_seo(){
+	global $post, $devhelper_use_seo_on_get;
 	
 
 	/* -- Get Post ID & Post Type -- */
@@ -83,103 +83,103 @@ function wpstarter_seo(){
 
 		/* -- Google: Author/Publisher -- */
 		if( str_replace(' ', '', devOpt('developer_seo_google', false)) != '' ){
-			$wpstarter_seo['google']['author'] = "\n<link rel=\"author\" href=\"".devOpt('developer_seo_google', false)."\">";
-			$wpstarter_seo['google']['publisher'] = "\n<link rel=\"publisher\" href=\"".devOpt('developer_seo_google', false)."\">";
+			$devhelper_seo['google']['author'] = "\n<link rel=\"author\" href=\"".devOpt('developer_seo_google', false)."\">";
+			$devhelper_seo['google']['publisher'] = "\n<link rel=\"publisher\" href=\"".devOpt('developer_seo_google', false)."\">";
 		}else{
-			$wpstarter_seo['google']['author'] = '';
-			$wpstarter_seo['google']['publisher'] = '';
+			$devhelper_seo['google']['author'] = '';
+			$devhelper_seo['google']['publisher'] = '';
 		}
 
 		/* -- Google: Webmasters -- */
 		if( str_replace(' ', '', devOpt('developer_seo_google_webmasters', false)) != '' ){
-			$wpstarter_seo['google']['webmasters'] = "\n<meta name=\"google-site-verification\" content=\"".devOpt('developer_seo_google_webmasters', false)."\">";
+			$devhelper_seo['google']['webmasters'] = "\n<meta name=\"google-site-verification\" content=\"".devOpt('developer_seo_google_webmasters', false)."\">";
 		}else{
-			$wpstarter_seo['google']['webmasters'] = '';
+			$devhelper_seo['google']['webmasters'] = '';
 		}
 
-		/* -- Generated By WP Starter -- */
-		echo "\n\n<!-- SEO By WP Starter Framework(getwpstarter.com) -->\n";
+		/* -- Generated By Dev Helper -- */
+		echo "\n\n<!-- SEO By Dev Helper Framework(getwpstarter.com) -->\n";
 
 		/* -- Google -- */
-		echo $wpstarter_seo['google']['author'];
-		echo $wpstarter_seo['google']['publisher'];
-		echo $wpstarter_seo['google']['webmasters'];
+		echo $devhelper_seo['google']['author'];
+		echo $devhelper_seo['google']['publisher'];
+		echo $devhelper_seo['google']['webmasters'];
 
 		/* ############################################ */
 
 		/* -- Active for This Post Type and SEO On Current PAGE -- */
-		if( get_field('wpstarter_seo_enable', $post_id) == 'yes' AND in_array($post_type, $wpstarter_use_seo_on_get) ){
+		if( get_field('devhelper_seo_enable', $post_id) == 'yes' AND in_array($post_type, $devhelper_use_seo_on_get) ){
 
 			/* -- Meta: Description -- */
-			if( str_replace(' ', '', get_field('wpstarter_seo_meta_description', $post_id)) != '' ){ 
-				$wpstarter_seo['meta']['description'] = "\n<meta name=\"description\" content=\"".get_field('wpstarter_seo_meta_description')."\">";
+			if( str_replace(' ', '', get_field('devhelper_seo_meta_description', $post_id)) != '' ){ 
+				$devhelper_seo['meta']['description'] = "\n<meta name=\"description\" content=\"".get_field('devhelper_seo_meta_description')."\">";
 			}else{
-				$wpstarter_seo['meta']['description'] = '';
+				$devhelper_seo['meta']['description'] = '';
 			}
 
 			/* -- Social: Title -- */
-			if( str_replace(' ', '', get_field('wpstarter_seo_social_title', $post_id)) != '' ){
-				$wpstarter_seo['social']['title']  = "\n<meta property=\"og:title\" content=\"".get_field('wpstarter_seo_social_title', $post_id)."\">";
-				$wpstarter_seo['social2']['title'] = "\n\n<meta itemprop=\"name\" content=\"".get_field('wpstarter_seo_social_title', $post_id)."\">";
+			if( str_replace(' ', '', get_field('devhelper_seo_social_title', $post_id)) != '' ){
+				$devhelper_seo['social']['title']  = "\n<meta property=\"og:title\" content=\"".get_field('devhelper_seo_social_title', $post_id)."\">";
+				$devhelper_seo['social2']['title'] = "\n\n<meta itemprop=\"name\" content=\"".get_field('devhelper_seo_social_title', $post_id)."\">";
 			}else{
-				$wpstarter_seo['social']['title']  = "\n<meta property=\"og:title\" content=\"".wp_title(get_wpstarter_title('sep'), false, get_wpstarter_title('seplocation'))."\">";
-				$wpstarter_seo['social2']['title'] = "\n\n<meta itemprop=\"name\" content=\"".wp_title(get_wpstarter_title('sep'), false, get_wpstarter_title('seplocation'))."\">";
+				$devhelper_seo['social']['title']  = "\n<meta property=\"og:title\" content=\"".wp_title(get_devhelper_title('sep'), false, get_devhelper_title('seplocation'))."\">";
+				$devhelper_seo['social2']['title'] = "\n\n<meta itemprop=\"name\" content=\"".wp_title(get_devhelper_title('sep'), false, get_devhelper_title('seplocation'))."\">";
 			}
 
 			/* -- Social: Description -- */
-			if( str_replace(' ', '', get_field('wpstarter_seo_social_description', $post_id)) != '' ){
-				$wpstarter_seo['social']['description']  = "\n<meta property=\"og:description\" content=\"".get_field('wpstarter_seo_social_description', $post_id)."\">";
-				$wpstarter_seo['social2']['description'] = "\n<meta itemprop=\"description\" content=\"".get_field('wpstarter_seo_social_description', $post_id)."\">";
-			}else if( str_replace(' ', '', get_field('wpstarter_seo_meta_description', $post_id)) != '' ){
-				$wpstarter_seo['social']['description']  = "\n<meta property=\"og:description\" content=\"".get_field('wpstarter_seo_meta_description', $post_id)."\">";
-				$wpstarter_seo['social2']['description'] = "\n<meta itemprop=\"description\" content=\"".get_field('wpstarter_seo_meta_description', $post_id)."\">";
+			if( str_replace(' ', '', get_field('devhelper_seo_social_description', $post_id)) != '' ){
+				$devhelper_seo['social']['description']  = "\n<meta property=\"og:description\" content=\"".get_field('devhelper_seo_social_description', $post_id)."\">";
+				$devhelper_seo['social2']['description'] = "\n<meta itemprop=\"description\" content=\"".get_field('devhelper_seo_social_description', $post_id)."\">";
+			}else if( str_replace(' ', '', get_field('devhelper_seo_meta_description', $post_id)) != '' ){
+				$devhelper_seo['social']['description']  = "\n<meta property=\"og:description\" content=\"".get_field('devhelper_seo_meta_description', $post_id)."\">";
+				$devhelper_seo['social2']['description'] = "\n<meta itemprop=\"description\" content=\"".get_field('devhelper_seo_meta_description', $post_id)."\">";
 			}else{
-				$wpstarter_seo['social']['description']  = '';
-				$wpstarter_seo['social2']['description'] = '';
+				$devhelper_seo['social']['description']  = '';
+				$devhelper_seo['social2']['description'] = '';
 			}
 
 			/* -- Social: Publisher -- */
 			if( str_replace(' ', '', devOpt('developer_seo_facebook', false)) != '' ){
-				$wpstarter_seo['social']['publisher'] = "\n<meta property=\"article:publisher\" content=\"".devOpt('developer_seo_facebook', false)."\">";
+				$devhelper_seo['social']['publisher'] = "\n<meta property=\"article:publisher\" content=\"".devOpt('developer_seo_facebook', false)."\">";
 			}else{
-				$wpstarter_seo['social']['publisher'] = '';
+				$devhelper_seo['social']['publisher'] = '';
 			}
 
 			/* -- Social: Image -- */
-			if( str_replace(' ', '', get_field('wpstarter_seo_social_image', $post_id)) != '' ){
-				$social_image = thumb( get_field('wpstarter_seo_social_image', $post_id), 300, 300, 2 );
-				$social_image = thumb( get_field('wpstarter_seo_social_image', $post_id), 300, 300, 2 );
-				$wpstarter_seo['social']['image']  = "\n<meta property=\"og:image\" content=\"".$social_image."\">";
-				$wpstarter_seo['social2']['image'] = "\n<meta itemprop=\"image\" content=\"".$social_image."\">";
+			if( str_replace(' ', '', get_field('devhelper_seo_social_image', $post_id)) != '' ){
+				$social_image = thumb( get_field('devhelper_seo_social_image', $post_id), 300, 300, 2 );
+				$social_image = thumb( get_field('devhelper_seo_social_image', $post_id), 300, 300, 2 );
+				$devhelper_seo['social']['image']  = "\n<meta property=\"og:image\" content=\"".$social_image."\">";
+				$devhelper_seo['social2']['image'] = "\n<meta itemprop=\"image\" content=\"".$social_image."\">";
 			}else{
-				$wpstarter_seo['social']['image']  = '';
-				$wpstarter_seo['social2']['image'] = '';
+				$devhelper_seo['social']['image']  = '';
+				$devhelper_seo['social2']['image'] = '';
 			}
 
 			/* ----- SHOW FIELDS ----- */
 			/* -- Default Description -- */
-			echo $wpstarter_seo['meta']['description'];
+			echo $devhelper_seo['meta']['description'];
 
 			/* -- Social -- */
 			echo "\n\n<meta property=\"og:locale\" content=\"".get_bloginfo('language')."\">";
 			echo "\n<meta property=\"og:type\" content=\"website\">";
-			echo $wpstarter_seo['social']['title'];
-			echo $wpstarter_seo['social']['description'];
+			echo $devhelper_seo['social']['title'];
+			echo $devhelper_seo['social']['description'];
 			echo "\n<meta property=\"og:url\" content=\"".get_bloginfo('url')."/\">";
 			echo "\n<meta property=\"og:site_name\" content=\"".get_bloginfo('name')."\">";
-			echo $wpstarter_seo['social']['publisher'];
-			echo $wpstarter_seo['social']['image'];
+			echo $devhelper_seo['social']['publisher'];
+			echo $devhelper_seo['social']['image'];
 
-			echo $wpstarter_seo['social2']['title'];
-			echo $wpstarter_seo['social2']['description'];
-			echo $wpstarter_seo['social2']['image'];
+			echo $devhelper_seo['social2']['title'];
+			echo $devhelper_seo['social2']['description'];
+			echo $devhelper_seo['social2']['image'];
 
 		} // Active SEO On Page AND Active For This Post Type
 
 		/* ############################################ */
 
-		/* -- Generated By WP Starter -- */
-		echo "\n\n<!-- End Seo By WP Starter Framework(getwpstarter.com) -->\n\n\n"; 
+		/* -- Generated By Dev Helper -- */
+		echo "\n\n<!-- End Seo By Dev Helper Framework(getwpstarter.com) -->\n\n\n"; 
 
 	} // Active SEO Global
 }
