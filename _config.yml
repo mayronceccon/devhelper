@@ -1,9 +1,13 @@
 # Site settings
-title: WP Starter Framework
-email: your-email@domain.com
-description: Construindo temas WordPress de forma simples e eficaz.
-url: "http://mattdeveloper.github.io/wpstarter/" # the base hostname & protocol for your site
+title: Dev Helper
+email: talk@mattdeveloper.com
+description: Plugin para o desenvolvimento de temas WordPress
+url: "http://mattdeveloper.github.io/devhelper/" # the base hostname & protocol for your site
 github_username:  mattdeveloper
+
+# Version
+version: 0.0.1
+download: 'https://github.com/mattdeveloper/devhelper/archive/master.zip'
 
 # Build settings
 markdown: kramdown
