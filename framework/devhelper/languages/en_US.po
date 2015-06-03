@@ -1,0 +1,1360 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Starter\n"
+"POT-Creation-Date: 2014-12-30 01:32-0300\n"
+"PO-Revision-Date: 2014-12-30 01:40-0300\n"
+"Last-Translator: Mattheus de Oliveira Machado <mattheus@leggocomunicacao.com."
+"br>\n"
+"Language-Team: Mattheus Oliveira <mattheus@leggocomunicacao.com.br>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../developers/config-wplogin.php:10 ../developers/_config.php:74
+msgid "WP Login"
+msgstr "WP Login"
+
+#: ../developers/config-wplogin.php:21
+msgid "Escolha a cor de fundo da página de login."
+msgstr "Choose the background color of the login page."
+
+#: ../developers/config-wplogin.php:21 ../developers/config-wplogin.php:33
+msgid "Por padrão a cor é:"
+msgstr "By default the color is:"
+
+#: ../developers/config-wplogin.php:22
+msgid "Cor de Fundo"
+msgstr "Background Color"
+
+#: ../developers/config-wplogin.php:33
+msgid "Escolha uma cor para o botão e <b>hover</b> dos links."
+msgstr "Choose a color for the button and <b>hover</b> of the links."
+
+#: ../developers/config-wplogin.php:34
+msgid "Cor do Botão e Links"
+msgstr "Color for Buttons and Links"
+
+#: ../developers/config-wplogin.php:44
+msgid "Envie uma imagem para aparecer na tela de login do WordPress."
+msgstr "Send an image to appear in the WordPress login screen."
+
+#: ../developers/config-wplogin.php:45
+msgid "Imagem do Login"
+msgstr "Login Image"
+
+#: ../developers/config-wplogin.php:55
+msgid ""
+"Quando clicar na logo do login o usuário vai para o site da Agência Leggo, "
+"você pode mudar essa url aqui."
+msgstr ""
+"When you click on login then the user goes to the website of the Leggo "
+"Agency, you can change the url here."
+
+#: ../developers/config-wplogin.php:56 ../developers/config-wplogin.php:67
+msgid "Valor padrão"
+msgstr "Default value"
+
+#: ../developers/config-wplogin.php:57
+msgid "URL da Logo"
+msgstr "Logo URL"
+
+#: ../developers/config-wplogin.php:67
+msgid "Este título aparece quando o usuário passa o mouse na imagem"
+msgstr "This title appears when the user hovers the image"
+
+#: ../developers/config-wplogin.php:67 ../developers/_configcodes.php:303
+msgid "Um desenvolvimento Agência Leggo"
+msgstr "A development Leggo Agency"
+
+#: ../developers/config-wplogin.php:68
+msgid "Título da Logo"
+msgstr "Title Logo"
+
+#: ../developers/_configthemeoptions.php:17
+#: ../developers/_configthemeoptions.php:18
+#: ../developers/_configthemeoptions.php:221 ../developers/_config.php:70
+#: ../developers/config-themeoptions.php:10
+#: ../developers/config-themeoptions.php:46
+msgid "Opções do Tema"
+msgstr "Theme Options"
+
+#: ../developers/_configthemeoptions.php:48
+#: ../developers/_configthemeoptions.php:53
+#, php-format
+msgid "The \"%s\" options group has been removed. Use another settings group."
+msgstr ""
+
+#: ../developers/_configthemeoptions.php:69
+msgid ""
+"The miscellaneous options group has been removed. Use another settings group."
+msgstr ""
+
+#: ../developers/_configthemeoptions.php:74
+msgid "The privacy options group has been removed. Use another settings group."
+msgstr ""
+
+#: ../developers/_configthemeoptions.php:172
+#: ../developers/_configthemeoptions.php:295
+msgid ""
+"As opções do tema não estão configuradas corretamente ou não foram criadas "
+"pelo desenvolvedor."
+msgstr ""
+"The theme options are not configured properly or were not created by the "
+"developer."
+
+#: ../developers/_configthemeoptions.php:229 ../developers/_config.php:43
+msgid "Alterações salvas com sucesso."
+msgstr "The changes have been saved."
+
+#: ../developers/_configthemeoptions.php:236
+msgid ""
+"Aqui você pode alterar algumas opções do tema criadas pelo desenvolvedor."
+msgstr "Here you can change some theme options created by the developer."
+
+#: ../developers/_configthemeoptions.php:240
+#: ../developers/_configthemeoptions.php:322 ../developers/_config.php:55
+#: ../developers/_config.php:104
+msgid "Salvar Alterações"
+msgstr "Save Changes"
+
+#: ../developers/_configthemeoptions.php:278
+#: ../developers/_configthemeoptions.php:294
+#: ../customfields/themeoptions-create.php:185
+msgid "Erro"
+msgstr "Error"
+
+#: ../developers/_configthemeoptions.php:318
+msgid "Opções criadas com o"
+msgstr "Options created with the"
+
+#: ../developers/config-customposttypes.php:4 ../developers/_config.php:71
+msgid "Custom Post Types"
+msgstr "Custom Post Types"
+
+#: ../developers/config-customposttypes.php:7
+msgid ""
+"Os Tipos de Post Customizados(Custom Post Types) são muito úteis para o \n"
+"\t\tdesenvolvimento de um Website, porém, você precisa digitar alguns "
+"códigos para fazê-los. Nossa ideia é\n"
+"\t\tque os desenvolvedores de temas que utilizam o WP Starter Framework "
+"tenham uma facilidade maior em desenvolver seus\n"
+"\t\tprojetos, com isso você pode criar Custom Post Types direto do painel, "
+"lhe poupando tempo e códigos, deixando o\n"
+"\t\tseu trabalho mais limpo, fácil e ágil. Para criar, editar e/ou excluir "
+"Custom Post Types\n"
+"\t\tclique no botão abaixo."
+msgstr ""
+
+#: ../developers/config-customposttypes.php:15
+msgid "Página de Custom Post Types"
+msgstr "Config Custom Post Types"
+
+#: ../developers/config-customposttypes.php:18
+msgid ""
+"Depois de criar os Custom Post Types você precisa criar os campos dele, para "
+"isso existe o plugin"
+msgstr ""
+
+#: ../developers/config-customposttypes.php:19 ../developers/config-seo.php:21
+#: ../developers/config-customfields.php:5
+msgid "Abrir em nova guia."
+msgstr "Open in new tab."
+
+#: ../developers/config-customposttypes.php:20
+msgid ""
+"que já vem instalado no tema automaticamente. Clique na aba Custom Fields "
+"para saber mais sobre o plugin."
+msgstr ""
+
+#: ../developers/config-advanced.php:11 ../developers/_config.php:81
+msgid "Avançado"
+msgstr "Advanced"
+
+#: ../developers/config-advanced.php:20
+msgid ""
+"A função WP Head que é chamada dentro da tag <head></head> do site cria "
+"algumas tags, caso você não deseje que estas tags \n"
+"\t\t\t\t\t\tapareçam você pode marcá-las acima."
+msgstr ""
+
+#: ../developers/config-advanced.php:31
+msgid "WP Head"
+msgstr "WP Head"
+
+#: ../developers/config-advanced.php:40
+msgid ""
+"Quando você se cadastra no Google Analytics você recebe um script do "
+"analytics, insira o script completo aqui."
+msgstr ""
+
+#: ../developers/config-advanced.php:41 ../developers/config-seo.php:87
+msgid "Campo opcional."
+msgstr "Optional field."
+
+#: ../developers/config-advanced.php:44
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: ../developers/config-seo.php:10 ../developers/_config.php:67
+msgid "SEO"
+msgstr "SEO"
+
+#: ../developers/config-seo.php:19 ../developers/config-thumbnails.php:21
+#: ../developers/config-themeoptions.php:19
+#: ../customfields/developer-customposttypes.php:248
+#: ../customfields/developer-customposttypes.php:264
+#: ../customfields/developer-customposttypes.php:285
+#: ../customfields/developer-seo.php:22
+msgid "Não"
+msgstr "no"
+
+#: ../developers/config-seo.php:19 ../developers/config-thumbnails.php:21
+#: ../developers/config-themeoptions.php:19
+#: ../customfields/developer-customposttypes.php:249
+#: ../customfields/developer-customposttypes.php:263
+#: ../customfields/developer-customposttypes.php:284
+#: ../customfields/developer-customposttypes.php:299
+#: ../customfields/developer-seo.php:21
+msgid "Sim"
+msgstr "Yes"
+
+#: ../developers/config-seo.php:20 ../developers/config-reordermenu.php:75
+msgid "Atenção"
+msgstr "Caution"
+
+#: ../developers/config-seo.php:20
+msgid "Caso esteja usando algum plugin para SEO como por exemplo o"
+msgstr "If you are using a plugin for SEO such as"
+
+#: ../developers/config-seo.php:22
+msgid "deixe a opção marcada como não."
+msgstr "leave the option not marked."
+
+#: ../developers/config-seo.php:24
+msgid "Ativar SEO"
+msgstr "Enable SEO"
+
+#: ../developers/config-seo.php:49
+msgid ""
+"Insira os post types que você quer que os campos de SEO apareçam. Insira os "
+"post types separados por vírgula."
+msgstr ""
+"Insert the post types you want the SEO fields appear. Insert the post types "
+"separated by commas."
+
+#: ../developers/config-seo.php:50
+msgid "Os post types atuais no seu tema são:"
+msgstr "The current post types in your theme are:"
+
+#: ../developers/config-seo.php:51
+msgid ""
+"Os post types citados acima servem de exemplo de como devem ser inseridos no "
+"input com a vírgula."
+msgstr ""
+"The post types mentioned above serve as examples of how they should be "
+"entered in the input with a comma."
+
+#: ../developers/config-seo.php:53
+msgid "Post Types"
+msgstr "Post Types"
+
+#: ../developers/config-seo.php:62
+msgid "Caso tenha uma página ou conta no facebook insira a url aqui."
+msgstr "If you have a page or facebook account enter the url here."
+
+#: ../developers/config-seo.php:63 ../developers/config-seo.php:75
+#: ../developers/config-thumbnails.php:32
+msgid "Exemplo"
+msgstr "Example"
+
+#: ../developers/config-seo.php:65
+msgid "Página no Facebook"
+msgstr "Facebook Page"
+
+#: ../developers/config-seo.php:74
+msgid "Caso tenha uma página no Google+ insira a url aqui."
+msgstr "If you have a Google+ page enter the url here."
+
+#: ../developers/config-seo.php:77
+msgid "Página no Google+"
+msgstr "Google+ Page"
+
+#: ../developers/config-seo.php:86
+msgid ""
+"Quando você se cadastra no Google Webmaster você recebe um arquivo com um "
+"código(ou apenas o código), você pode inserir apenas este código aqui."
+msgstr ""
+"When you register in Google Webmaster you receive a file with a code(or just "
+"the code), you can just enter this code here."
+
+#: ../developers/config-seo.php:89
+msgid "Google Webmasters"
+msgstr "Google Webmasters"
+
+#: ../developers/config-seo.php:96
+msgid ""
+"As configurações de SEO do WP Starter incluem: <i>Título Forçado</i>, "
+"<i>Meta Description</i> e <i>configurações para Facebook e para o Google+</"
+"i>."
+msgstr ""
+"The settings of the WP Starter SEO include: <i>Forced title</i>, <i>Meta "
+"Description</i> and <i>settings for Facebook and Google+</i>"
+
+#: ../developers/config-seo.php:100
+msgid ""
+"As configurações citadas acima junto com as configurações nesta página só "
+"terão efeito se você marcar a opção <b>Ativar SEO</b> como <b>Sim</b>."
+msgstr ""
+"The settings listed above along with the settings on this page will only "
+"take effect if you select the <b>Enable SEO</b> option to <b>Yes</b>."
+
+#: ../developers/config-removemenus.php:54 ../developers/_config.php:77
+#: ../developers/config-reordermenu.php:71
+#: ../developers/config-reordermenu.php:76
+msgid "Remover Menus"
+msgstr "Remove Menus"
+
+#: ../developers/config-removemenus.php:63
+msgid ""
+"Selecione os tipos de usuários que você deseja que os menus e submenus sejam "
+"removidos."
+msgstr "Select the types of users you want the menus and submenus are removed."
+
+#: ../developers/config-removemenus.php:65
+msgid "Administrador"
+msgstr "Administrator"
+
+#: ../developers/config-removemenus.php:66
+msgid "Editor"
+msgstr "Editor"
+
+#: ../developers/config-removemenus.php:67
+msgid "Autor"
+msgstr "Author"
+
+#: ../developers/config-removemenus.php:68
+msgid "Colaborador"
+msgstr "Contributor"
+
+#: ../developers/config-removemenus.php:69
+msgid "Assinante"
+msgstr "Subscriber"
+
+#: ../developers/config-removemenus.php:72
+#: ../developers/config-removemenus.php:127
+#: ../developers/config-reordermenu.php:69
+msgid "Usuários"
+msgstr "Users"
+
+#: ../developers/config-removemenus.php:85
+msgid "Menu Itens"
+msgstr "Menu Items"
+
+#: ../developers/config-removemenus.php:94
+msgid ""
+"Caso algum menu não apareça nas opções acima você pode removê-lo por aqui. "
+"Insira uma url de página por vez. Você deve inserir o nome da página depois "
+"de /wp-admin/ na url. Exemplo de remoção:"
+msgstr ""
+
+#: ../developers/config-removemenus.php:96
+msgid "Menu Itens Manual"
+msgstr "Menu Items - Manual"
+
+#: ../developers/config-removemenus.php:105
+msgid ""
+"Caso algum submenu não apareça nas opções acima você pode removê-lo por "
+"aqui. Insira uma url de página por vez. Para remover um submenu insira o "
+"nome do arquivo\n"
+"\t\t\t\t\t\tdo menu pai e do link que deseja remover. Exemplo: "
+msgstr ""
+
+#: ../developers/config-removemenus.php:108
+msgid "Submenu Itens Manual"
+msgstr "Submenu Items - Manual"
+
+#: ../developers/config-removemenus.php:119
+#: ../developers/config-themeoptions.php:34
+msgid "Menus"
+msgstr "Menus"
+
+#: ../developers/config-removemenus.php:120
+msgid ""
+"No wordpress existe uma função para remover links do menu lateral chamada "
+"<b>remove_menu_page</b>. Basta você chamar a função no seu arquivo "
+"<b>functions.php</b> passando\n"
+"\t\tuma string que seria a página a ser removida do menu lateral, por "
+"exemplo: <b>remove_menu_page('index.php')</b>. O index.php no caso é a url "
+"para a página Painel do wordpress.\n"
+"\t\tPara facilitar esta tarefa você pode marcar as páginas que deseja que "
+"não sejam mostradas em Menu Itens</b>.\n"
+"\t"
+msgstr ""
+
+#: ../developers/config-removemenus.php:128
+msgid ""
+"Em Usuários você precisa selecionar quais tipos de usuários terão o menu "
+"lateral alterado, em muitas vezes o desenvolvedor cria um usuário para o "
+"cliente com funções de editor e muda a exbição dos menus\n"
+"\t\tapenas para este tipo de usuário.\n"
+"\t"
+msgstr ""
+
+#: ../developers/config-removemenus.php:134 ../developers/_config.php:9
+#: ../developers/_config.php:10 ../developers/config-reordermenu.php:17
+msgid "Desenvolvedor"
+msgstr "Developer"
+
+#: ../developers/config-removemenus.php:135
+msgid ""
+"Você não pode desabilitar o item Desenvolvedor do menu por aqui, para fazer "
+"isso chame a função <b>hide_developer();</b> no arquivo functions.php do seu "
+"tema."
+msgstr ""
+
+#: ../developers/config-adminbar.php:10 ../developers/_config.php:80
+msgid "Admin Bar"
+msgstr "Admin Bar"
+
+#: ../developers/config-adminbar.php:19
+msgid ""
+"Selecione os itens que deseja remover da barra de ferramentas. Os itens que "
+"você selecionar acima servem para todos os tipos de usuários."
+msgstr ""
+"Select the items you want to remove the toolbar. The items you select above "
+"serve all types of users."
+
+#: ../developers/config-adminbar.php:21 ../developers/_config.php:100
+#: ../developers/_configcodes.php:321 ../developers/_configcodes.php:428
+#: ../developers/_configcodes.php:432
+msgid "Agência Leggo"
+msgstr "Leggo Agency"
+
+#: ../developers/config-adminbar.php:22
+msgid "Logo do WordPress"
+msgstr "Logo of WordPress"
+
+#: ../developers/config-adminbar.php:24
+msgid "Comentários"
+msgstr "Comments"
+
+#: ../developers/config-adminbar.php:25
+msgid "Novo"
+msgstr "New"
+
+#: ../developers/config-adminbar.php:28
+msgid "Remover Itens"
+msgstr "Remove Items"
+
+#: ../developers/config-adminbar.php:37
+msgid ""
+"Os campos ID, Conteúdo e Href são obrigatórios. Se deixar algum deles em "
+"branco não ativaremos o link. Em location(campo opcional) \n"
+"\t\t\t\t\t   os valores aceitos são <b>before</b> ou <b>after</b>."
+msgstr ""
+
+#: ../developers/config-adminbar.php:40
+msgid "Shortcodes disponíveis para usar nos campos Conteúdo e Href:"
+msgstr "Shortcodes available for use in the Contents and Href fields:"
+
+#: ../developers/config-adminbar.php:47
+msgid "ID"
+msgstr "ID"
+
+#: ../developers/config-adminbar.php:48
+msgid "Conteúdo"
+msgstr "Content"
+
+#: ../developers/config-adminbar.php:49
+msgid "Href"
+msgstr "Href"
+
+#: ../developers/config-adminbar.php:50
+msgid "Target"
+msgstr "Target"
+
+#: ../developers/config-adminbar.php:51
+msgid "Title"
+msgstr "Title"
+
+#: ../developers/config-adminbar.php:52
+msgid "Class"
+msgstr "Class"
+
+#: ../developers/config-adminbar.php:53
+msgid "Location"
+msgstr "Location"
+
+#: ../developers/config-adminbar.php:56
+msgid "Adicionar Links"
+msgstr "Add Links"
+
+#: ../developers/config-footer.php:11 ../developers/_config.php:75
+msgid "Rodapé"
+msgstr "Footer"
+
+#: ../developers/config-footer.php:20
+msgid "Você pode usar HTML aqui."
+msgstr "You can use HTML here."
+
+#: ../developers/config-footer.php:21
+msgid "Por padrão o texto é"
+msgstr "By default the text is"
+
+#: ../developers/config-footer.php:21 ../developers/_configcodes.php:320
+msgid "Tema"
+msgstr "Theme"
+
+#: ../developers/config-footer.php:22 ../developers/_configcodes.php:321
+msgid "Por"
+msgstr "By"
+
+#: ../developers/config-footer.php:22
+msgid "Agência"
+msgstr "Agency"
+
+#: ../developers/config-footer.php:24
+msgid "Texto do Rodapé"
+msgstr "Footer Text"
+
+#: ../developers/config-thumbnails.php:10 ../developers/_config.php:68
+msgid "Thumbnails"
+msgstr "Thumbnails"
+
+#: ../developers/config-thumbnails.php:19
+msgid "Marque sim se deseja ativar as Thumbnails nativas do WordPress."
+msgstr "Check yes if you want to enable native WordPress Thumbnails."
+
+#: ../developers/config-thumbnails.php:22
+msgid "Ativar Thumbnails"
+msgstr "Enable Thumbnails"
+
+#: ../developers/config-thumbnails.php:31
+msgid ""
+"Adicione um tamanho por vez separando com / os valores. Os valores são id/"
+"largura/altura/cortar"
+msgstr ""
+
+#: ../developers/config-thumbnails.php:34
+msgid "Tamanhos"
+msgstr "Sizes"
+
+#: ../developers/config-thumbnails.php:42
+#: ../developers/config-thumbnails.php:64
+msgid "Thumbnails Nativas"
+msgstr "Native thumbnails"
+
+#: ../developers/config-thumbnails.php:43
+msgid ""
+"O WordPress tem suporte a thumbnails, você pode criar diversos tamanhos para "
+"suas imagens, porém todas as imagens enviadas serão cortadas, gerando assim "
+"vários arquivos da mesma imagem. O único problema com isso tudo é o espaço "
+"no servidor, porém hoje a maioria dos servidores tem uma quantidade boa de "
+"espaço para armazenar estas imagens. Para criar as thumbnails tem um campo "
+"abaixo chamado Thumbnails WordPress com explicações de como os tamanhos "
+"devem ser criados, você pode criar os diferentes tamanhos lá."
+msgstr ""
+"WordPress supports the thumbnails, you can create different sizes for your "
+"images, but all sent images will be cut, thus generating multiple files of "
+"the same image. The only problem with all this is the server space, but "
+"today most of the servers has a good amount of space to store these images. "
+"To create the thumbnails below has a field called Thumbnails with WordPress "
+"as explanations sizes must be created, you can create different sizes there."
+
+#: ../developers/config-thumbnails.php:48
+msgid ""
+"Uma opção que criamos é a de utilizar o TimThumb. TimThumb é uma classe php "
+"que gera miniaturas na hora que uma primeira pessoa acessa página, ele cria "
+"automaticamente os tamanhos de imagem que você deseja. Essas imagens são "
+"armazenadas em uma pasta chamada cache que está dentro do seu tema em "
+"<b>_framework/thumb/cache/</b>. Você pode apagar os arquivos desta pasta "
+"quando quiser para limpar espaço em seu servidor e as imagens serão geradas "
+"automaticamente depois."
+msgstr ""
+
+#: ../developers/config-thumbnails.php:52
+msgid "Utilizando o TimThumb"
+msgstr "Using timthumb"
+
+#: ../developers/config-thumbnails.php:53
+msgid ""
+"Para utilizar o TimThumb antes de tudo você deve dar permissão de "
+"escrita(777) na pasta <b>_framework/thumb/cache/</b> do seu tema caso o seu "
+"servidor não dê essa permissão a ela e então você deve chamar a função "
+"<b>thumb</b> dentro de uma tag php passando alguns valores(caminho da "
+"imagem, largura, altura, como cortá-la)."
+msgstr ""
+
+#: ../developers/config-thumbnails.php:54
+msgid ""
+"Abaixo segue os exemplos de como deve ser usada a função <b>thumb</b>. Para "
+"ler a documentação de \"crop\""
+msgstr ""
+
+#: ../developers/config-thumbnails.php:55
+msgid "clique aqui"
+msgstr "click here"
+
+#: ../developers/config-thumbnails.php:57
+msgid "Será gerada uma imagem de 300x300 cortada."
+msgstr "An image of 300x300 cut will be generated."
+
+#: ../developers/config-thumbnails.php:58
+msgid ""
+"A imagem terá 300x300 porém não será cortada e terá uma borda se preciso."
+msgstr ""
+"The image will be 300x300 but will not be cut and will have an edge if "
+"required."
+
+#: ../developers/config-thumbnails.php:59
+msgid "Gera uma imagem com no máximo 300 de largura e 300 de altura."
+msgstr "Generating an image with a maximum width 300 and height 300."
+
+#: ../developers/config-thumbnails.php:64
+msgid "Utilizando"
+msgstr ""
+
+#: ../developers/config-thumbnails.php:65
+msgid ""
+"Você pode ativar e configurar as thumbnails nativas do WordPress através dos "
+"campos abaixo. Leia as explicações abaixo deles para entender melhor o que "
+"deve ser feito."
+msgstr ""
+
+#: ../developers/_config.php:35
+msgid "Opções do Desenvolvedor"
+msgstr "Developer Options"
+
+#: ../developers/_config.php:50
+msgid "Precisa de ajuda?"
+msgstr "Need help?"
+
+#: ../developers/_config.php:51
+msgid "Saiba mais sobre o WP Starter"
+msgstr "Learn more about WP Starter"
+
+#: ../developers/_config.php:51
+msgid "Clique aqui"
+msgstr "Click here"
+
+#: ../developers/_config.php:66
+#: ../customfields/developer-customposttypes.php:10
+#: ../customfields/developer-seo.php:30
+msgid "Geral"
+msgstr "General"
+
+#: ../developers/_config.php:72 ../developers/config-customfields.php:2
+#: ../customfields/developer-customposttypes.php:235
+msgid "Custom Fields"
+msgstr "Custom Fields"
+
+#: ../developers/_config.php:78 ../developers/config-reordermenu.php:45
+msgid "Reordenar Menu"
+msgstr "Menu Reorder"
+
+#: ../developers/_config.php:100
+msgid "Um desenvolvimento"
+msgstr "A development"
+
+#: ../developers/_config.php:228 ../developers/_config.php:240
+#: ../developers/_config.php:390 ../developers/_config.php:415
+msgid "Remover"
+msgstr "Remove"
+
+#: ../developers/_config.php:246 ../developers/_configcodes.php:144
+#: ../customfields/developer-customposttypes.php:89
+#: ../customfields/developer-customposttypes.php:94
+msgid "Adicionar Novo"
+msgstr "Add New"
+
+#: ../developers/_config.php:250 ../developers/_config.php:424
+msgid "Obs"
+msgstr "Note"
+
+#: ../developers/_config.php:250 ../developers/_config.php:424
+msgid "Deixe um valor em branco e ele será excluído automaticamente."
+msgstr "Leave a blank value and it will automatically be deleted."
+
+#: ../developers/_config.php:266 ../developers/_config.php:286
+msgid "O desenvolvedor do site não especificou os valores para este campo."
+msgstr "The developer of the site did not specify the values ​​for this field."
+
+#: ../developers/_config.php:324
+msgid "Enviar Imagem"
+msgstr "Send an Image"
+
+#: ../developers/_config.php:325
+msgid "Limpar"
+msgstr "Clean up"
+
+#: ../developers/config-themeoptions.php:20
+msgid ""
+"As opções do tema já vem ativadas por padrão, porém, não vem com nenhum dado "
+"e também não é exibida no menu de administração. Marque\n"
+"\t\t\t\t\t   esta opção com <b>Sim</b> o link para as opções do tema "
+"aparecerá no menu lateral."
+msgstr ""
+
+#: ../developers/config-themeoptions.php:23
+msgid "Mostrar"
+msgstr "Show"
+
+#: ../developers/config-themeoptions.php:32
+msgid ""
+"Crie um menu por vez. Antes de criar opções para o tema você precisa criar "
+"pelo menus um menu."
+msgstr ""
+"Create a menu at a time. Before creating options for the theme you need to "
+"create menus for a menu."
+
+#: ../developers/config-themeoptions.php:43
+msgid "Clique no botão acima para adicionar/editar/excluir opções do tema."
+msgstr "Click the button above to add/edit/delete theme options."
+
+#: ../developers/config-themeoptions.php:44 ../developers/_configcodes.php:98
+msgid "Gerenciar Opções"
+msgstr "Manage Options"
+
+#: ../developers/config-themeoptions.php:53
+msgid ""
+"As opções do tema são muito úteis em qualquer site. Você pode criar valores "
+"que são alterados direto pelo painel e chamá-los utilizar a seguinte\n"
+"\t\tfunção no php: "
+msgstr ""
+
+#: ../developers/config-themeoptions.php:55
+msgid "para exibir o valor e"
+msgstr ""
+
+#: ../developers/config-reordermenu.php:14
+msgid "Separador"
+msgstr "Separator"
+
+#: ../developers/config-reordermenu.php:57
+msgid "Reordenar"
+msgstr "Reorder"
+
+#: ../developers/config-reordermenu.php:70
+msgid ""
+"A ordem que você define aqui se aplicará aos tipos de usuários que você "
+"escolher na aba"
+msgstr "The order you set here apply to the types of users you choose the tab"
+
+#: ../developers/config-reordermenu.php:76
+msgid "Depois que você remover os menus na aba"
+msgstr "After you remove the menus tab"
+
+#: ../developers/config-reordermenu.php:76
+msgid "você precisa salvar as alterações para alterar a ordem deles aqui."
+msgstr "you need to save changes to change the order of them here."
+
+#: ../developers/config-reordermenu.php:80
+#: ../customfields/developer-customposttypes.php:68
+msgid "Dica"
+msgstr "Tip"
+
+#: ../developers/config-reordermenu.php:81
+msgid ""
+"O link para a página Desenvolvedor só aparece para os administradores, caso "
+"retire alguns itens do menu apenas para outros tipos de usuários você "
+"precisa marcar administrador também e salvar as alterações para que os links "
+"apareçam aqui, então você pode reordená-los, salvar as alterações e depois "
+"desmarcar Administrador em Remover Menus."
+msgstr ""
+"The link to the Developer page only appears for administrators, if you "
+"remove some menu items only for other types of users you need to score "
+"administrator and also save changes to the links that appear here, then you "
+"can reorder them, save changes and then uncheck Administrator in Remove "
+"Menus."
+
+#: ../developers/config-customfields.php:4
+msgid "O plugin"
+msgstr "The plugin"
+
+#: ../developers/config-customfields.php:6
+msgid ""
+"está implementado automaticamente no tema. Para um painel de administração "
+"mais limpo decidimos retirar os links do plugin do menu do WordPress e "
+"colocá-los aqui."
+msgstr ""
+"is automatically implemented in the theme. For a panel cleaner "
+"administration decided to remove the links from the WordPress plugin menu "
+"and put them here."
+
+#: ../developers/config-customfields.php:8
+msgid ""
+"Caso queira você pode instalar o plugin através de plugins e os links do "
+"plugin iram aparecer no menu do WordPress, porém, nós não recomendamos isso "
+"pois não irá acrescentar em nada\n"
+"\tno seu tema já que o plugin completo está implementado no tema. Para "
+"exibir os links no menu do WordPress recomendamos que abra o arquivo \n"
+"\t<b>_framework/framework.php</b> e mude o valor da constante <b>ACF_LITE</"
+"b> na linha <b>59</b> para <b>false</b>."
+msgstr ""
+
+#: ../developers/config-customfields.php:12
+msgid "Campos Personalizados"
+msgstr "Custom Fields"
+
+#: ../developers/config-general.php:2
+msgid "Visão Geral"
+msgstr "Overview"
+
+#: ../developers/config-general.php:5
+msgid "Bem-vindo"
+msgstr "Welcome"
+
+#: ../developers/config-general.php:6
+msgid ""
+"Você está utilizando o WP Starter versão 0.9.0 (Versão de Testes) para "
+"facilitar o desenvolvimento de temas no WordPress"
+msgstr ""
+"You are using WP Starter version 0.9.0(Beta) to facilitate the development "
+"of themes in WordPress"
+
+#: ../developers/config-general.php:7
+msgid ""
+"Navegue pelo menu a esquerda para ver e configurar as funcionalidades do WP "
+"Starter"
+msgstr ""
+"Scroll through the menu to the left to view and configure the features of WP "
+"Starter"
+
+#: ../developers/_configcodes.php:99
+msgid "Todas as Opções"
+msgstr "All Options"
+
+#: ../developers/_configcodes.php:100
+msgid "Adicionar Nova Opção"
+msgstr "Add New Option"
+
+#: ../developers/_configcodes.php:101
+msgid "Adicionar Nova"
+msgstr "Add New"
+
+#: ../developers/_configcodes.php:102
+msgid "Editar Opção"
+msgstr "Edit Option"
+
+#: ../developers/_configcodes.php:103
+msgid "Atualizar Opção"
+msgstr "Upgrade Option"
+
+#: ../developers/_configcodes.php:104
+msgid "Buscar Opções"
+msgstr "Search Options"
+
+#: ../developers/_configcodes.php:105 ../developers/_configcodes.php:148
+msgid "Nada encontrado"
+msgstr "Nothing found"
+
+#: ../developers/_configcodes.php:106 ../developers/_configcodes.php:149
+#: ../customfields/developer-customposttypes.php:206
+msgid "Nada encontrado na lixeira"
+msgstr ""
+
+#: ../developers/_configcodes.php:111
+msgid "Opções do Tema."
+msgstr "Theme Options."
+
+#: ../developers/_configcodes.php:141
+msgid "Custom Post Type"
+msgstr "Custom Post Type"
+
+#: ../developers/_configcodes.php:142
+#: ../customfields/developer-customposttypes.php:173
+msgid "Todos Itens"
+msgstr "All Items"
+
+#: ../developers/_configcodes.php:143
+#: ../customfields/developer-customposttypes.php:103
+#: ../customfields/developer-customposttypes.php:108
+msgid "Adicionar Novo Item"
+msgstr "Add New Item"
+
+#: ../developers/_configcodes.php:145
+#: ../customfields/developer-customposttypes.php:117
+#: ../customfields/developer-customposttypes.php:122
+msgid "Editar Item"
+msgstr "Edit Item"
+
+#: ../developers/_configcodes.php:146
+#: ../customfields/developer-customposttypes.php:131
+#: ../customfields/developer-customposttypes.php:136
+msgid "Atualizar Item"
+msgstr "Update Item"
+
+#: ../developers/_configcodes.php:147
+msgid "Buscar Itens"
+msgstr "Search Items"
+
+#: ../developers/_configcodes.php:154
+msgid "Tipos de post customizados."
+msgstr "Custom post types."
+
+#: ../customfields/themeoptions-create.php:19
+msgid "Detalhes da Opção"
+msgstr "Option Details"
+
+#: ../customfields/themeoptions-create.php:30
+msgid "Básico"
+msgstr "Basic"
+
+#: ../customfields/themeoptions-create.php:36
+msgid "Menu"
+msgstr "Menu"
+
+#: ../customfields/themeoptions-create.php:39
+msgid ""
+"Para criar os menus você precisa ir em <b>Desenvolvedor</b>, depois "
+"<b>Opções do Tema</b>. Você não pode criar novas opções do tema sem antes "
+"criar os menus."
+msgstr ""
+"To create the menus you need to go in <b>Developer</b>, then <b>Theme</b> "
+"Options. You can not create new theme options without entering the menus."
+
+#: ../customfields/themeoptions-create.php:48
+msgid "Slug / ID"
+msgstr "Slug / ID"
+
+#: ../customfields/themeoptions-create.php:51
+msgid ""
+"<b>Exemplo:</b> telefone<br>\n"
+"\t\t<b>Atenção:</b> Não use caracteres especiais nem espaços neste campo. "
+"Para exibir os valores de um campo personalizado utilize a seguinte função "
+"no php: <i>echo options('field_id', false);</i>"
+msgstr ""
+
+#: ../customfields/themeoptions-create.php:63
+#: ../customfields/themeoptions-create.php:69
+msgid "Tipo"
+msgstr "Type"
+
+#: ../customfields/themeoptions-create.php:74
+msgid "Texto"
+msgstr "Text"
+
+#: ../customfields/themeoptions-create.php:75
+msgid "Textarea"
+msgstr ""
+
+#: ../customfields/themeoptions-create.php:76
+msgid "Campo Repetido (Retorna um Array)"
+msgstr "Repeater Field (Returns an Array)"
+
+#: ../customfields/themeoptions-create.php:77
+msgid "Seleção"
+msgstr ""
+
+#: ../customfields/themeoptions-create.php:78
+msgid "Imagem (Retorna o ID)"
+msgstr "Image (Returns the ID)"
+
+#: ../customfields/themeoptions-create.php:79
+msgid "Seleção de Cor"
+msgstr ""
+
+#: ../customfields/themeoptions-create.php:87
+msgid "Valores"
+msgstr "Values"
+
+#: ../customfields/themeoptions-create.php:90
+msgid ""
+"Separe os valores por vírgula. Exemplo: valor 1, valor 2, valor 3.<br>O "
+"campo é obrigatório."
+msgstr ""
+"Separate the values with commas. Example: value 1, value 2, value 3.<br>The "
+"field is required."
+
+#: ../customfields/themeoptions-create.php:112
+msgid "Outros"
+msgstr "Others"
+
+#: ../customfields/themeoptions-create.php:118
+msgid "Ordem"
+msgstr "Order"
+
+#: ../customfields/themeoptions-create.php:121
+msgid ""
+"Escolha a ordem que o campo será exibido na seção escolhida no campo Menu."
+msgstr ""
+"Choose the order that the field will be displayed in the selected section in "
+"the menu field."
+
+#: ../customfields/themeoptions-create.php:133
+#: ../customfields/developer-seo.php:102
+msgid "Descrição"
+msgstr "Description"
+
+#: ../customfields/themeoptions-create.php:136
+msgid "A descrição do campo aparece abaixo dele. O campo é opcional."
+msgstr "The description of the field appears below it. The field is optional."
+
+#: ../customfields/themeoptions-create.php:188
+msgid ""
+"Você não criou nenhum menu para as opções do tema. Vá para a página "
+"Desenvolvedor e na aba Opções do Tema crie pelo menos um menu."
+msgstr ""
+
+#: ../customfields/developer-customposttypes.php:6
+msgid "Configurações do Custom Post Type"
+msgstr "Custom Post Type Settings"
+
+#: ../customfields/developer-customposttypes.php:16
+msgid "Post Slug"
+msgstr "Post Slug"
+
+#: ../customfields/developer-customposttypes.php:34
+msgid "Nome (Singular)"
+msgstr "Name (Singular)"
+
+#: ../customfields/developer-customposttypes.php:37
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Filme"
+msgstr "The field is required.<br><b>Example:</b> Movie"
+
+#: ../customfields/developer-customposttypes.php:48
+msgid "Nome (Plural)"
+msgstr "Name (Plural)"
+
+#: ../customfields/developer-customposttypes.php:51
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Filmes"
+msgstr "The field is required.<br><b>Example:</b> Movies"
+
+#: ../customfields/developer-customposttypes.php:62
+msgid "Rótulos"
+msgstr "Labels"
+
+#: ../customfields/developer-customposttypes.php:71
+msgid ""
+"Tirando o rótulo <b>Nome no Menu</b> todos eles já tem um valor predefinido. "
+"Caso queira você pode alterá-los, porém, não é preciso. De qualquer forma dê "
+"uma lida nos rótulos que construímos para o seu post type."
+msgstr ""
+
+#: ../customfields/developer-customposttypes.php:75
+msgid "Nome no Menu"
+msgstr ""
+
+#: ../customfields/developer-customposttypes.php:78
+msgid "Campo obrigatório.<br><b>Exemplo:</b> Filmes"
+msgstr "The field is required.<br><b>Example:</b> Movies"
+
+#: ../customfields/developer-customposttypes.php:92
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Adicionar Novo"
+msgstr "The field is required.<br><b>Example:</b> Add New"
+
+#: ../customfields/developer-customposttypes.php:106
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Adicionar Novo Item"
+msgstr "The field is required.<br><b>Example:</b> Add New Item"
+
+#: ../customfields/developer-customposttypes.php:120
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Editar Item"
+msgstr "The field is required.<br><b>Example:</b> Edit Item"
+
+#: ../customfields/developer-customposttypes.php:134
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Atualizar Item"
+msgstr "The field is required.<br><b>Example:</b> Update Item"
+
+#: ../customfields/developer-customposttypes.php:145
+#: ../customfields/developer-customposttypes.php:150
+msgid "Ver Item"
+msgstr "View Item"
+
+#: ../customfields/developer-customposttypes.php:148
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Ver Item"
+msgstr "The field is required.<br><b>Example:</b> See Items"
+
+#: ../customfields/developer-customposttypes.php:159
+#: ../customfields/developer-customposttypes.php:164
+msgid "Buscar Item"
+msgstr "Search Item"
+
+#: ../customfields/developer-customposttypes.php:162
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Buscar Item"
+msgstr "The field is required.<br><b>Example:</b> Search Item"
+
+#: ../customfields/developer-customposttypes.php:176
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Todos os Itens"
+msgstr "The field is required.<br><b>Example:</b> All Items"
+
+#: ../customfields/developer-customposttypes.php:178
+msgid "Todos os Itens"
+msgstr "All Items"
+
+#: ../customfields/developer-customposttypes.php:187
+msgid "Não Encontrado"
+msgstr "Not Found"
+
+#: ../customfields/developer-customposttypes.php:190
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Não encontrado"
+msgstr "The field is required.<br><b>Example:</b> Not found"
+
+#: ../customfields/developer-customposttypes.php:192
+msgid "Não encontrado"
+msgstr "Nothing found"
+
+#: ../customfields/developer-customposttypes.php:201
+msgid "Não Encontrado na Lixeira"
+msgstr "Nothing found in Trash"
+
+#: ../customfields/developer-customposttypes.php:204
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Nada encontrado na lixeira."
+msgstr "The field is required.<br><b>Example:</b> Nothing found in the trash."
+
+#: ../customfields/developer-customposttypes.php:215
+msgid "Opções"
+msgstr "Options"
+
+#: ../customfields/developer-customposttypes.php:221
+msgid "Suportes"
+msgstr "Supports"
+
+#: ../customfields/developer-customposttypes.php:224
+msgid ""
+"Selecione pelo menos um suporte. Recomendamos que sempre selecione o suporte "
+"<b>Title</b>.<br>\n"
+"\tCampos customizados podem ser adicionados ao post type indo na página "
+"<b>Desenvolvedor</b> e clicando em <b>Custom Fields</b>.<br>\n"
+"\t<b>Obs:</b> O suporte a títulos já é automaticamente adicionado."
+msgstr ""
+
+#: ../customfields/developer-customposttypes.php:228
+msgid "Content (Editor)"
+msgstr "Content (Editor)"
+
+#: ../customfields/developer-customposttypes.php:229
+msgid "Excerpt"
+msgstr "Excerpt"
+
+#: ../customfields/developer-customposttypes.php:230
+msgid "Author"
+msgstr "Author"
+
+#: ../customfields/developer-customposttypes.php:231
+msgid "Featured Image"
+msgstr "Featured Image"
+
+#: ../customfields/developer-customposttypes.php:232
+msgid "Comments"
+msgstr "Comments"
+
+#: ../customfields/developer-customposttypes.php:233
+msgid "Trackbacks"
+msgstr "Trackbacks"
+
+#: ../customfields/developer-customposttypes.php:234
+msgid "Revisions"
+msgstr "Revisions"
+
+#: ../customfields/developer-customposttypes.php:236
+msgid "Page Attributes"
+msgstr "Page Attributes"
+
+#: ../customfields/developer-customposttypes.php:242
+msgid "Excluir da Pesquisa"
+msgstr "Exclude From Search"
+
+#: ../customfields/developer-customposttypes.php:245
+msgid "Posts desse tipo devem ser excluídos dos resultados de pesquisa."
+msgstr "Posts of this type should be excluded from search results."
+
+#: ../customfields/developer-customposttypes.php:257
+msgid "Ativar Exportação"
+msgstr "Enable Export"
+
+#: ../customfields/developer-customposttypes.php:260
+msgid "Permite à exportação do post type."
+msgstr "Allows export of the post type."
+
+#: ../customfields/developer-customposttypes.php:272
+msgid "Visibilidade"
+msgstr "Visibility"
+
+#: ../customfields/developer-customposttypes.php:278
+msgid "Mostrar na Barra do Admin"
+msgstr "Show in Admin Bar"
+
+#: ../customfields/developer-customposttypes.php:281
+msgid "Mostrar o post type na barra de administração do usuário atual."
+msgstr "Show the post type in the admin bar of the current user."
+
+#: ../customfields/developer-customposttypes.php:293
+msgid "Mostrar na Sidebar do Admin"
+msgstr "Show in the Admin Sidebar"
+
+#: ../customfields/developer-customposttypes.php:296
+msgid "Mostrar o post type na sidebar do painel de administração."
+msgstr "Show the post type in the admin panel sidebar."
+
+#: ../customfields/developer-customposttypes.php:300
+msgid "No"
+msgstr "Não"
+
+#: ../customfields/developer-customposttypes.php:308
+msgid "Posição na Sidebar"
+msgstr "Sidebar Position"
+
+#: ../customfields/developer-customposttypes.php:311
+msgid "Escolha a posição do post type na sidebar do painel de administração."
+msgstr "Choose the position of the post type in the admin panel sidebar."
+
+#: ../customfields/developer-customposttypes.php:325
+msgid "5 - below Posts"
+msgstr "5 - below Posts"
+
+#: ../customfields/developer-customposttypes.php:326
+msgid "10 - below Posts"
+msgstr "10 - below Posts"
+
+#: ../customfields/developer-customposttypes.php:327
+msgid "15 - below Links"
+msgstr "15 - below Links"
+
+#: ../customfields/developer-customposttypes.php:328
+msgid "20 - below Pages"
+msgstr "20 - below Pages"
+
+#: ../customfields/developer-customposttypes.php:329
+msgid "25 - below Comments"
+msgstr "25 - below Comments"
+
+#: ../customfields/developer-customposttypes.php:330
+msgid "60 - below first separator"
+msgstr "60 - below first separator"
+
+#: ../customfields/developer-customposttypes.php:331
+msgid "65 - below Plugins"
+msgstr "65 - below Plugins"
+
+#: ../customfields/developer-customposttypes.php:332
+msgid "70 - below Users"
+msgstr "70 - below Users"
+
+#: ../customfields/developer-customposttypes.php:333
+msgid "75 - below Tools"
+msgstr "75 - below Tools"
+
+#: ../customfields/developer-customposttypes.php:334
+msgid "80 - below Settings"
+msgstr "80 - below Settings"
+
+#: ../customfields/developer-customposttypes.php:335
+msgid "100 - below second separator"
+msgstr "100 - below second separator"
+
+#: ../customfields/developer-customposttypes.php:343
+msgid "Permalinks"
+msgstr "Permalinks"
+
+#: ../customfields/developer-customposttypes.php:349
+msgid "Default Permalinks"
+msgstr "Default Permalinks"
+
+#: ../customfields/developer-customposttypes.php:352
+msgid ""
+"Os permalinks são montados com o valor que você inseriu em <b>Post Slug</b> "
+"na aba <b>Geral</b>.\n"
+"\t<b>Exemplo:</b> Se o post slug for filmes o permalink será http://meusite."
+"com/filmes/post-exemplo"
+msgstr ""
+
+#: ../customfields/developer-customposttypes.php:357
+msgid "Capacidade"
+msgstr "Capacity"
+
+#: ../customfields/developer-customposttypes.php:363
+msgid "Tipo de Capacidade Base"
+msgstr "Capacity Base Type"
+
+#: ../customfields/developer-customposttypes.php:366
+msgid "Utilizado como uma base para a construção de capacidades."
+msgstr "Used as a basis for capacity building."
+
+#: ../customfields/developer-customposttypes.php:369
+msgid "Posts"
+msgstr "Posts"
+
+#: ../customfields/developer-customposttypes.php:370
+msgid "Pages"
+msgstr "Pages"
+
+#: ../customfields/developer-seo.php:6
+msgid "por"
+msgstr "by"
+
+#: ../customfields/developer-seo.php:10
+msgid "Ativar"
+msgstr "Enable"
+
+#: ../customfields/developer-seo.php:16
+msgid "Ativar configurações de SEO para este post?"
+msgstr "Enable SEO settings for this post?"
+
+#: ../customfields/developer-seo.php:47 ../customfields/developer-seo.php:89
+msgid "Título Forçado"
+msgstr "Forced Title"
+
+#: ../customfields/developer-seo.php:50
+msgid ""
+"Caso não deseje que o título padrão que seria <b>Nome do Post - Nome do "
+"Site</b> apareça na tag title você pode alterar o valor aqui. Deixe em "
+"branco e o título padrão aparecerá. O número máximo de caracteres é de 64."
+msgstr ""
+
+#: ../customfields/developer-seo.php:60
+msgid "Meta Descrição"
+msgstr "Meta Description"
+
+#: ../customfields/developer-seo.php:63
+msgid ""
+"Escreva um resumo do post. Este texto é o que aparecerá no Google quando "
+"este post/página aparecer nos resultados de pesquisa. O número máximo de "
+"caracteres é de 150."
+msgstr ""
+
+#: ../customfields/developer-seo.php:72
+msgid "Social Facebook e Google+"
+msgstr "Social Facebook and Google+"
+
+#: ../customfields/developer-seo.php:92
+msgid ""
+"Se você não quiser usar o título padrão do post/página e sim outro nas redes "
+"sociais você deve inseri-lo aqui. O número máximo de caracteres é de 64."
+msgstr ""
+"If you do not want to use the default title of the post/page but other in "
+"the social networks you must enter it here. The maximum number of characters "
+"is 64."
+
+#: ../customfields/developer-seo.php:105
+msgid ""
+"Se você não quiser usar a meta descrição padrão do post/página e sim outro "
+"nas redes sociais você deve inseri-la aqui. O número máximo de caracteres é "
+"de 150."
+msgstr ""
+"If you do not want to use the default meta description of the post/page but "
+"other in the social networks you must enter it here. The maximum number of "
+"characters is 150."
+
+#: ../customfields/developer-seo.php:114
+msgid "Imagem"
+msgstr "Image"
+
+#: ../customfields/developer-seo.php:117
+msgid ""
+"Se você quiser selecionar uma imagem para as redes sociais referente a este "
+"post/página escolha uma imagem aqui. A imagem deve ser quadrada, caso o "
+"contrário o facebook ou o google+ poderá recortar a imagem."
+msgstr ""
+"If you want to select an image for social networks related to this post / "
+"page choose a picture here. The image must be square, otherwise if facebook "
+"or google + can crop the image."
+
+#~ msgid "customposttypes"
+#~ msgstr "customposttypes"
