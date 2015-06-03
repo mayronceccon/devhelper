@@ -25,12 +25,12 @@ add_action('plugins_loaded', 'remove_developer_from_admin_menu');
 function remove_developer_from_admin_menu(){
 $devhelper_current_user_level = wp_get_current_user();
 	if( $devhelper_current_user_level->user_level < 10 ){ // Show Developer link on menu only for users with level 10
-		hide_developers();
+		hide_developer();
 	}
 }
 
 function devhelper_remove_developer_options(){ remove_menu_page( 'devhelper_page' ); }
-function hide_developers(){ // Cal this function to remove developer from admin side menu
+function hide_developer(){ // Cal this function to remove developer from admin side menu
 	add_action( 'admin_menu', 'devhelper_remove_developer_options', 999 );
 }
 
