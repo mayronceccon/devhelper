@@ -32,8 +32,8 @@ function devhelper_get_menus(){
 /* ===============================================================
 	CREATING SECTION AND FIELDS
 =============================================================== */
-add_action( 'admin_init', 'wpstarterDeveloper_removemenus_settings' );
-function wpstarterDeveloper_removemenus_settings(){
+add_action( 'admin_init', 'devhelperDeveloper_removemenus_settings' );
+function devhelperDeveloper_removemenus_settings(){
 
 	if( is_array($GLOBALS['devhelper_menus']) ){
 		foreach( $GLOBALS['devhelper_menus'] as $key=>$value ){	
@@ -48,7 +48,7 @@ function wpstarterDeveloper_removemenus_settings(){
 	}
  
 	// Register the settings with Validation callback
-	register_setting( 'wpstarterDeveloper', 'wpstarterDeveloper', '' );
+	register_setting( 'devhelperDeveloper', 'devhelperDeveloper', '' );
 
 	// Add settings section
 	add_settings_section( 'developer-removemenus', __('Remover Menus', 'devhelper'), 'devhelper_developer_display_section_removemenus', 'devhelper_page' ); 

@@ -1,10 +1,10 @@
 <?php
 
-add_action( 'admin_init', 'wpstarterDeveloper_seo_settings' );
-function wpstarterDeveloper_seo_settings(){
+add_action( 'admin_init', 'devhelperDeveloper_seo_settings' );
+function devhelperDeveloper_seo_settings(){
  
 	// Register the settings with Validation callback
-	register_setting( 'wpstarterDeveloper', 'wpstarterDeveloper', '' );
+	register_setting( 'devhelperDeveloper', 'devhelperDeveloper', '' );
 
 	// Add settings section
 	add_settings_section( 'developer-seo', __('SEO', 'devhelper'), 'devhelper_developer_display_section_seo', 'devhelper_page' ); 

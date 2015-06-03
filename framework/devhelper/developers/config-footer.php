@@ -1,10 +1,10 @@
 <?php
 
-add_action( 'admin_init', 'wpstarterDeveloper_footer_settings' );
-function wpstarterDeveloper_footer_settings(){
+add_action( 'admin_init', 'devhelperDeveloper_footer_settings' );
+function devhelperDeveloper_footer_settings(){
 
 	// Register the settings with Validation callback
-	register_setting( 'wpstarterDeveloper', 'wpstarterDeveloper', '' );
+	register_setting( 'devhelperDeveloper', 'devhelperDeveloper', '' );
 
 	// Add settings section
 	add_settings_section( 'developer-footer', __('Rodapé', 'devhelper'), 'devhelper_developer_display_section', 'devhelper_page' );

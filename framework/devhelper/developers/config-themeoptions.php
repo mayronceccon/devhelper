@@ -1,10 +1,10 @@
 <?php
 
-add_action( 'admin_init', 'wpstarterDeveloper_themeoptions_settings' );
-function wpstarterDeveloper_themeoptions_settings(){
+add_action( 'admin_init', 'devhelperDeveloper_themeoptions_settings' );
+function devhelperDeveloper_themeoptions_settings(){
 
 	// Register the settings with Validation callback
-	register_setting( 'wpstarterDeveloper', 'wpstarterDeveloper', '' );
+	register_setting( 'devhelperDeveloper', 'devhelperDeveloper', '' );
 
 	// Add settings section
 	add_settings_section( 'developer-themeoptions', __('Opções do Tema', 'devhelper'), 'devhelper_developer_display_section_themeoptions', 'devhelper_page' );

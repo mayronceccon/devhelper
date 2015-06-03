@@ -90,7 +90,7 @@ $('.add-repeater-field-more').click(function(){
 	$( html_output ).each(function(){
 
 		$( 'input',this ).each(function(){
-			input_name     = 'wpstarterDeveloper';
+			input_name     = 'devhelperDeveloper';
 			input_name    += '[' + field_id + ']';
 			input_name    += '[' + id + ']';
 			input_name    += '[' + $(this).attr('data-key') + ']';

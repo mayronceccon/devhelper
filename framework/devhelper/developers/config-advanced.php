@@ -1,10 +1,10 @@
 <?php
 
-add_action( 'admin_init', 'wpstarterDeveloper_advanced_settings' );
-function wpstarterDeveloper_advanced_settings(){
+add_action( 'admin_init', 'devhelperDeveloper_advanced_settings' );
+function devhelperDeveloper_advanced_settings(){
  
 	// Register the settings with Validation callback
-	register_setting( 'wpstarterDeveloper', 'wpstarterDeveloper', '' );
+	register_setting( 'devhelperDeveloper', 'devhelperDeveloper', '' );
 
 	// Add settings section
 	add_settings_section( 'developer-advanced', __('Avançado', 'devhelper'), 'devhelper_developer_display_section', 'devhelper_page' ); 

@@ -1,10 +1,10 @@
 <?php
 
-add_action( 'admin_init', 'wpstarterDeveloper_adminbar_settings' );
-function wpstarterDeveloper_adminbar_settings(){
+add_action( 'admin_init', 'devhelperDeveloper_adminbar_settings' );
+function devhelperDeveloper_adminbar_settings(){
 
 	// Register the settings with Validation callback
-	register_setting( 'wpstarterDeveloper', 'wpstarterDeveloper', '' );
+	register_setting( 'devhelperDeveloper', 'devhelperDeveloper', '' );
 
 	// Add settings section
 	add_settings_section( 'developer-adminbar', __('Admin Bar', 'devhelper'), 'devhelper_developer_display_section', 'devhelper_page' );
@@ -18,7 +18,7 @@ function wpstarterDeveloper_adminbar_settings(){
 		'name'      => 'adminbar_remove_items',
 		'desc'      => __('Selecione os itens que deseja remover da barra de ferramentas. Os itens que você selecionar acima servem para todos os tipos de usuários.', 'devhelper'),
 		'fields'    => array(
-				'linkwpstarter' => __('Dev Helper Link', 'devhelper'),
+				'linkdevhelper' => __('Dev Helper Link', 'devhelper'),
 				'wp-logo'       => __('Logo do WordPress', 'devhelper'),
 				'site-name'     => get_bloginfo('name'),
 				'comments'      => __('Comentários', 'devhelper'),

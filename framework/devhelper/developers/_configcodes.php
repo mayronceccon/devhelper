@@ -23,7 +23,7 @@
 	00. CONFIG: GET DEVELOPER OPTIONS
 =============================================================== */
 function devOpt($string, $echo=true){ // 1. Developer Option // 2. True to Echo
-	$option = get_option('wpstarterDeveloper');
+	$option = get_option('devhelperDeveloper');
 	if( !isset($option[$string]) ){
 		$option[$string] = '';
 	}else{
@@ -432,7 +432,7 @@ function devhelper_adminbar_leggo_link(){
 	global $wp_admin_bar;
 
 	$wp_admin_bar->add_menu( array(
-		'id'      => 'linkwpstarter',
+		'id'      => 'linkdevhelper',
 		'title'   => '<img src="'.DEVHELPER__PLUGIN_URL.'framework/devhelper/assets/img/adminbar-devhelper.png" alt="'.__('Dev Helper', 'devhelper').'">',
 		'href'    => 'https://mattdeveloper.github.com/devhelper',
 		'meta'    => array(
@@ -453,8 +453,8 @@ if( is_array(devOpt('adminbar_remove_items', false)) AND sizeof(devOpt('adminbar
 			if( $value != '' ){
 
 				/* -- Agency Leggo -- */
-				if( $value == 'linkwpstarter' ){
-					$wp_admin_bar->remove_menu('linkwpstarter');
+				if( $value == 'linkdevhelper' ){
+					$wp_admin_bar->remove_menu('linkdevhelper');
 				}
 
 				/* -- WP Logo -- */

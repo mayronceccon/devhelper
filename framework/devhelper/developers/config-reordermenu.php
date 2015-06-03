@@ -29,8 +29,8 @@ function devhelper_get_menus_for_order(){
 /* ===============================================================
 	CREATING SECTION AND FIELDS
 =============================================================== */
-add_action( 'admin_init', 'wpstarterDeveloper_reordermenu_settings' );
-function wpstarterDeveloper_reordermenu_settings(){
+add_action( 'admin_init', 'devhelperDeveloper_reordermenu_settings' );
+function devhelperDeveloper_reordermenu_settings(){
  
 	if( is_array($GLOBALS['devhelper_menus_order']) ){
 		foreach( $GLOBALS['devhelper_menus_order'] as $key=>$value ){	
@@ -39,7 +39,7 @@ function wpstarterDeveloper_reordermenu_settings(){
 	}
 
 	// Register the settings with Validation callback
-	register_setting( 'wpstarterDeveloper', 'wpstarterDeveloper', '' );
+	register_setting( 'devhelperDeveloper', 'devhelperDeveloper', '' );
 
 	// Add settings section
 	add_settings_section( 'developer-reordermenu', __('Reordenar Menu', 'devhelper'), 'devhelper_developer_display_section_reordermenu', 'devhelper_page' ); 

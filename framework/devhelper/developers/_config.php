@@ -83,7 +83,7 @@ function devhelper_developer_page(){
 
 			<!-- Content Sections -->
 			<div class="fields">
-				<?php settings_fields('wpstarterDeveloper'); devhelper_do_settings_sections('devhelper_page'); ?>
+				<?php settings_fields('devhelperDeveloper'); devhelper_do_settings_sections('devhelper_page'); ?>
 				<div style="display:none;"><?php devhelper_do_settings_sections('devhelper_themeoptions'); ?></div>
 
 				<?php require_once(DEVHELPER__PLUGIN_DIR.'framework/devhelper/developers/config-general.php'); ?>
@@ -179,7 +179,7 @@ function devhelper_developer_display_setting($args)
 {
 	extract($args);
 
-	if( isset($themeopt) AND $themeopt == true ){ $option_name = 'wpstarterThemeOptions'; }else{ $option_name = 'wpstarterDeveloper'; }
+	if( isset($themeopt) AND $themeopt == true ){ $option_name = 'wpstarterThemeOptions'; }else{ $option_name = 'devhelperDeveloper'; }
 	$options = get_option( $option_name );
 
 	switch($type){
@@ -381,7 +381,7 @@ function devhelper_developer_display_setting($args)
 							foreach( $thefields as $key=>$value ){
 								echo '<div style="width: '.($fields_size-1).'%; padding-right: 1%; margin-bottom: 0; float: left;">';
 									echo '<i style="font-size:13px;">'.$fields_names[$cnt_field_name].'</i><br>';
-									echo "<input class='regular-text $class' type='text' id='$id' name='wpstarterDeveloper[$id][$uniqid][$key]' value='$value'>";
+									echo "<input class='regular-text $class' type='text' id='$id' name='devhelperDeveloper[$id][$uniqid][$key]' value='$value'>";
 								echo '</div>';
 								$cnt_field_name++;
 							}

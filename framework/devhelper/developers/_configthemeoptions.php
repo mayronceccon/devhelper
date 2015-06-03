@@ -83,7 +83,7 @@ function devhelper_add_settings_field($id, $title, $callback, $page, $section = 
 /* ===============================================================
 	CREATING SECTIONS AND FIELDS
 =============================================================== */
-function wpstarterDeveloperions_config($key, $name){
+function devhelperDeveloperions_config($key, $name){
 	global $themeopt_empty;
 
 	// Select All Fields For This Menu
@@ -195,7 +195,7 @@ function themeopt_loop_menu(){
 	if( is_array($devhelper_themeoptions_menus) AND sizeof($devhelper_themeoptions_menus) >= 1 ){
 		foreach( $devhelper_themeoptions_menus as $key=>$value ){
 			if( $value != '' ){
-				add_action( 'admin_init', wpstarterDeveloperions_config($key, $value), 10000, 2 );
+				add_action( 'admin_init', devhelperDeveloperions_config($key, $value), 10000, 2 );
 				$devhelper_themeoptions_menus_exists = true;
 			}
 		}
@@ -285,7 +285,7 @@ function devhelper_themeoptions_page(){
 
 			<!-- Content Sections -->
 			<div class="fields">
-				<?php settings_fields('wpstarterDeveloper'); devhelper_do_settings_sections('devhelper_themeoptions'); ?>
+				<?php settings_fields('devhelperDeveloper'); devhelper_do_settings_sections('devhelper_themeoptions'); ?>
 				<div style="display:none;"><?php devhelper_do_settings_sections('devhelper_page'); ?></div>
 
 				<?php if( $GLOBALS['devhelper_themeoptions_menus_exists'] == false ){ // If is empty ?>
@@ -336,7 +336,7 @@ function devhelper_themeoptions_page(){
 	CALL THEME OPTIONS VALUES
 =============================================================== */
 function options($string, $echo=true){ // 1. Option // 2. True to Echo
-	$option = get_option('wpstarterDeveloper');
+	$option = get_option('devhelperDeveloper');
 	$string = 'wpthemeopt'.$string;
 	if( $echo == true ){ // Echo Option
 		echo $option[$string];
