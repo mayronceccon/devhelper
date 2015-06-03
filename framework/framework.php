@@ -63,8 +63,8 @@ function devhelper_admin_scripts_developer(){
 
 	wp_enqueue_script('jquery-ui-sortable'); // Ui Sortable
 
-	wp_enqueue_style('devhelper', DEVHELPER__PLUGIN_URL.'framework/devhelper/_assets/css/devhelper-developer.css'); // Styles
-	wp_enqueue_script('devhelper-developer', DEVHELPER__PLUGIN_URL.'framework/devhelper/_assets/js/devhelper-developer.js'); // Scripts
+	wp_enqueue_style('devhelper', DEVHELPER__PLUGIN_URL.'framework/devhelper/assets/css/devhelper-developer.css'); // Styles
+	wp_enqueue_script('devhelper-developer', DEVHELPER__PLUGIN_URL.'framework/devhelper/assets/js/devhelper-developer.js'); // Scripts
 }
 
 
@@ -79,8 +79,8 @@ function devhelper_admin_scripts_themeoptions(){
 	wp_enqueue_script('wp-color-picker'); // Color Picker
 	wp_enqueue_style('wp-color-picker'); // Color Picker
 
-	wp_enqueue_style('devhelper', DEVHELPER__PLUGIN_URL.'framework/devhelper/_assets/css/devhelper-developer.css'); // Styles
-	wp_enqueue_script('devhelper-themeoptions', DEVHELPER__PLUGIN_URL.'framework/devhelper/_assets/js/devhelper-themeoptions.js'); // Scripts
+	wp_enqueue_style('devhelper', DEVHELPER__PLUGIN_URL.'framework/devhelper/assets/css/devhelper-developer.css'); // Styles
+	wp_enqueue_script('devhelper-themeoptions', DEVHELPER__PLUGIN_URL.'framework/devhelper/assets/js/devhelper-themeoptions.js'); // Scripts
 }
 
 
