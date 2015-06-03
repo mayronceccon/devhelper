@@ -2,7 +2,7 @@
 if( function_exists("register_field_group") AND devOpt('active_seo', false) == 'yes' )
 {
 	register_field_group(array (
-		'id' => 'acf_seo-por-wp-starter',
+		'id' => 'acf_seo-por-devhelper',
 		'title' => 'SEO '.__('por', 'devhelper').' Dev Helper',
 		'fields' => array (
 			array (

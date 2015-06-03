@@ -314,7 +314,7 @@ function devhelper_themeoptions_page(){
 		<!-- BUTTONS -->
 		<div class="buttons">
 			<div class="left">
-				<?php _e('Opções criadas com o', 'devhelper'); ?> <a href="http://getwpstarter.com/" target="_blank">Dev Helper</a>.
+				<?php _e('Opções criadas com o', 'devhelper'); ?> <a href="http://mattdeveloper.github.io/devhelper" target="_blank">Dev Helper</a>.
 			</div><!-- end .left -->
 
 			<div class="right">

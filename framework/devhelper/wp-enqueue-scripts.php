@@ -1,7 +1,7 @@
 <?php
-$wp_starter_js = array();
-$wp_starter_use_js = array();
-$wp_starter_condition_js = array();
+$devhelper_js = array();
+$devhelper_use_js = array();
+$devhelper_condition_js = array();
 
 
 
@@ -9,15 +9,15 @@ $wp_starter_condition_js = array();
 	REGISTER JS
 =============================================================== */
 function new_js($name='', $path='', $footer=false){
-	global $wp_starter_js;
+	global $devhelper_js;
 
 	if( $name != '' AND $path != '' ){
-		$wp_starter_js[$name] = $path;
+		$devhelper_js[$name] = $path;
 
 		if( $footer == true ){
-			$wp_starter_js[$name.'_footer'] = true;
+			$devhelper_js[$name.'_footer'] = true;
 		}else{
-			$wp_starter_js[$name.'_footer'] = false;
+			$devhelper_js[$name.'_footer'] = false;
 		}
 	}
 }
@@ -28,20 +28,20 @@ function new_js($name='', $path='', $footer=false){
 	USE JS
 =============================================================== */
 function use_js($name='', $condition='', $validate=''){
-	global $wp_starter_js, $wp_starter_use_js, $wp_starter_condition_js;
+	global $devhelper_js, $devhelper_use_js, $devhelper_condition_js;
 
 	if( $name != '' ){
 		if( $condition != '' ){ // If have a condition to insert the JS
 			$generate_id = uniqid(); // Get a New ID
-			$wp_starter_condition_js[$generate_id]['name']      = $name.$generate_id;
-			$wp_starter_condition_js[$generate_id]['original']  = $name;
-			$wp_starter_condition_js[$generate_id]['condition'] = $condition;
-			$wp_starter_condition_js[$generate_id]['validate']  = $validate;
+			$devhelper_condition_js[$generate_id]['name']      = $name.$generate_id;
+			$devhelper_condition_js[$generate_id]['original']  = $name;
+			$devhelper_condition_js[$generate_id]['condition'] = $condition;
+			$devhelper_condition_js[$generate_id]['validate']  = $validate;
 		}else{ // Don't have any conditions
 			$generate_id = uniqid(); // Get a New ID
-			$wp_starter_use_js[$generate_id]['name']     = $name.$generate_id;
-			$wp_starter_use_js[$generate_id]['path']     = $wp_starter_js[$name];
-			$wp_starter_use_js[$generate_id]['original'] = $name;
+			$devhelper_use_js[$generate_id]['name']     = $name.$generate_id;
+			$devhelper_use_js[$generate_id]['path']     = $devhelper_js[$name];
+			$devhelper_use_js[$generate_id]['original'] = $name;
 		}
 	}
 }
@@ -51,19 +51,19 @@ function use_js($name='', $condition='', $validate=''){
 /* ===============================================================
 	INSERT IN HEAD
 =============================================================== */
-add_action( 'wp_enqueue_scripts', 'wp_starter_js_scripts' );
-function wp_starter_js_scripts(){
-	global $wp_starter_js, $wp_starter_use_js;
+add_action( 'wp_enqueue_scripts', 'devhelper_js_scripts' );
+function devhelper_js_scripts(){
+	global $devhelper_js, $devhelper_use_js;
 
 	/* Register Styles */
-	foreach( $wp_starter_use_js as $js ){
+	foreach( $devhelper_use_js as $js ){
 		$name     = $js['name'];
 		$path     = $js['path'];
 		$original = $js['original'];
 
 		if( !strstr($path, 'http://') AND !strstr($path, 'https://') ){ $path = THEMEROOT.'/'.$path; } // Verifying if have http:// or https:// if not, add the template directory url to the path
 
-		if( $wp_starter_js[$original.'_footer'] == false ){
+		if( $devhelper_js[$original.'_footer'] == false ){
 			wp_register_script( $name, $path );
 		}else{ // Insert before close the tag body
 			wp_register_script( $name, $path, array(), null, true );
@@ -71,7 +71,7 @@ function wp_starter_js_scripts(){
 	}
 
 	/* Enqueue Styles */
-	foreach( $wp_starter_use_js as $js ){
+	foreach( $devhelper_use_js as $js ){
 		$name = $js['name'];
 		wp_enqueue_script( $name );
 	}
@@ -84,9 +84,9 @@ function wp_starter_js_scripts(){
 =============================================================== */
 add_action('wp', 'use_js_condition');
 function use_js_condition(){
-	global $wp_starter_condition_js;
+	global $devhelper_condition_js;
 
-	foreach($wp_starter_condition_js as $js){
+	foreach($devhelper_condition_js as $js){
 		$js_name      = $js['name'];
 		$js_original  = $js['original'];
 		$js_condition = $js['condition'];

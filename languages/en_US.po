@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dev Helper\n"
-"POT-Creation-Date: 2014-12-30 01:32-0300\n"
-"PO-Revision-Date: 2015-06-03 00:19-0300\n"
+"POT-Creation-Date: 2015-06-03 00:43-0300\n"
+"PO-Revision-Date: 2015-06-03 00:46-0300\n"
 "Last-Translator: Mattheus de Oliveira Machado <mattheus@leggocomunicacao.com."
 "br>\n"
 "Language-Team: Mattheus Oliveira <talk@mattdeveloper.com>\n"
@@ -11,96 +11,2614 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.1\n"
-"X-Poedit-Basepath: .\n"
+"X-Poedit-Basepath: ../framework/\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __;_e;_\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
 
-#: ../developers/config-wplogin.php:10 ../developers/_config.php:74
-msgid "WP Login"
-msgstr "WP Login"
-
-#: ../developers/config-wplogin.php:21
-msgid "Escolha a cor de fundo da página de login."
-msgstr "Choose the background color of the login page."
-
-#: ../developers/config-wplogin.php:21 ../developers/config-wplogin.php:33
-msgid "Por padrão a cor é:"
-msgstr "By default the color is:"
-
-#: ../developers/config-wplogin.php:22
-msgid "Cor de Fundo"
-msgstr "Background Color"
-
-#: ../developers/config-wplogin.php:33
-msgid "Escolha uma cor para o botão e <b>hover</b> dos links."
-msgstr "Choose a color for the button and <b>hover</b> of the links."
-
-#: ../developers/config-wplogin.php:34
-msgid "Cor do Botão e Links"
-msgstr "Color for Buttons and Links"
-
-#: ../developers/config-wplogin.php:44
-msgid "Envie uma imagem para aparecer na tela de login do WordPress."
-msgstr "Send an image to appear in the WordPress login screen."
-
-#: ../developers/config-wplogin.php:45
-msgid "Imagem do Login"
-msgstr "Login Image"
-
-#: ../developers/config-wplogin.php:55
-msgid ""
-"Quando clicar na logo do login o usuário vai para o site da Agência Leggo, "
-"você pode mudar essa url aqui."
+#: advanced-custom-fields/acf.php:485
+msgid "Field&nbsp;Groups"
 msgstr ""
-"When you click on login then the user goes to the website of the Leggo "
-"Agency, you can change the url here."
 
-#: ../developers/config-wplogin.php:56 ../developers/config-wplogin.php:67
-msgid "Valor padrão"
-msgstr "Default value"
+#: advanced-custom-fields/acf.php:486
+#: advanced-custom-fields/core/controllers/field_groups.php:214
+msgid "Advanced Custom Fields"
+msgstr ""
 
-#: ../developers/config-wplogin.php:57
-msgid "URL da Logo"
-msgstr "Logo URL"
+#: advanced-custom-fields/acf.php:487
+msgid "Add New"
+msgstr ""
 
-#: ../developers/config-wplogin.php:67
-msgid "Este título aparece quando o usuário passa o mouse na imagem"
-msgstr "This title appears when the user hovers the image"
+#: advanced-custom-fields/acf.php:488
+msgid "Add New Field Group"
+msgstr ""
 
-#: ../developers/config-wplogin.php:67 ../developers/_configcodes.php:303
-msgid "Um desenvolvimento Agência Leggo"
-msgstr "A development Leggo Agency"
+#: advanced-custom-fields/acf.php:489
+msgid "Edit Field Group"
+msgstr ""
 
-#: ../developers/config-wplogin.php:68
-msgid "Título da Logo"
-msgstr "Title Logo"
+#: advanced-custom-fields/acf.php:490
+msgid "New Field Group"
+msgstr ""
 
-#: ../developers/_configthemeoptions.php:17
-#: ../developers/_configthemeoptions.php:18
-#: ../developers/_configthemeoptions.php:221 ../developers/_config.php:70
-#: ../developers/config-themeoptions.php:10
-#: ../developers/config-themeoptions.php:46
+#: advanced-custom-fields/acf.php:491
+msgid "View Field Group"
+msgstr ""
+
+#: advanced-custom-fields/acf.php:492
+msgid "Search Field Groups"
+msgstr ""
+
+#: advanced-custom-fields/acf.php:493
+msgid "No Field Groups found"
+msgstr ""
+
+#: advanced-custom-fields/acf.php:494
+msgid "No Field Groups found in Trash"
+msgstr ""
+
+#: advanced-custom-fields/acf.php:579
+#: advanced-custom-fields/core/views/meta_box_options.php:99
+#: devhelper/customfields/developer-customposttypes.php:235
+#: devhelper/developers/_config.php:71
+#: devhelper/developers/config-customfields.php:2
+msgid "Custom Fields"
+msgstr "Custom Fields"
+
+#: advanced-custom-fields/acf.php:597 advanced-custom-fields/acf.php:600
+msgid "Field group updated."
+msgstr ""
+
+#: advanced-custom-fields/acf.php:598
+msgid "Custom field updated."
+msgstr ""
+
+#: advanced-custom-fields/acf.php:599
+msgid "Custom field deleted."
+msgstr ""
+
+#: advanced-custom-fields/acf.php:602
+#, php-format
+msgid "Field group restored to revision from %s"
+msgstr ""
+
+#: advanced-custom-fields/acf.php:603
+msgid "Field group published."
+msgstr ""
+
+#: advanced-custom-fields/acf.php:604
+msgid "Field group saved."
+msgstr ""
+
+#: advanced-custom-fields/acf.php:605
+msgid "Field group submitted."
+msgstr ""
+
+#: advanced-custom-fields/acf.php:606
+msgid "Field group scheduled for."
+msgstr ""
+
+#: advanced-custom-fields/acf.php:607
+msgid "Field group draft updated."
+msgstr ""
+
+#: advanced-custom-fields/acf.php:742
+msgid "Thumbnail"
+msgstr ""
+
+#: advanced-custom-fields/acf.php:743
+msgid "Medium"
+msgstr ""
+
+#: advanced-custom-fields/acf.php:744
+msgid "Large"
+msgstr ""
+
+#: advanced-custom-fields/acf.php:745
+msgid "Full"
+msgstr ""
+
+#: advanced-custom-fields/core/actions/export.php:26
+#: advanced-custom-fields/core/views/meta_box_fields.php:58
+msgid "Error"
+msgstr ""
+
+#: advanced-custom-fields/core/actions/export.php:33
+msgid "No ACF groups selected"
+msgstr ""
+
+#: advanced-custom-fields/core/api.php:1171
+msgid "Update"
+msgstr ""
+
+#: advanced-custom-fields/core/api.php:1172
+msgid "Post updated"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:42
+#: advanced-custom-fields/core/controllers/field_groups.php:307
+msgid "Add-ons"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:130
+#: advanced-custom-fields/core/controllers/field_groups.php:429
+msgid "Repeater Field"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:131
+msgid "Create infinite rows of repeatable data with this versatile interface!"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:137
+#: advanced-custom-fields/core/controllers/field_groups.php:437
+msgid "Gallery Field"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:138
+msgid "Create image galleries in a simple and intuitive interface!"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:144
+#: advanced-custom-fields/core/controllers/field_groups.php:445
+msgid "Options Page"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:145
+msgid "Create global data to use throughout your website!"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:151
+msgid "Flexible Content Field"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:152
+msgid "Create unique designs with a flexible content layout manager!"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:161
+msgid "Gravity Forms Field"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:162
+msgid "Creates a select field populated with Gravity Forms!"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:168
+msgid "Date & Time Picker"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:169
+msgid "jQuery date & time picker"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:175
+msgid "Location Field"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:176
+msgid "Find addresses and coordinates of a desired location"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:182
+msgid "Contact Form 7 Field"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:183
+msgid "Assign one or more contact form 7 forms to a post"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:193
+msgid "Advanced Custom Fields Add-Ons"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:196
+msgid ""
+"The following Add-ons are available to increase the functionality of the "
+"Advanced Custom Fields plugin."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:197
+msgid ""
+"Each Add-on can be installed as a separate plugin (receives updates) or "
+"included in your theme (does not receive updates)."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:219
+#: advanced-custom-fields/core/controllers/addons.php:240
+msgid "Installed"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:221
+msgid "Purchase & Install"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/addons.php:242
+#: advanced-custom-fields/core/controllers/field_groups.php:422
+#: advanced-custom-fields/core/controllers/field_groups.php:431
+#: advanced-custom-fields/core/controllers/field_groups.php:439
+#: advanced-custom-fields/core/controllers/field_groups.php:447
+#: advanced-custom-fields/core/controllers/field_groups.php:455
+msgid "Download"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:50
+#: advanced-custom-fields/core/controllers/export.php:159
+msgid "Export"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:216
+msgid "Export Field Groups"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:221
+msgid "Field Groups"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:222
+msgid "Select the field groups to be exported"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:239
+#: advanced-custom-fields/core/controllers/export.php:252
+msgid "Export to XML"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:242
+#: advanced-custom-fields/core/controllers/export.php:267
+msgid "Export to PHP"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:253
+msgid ""
+"ACF will create a .xml export file which is compatible with the native WP "
+"import plugin."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:254
+msgid ""
+"Imported field groups <b>will</b> appear in the list of editable field "
+"groups. This is useful for migrating fields groups between Wp websites."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:256
+msgid "Select field group(s) from the list and click \"Export XML\""
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:257
+msgid "Save the .xml file when prompted"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:258
+msgid "Navigate to Tools &raquo; Import and select WordPress"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:259
+msgid "Install WP import plugin if prompted"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:260
+msgid "Upload and import your exported .xml file"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:261
+msgid "Select your user and ignore Import Attachments"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:262
+msgid "That's it! Happy WordPressing"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:268
+msgid "ACF will create the PHP code to include in your theme."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:269
+#: advanced-custom-fields/core/controllers/export.php:310
+msgid ""
+"Registered field groups <b>will not</b> appear in the list of editable field "
+"groups. This is useful for including fields in themes."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:270
+#: advanced-custom-fields/core/controllers/export.php:311
+msgid ""
+"Please note that if you export and register field groups within the same WP, "
+"you will see duplicate fields on your edit screens. To fix this, please move "
+"the original field group to the trash or remove the code from your functions."
+"php file."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:272
+msgid "Select field group(s) from the list and click \"Create PHP\""
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:273
+#: advanced-custom-fields/core/controllers/export.php:302
+msgid "Copy the PHP code generated"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:274
+#: advanced-custom-fields/core/controllers/export.php:303
+msgid "Paste into your functions.php file"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:275
+#: advanced-custom-fields/core/controllers/export.php:304
+msgid "To activate any Add-ons, edit and use the code in the first few lines."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:295
+msgid "Export Field Groups to PHP"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:300
+#: advanced-custom-fields/core/fields/tab.php:65
+msgid "Instructions"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:309
+msgid "Notes"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:316
+msgid "Include in theme"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:317
+msgid ""
+"The Advanced Custom Fields plugin can be included within a theme. To do so, "
+"move the ACF plugin inside your theme and add the following code to your "
+"functions.php file:"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:323
+msgid ""
+"To remove all visual interfaces from the ACF plugin, you can use a constant "
+"to enable lite mode. Add the following code to your functions.php file "
+"<b>before</b> the include_once code:"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:331
+msgid "Back to export"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/export.php:400
+msgid "No field groups were selected"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:358
+msgid "Move to trash. Are you sure?"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:359
+msgid "checked"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:360
+msgid "No toggle fields available"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:361
+msgid "Field group title is required"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:362
+msgid "copy"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:363
+#: advanced-custom-fields/core/views/meta_box_location.php:62
+#: advanced-custom-fields/core/views/meta_box_location.php:159
+msgid "or"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:364
+#: advanced-custom-fields/core/controllers/field_group.php:395
+#: advanced-custom-fields/core/controllers/field_group.php:457
+#: advanced-custom-fields/core/controllers/field_groups.php:148
+msgid "Fields"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:365
+msgid "Parent fields"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:366
+msgid "Sibling fields"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:367
+msgid "Hide / Show All"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:396
+#: devhelper/developers/config-adminbar.php:53
+msgid "Location"
+msgstr "Location"
+
+#: advanced-custom-fields/core/controllers/field_group.php:397
+msgid "Options"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:459
+msgid "Show Field Key:"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:460
+#: advanced-custom-fields/core/fields/page_link.php:138
+#: advanced-custom-fields/core/fields/page_link.php:159
+#: advanced-custom-fields/core/fields/post_object.php:328
+#: advanced-custom-fields/core/fields/post_object.php:349
+#: advanced-custom-fields/core/fields/select.php:224
+#: advanced-custom-fields/core/fields/select.php:243
+#: advanced-custom-fields/core/fields/taxonomy.php:347
+#: advanced-custom-fields/core/fields/user.php:332
+#: advanced-custom-fields/core/fields/wysiwyg.php:335
+#: advanced-custom-fields/core/views/meta_box_fields.php:196
+#: advanced-custom-fields/core/views/meta_box_fields.php:219
+#: devhelper/customfields/developer-customposttypes.php:300
+msgid "No"
+msgstr "Não"
+
+#: advanced-custom-fields/core/controllers/field_group.php:461
+#: advanced-custom-fields/core/fields/page_link.php:137
+#: advanced-custom-fields/core/fields/page_link.php:158
+#: advanced-custom-fields/core/fields/post_object.php:327
+#: advanced-custom-fields/core/fields/post_object.php:348
+#: advanced-custom-fields/core/fields/select.php:223
+#: advanced-custom-fields/core/fields/select.php:242
+#: advanced-custom-fields/core/fields/taxonomy.php:346
+#: advanced-custom-fields/core/fields/user.php:331
+#: advanced-custom-fields/core/fields/wysiwyg.php:334
+#: advanced-custom-fields/core/views/meta_box_fields.php:195
+#: advanced-custom-fields/core/views/meta_box_fields.php:218
+msgid "Yes"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:633
+msgid "Front Page"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:634
+msgid "Posts Page"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:635
+msgid "Top Level Page (parent of 0)"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:636
+msgid "Parent Page (has children)"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:637
+msgid "Child Page (has parent)"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:645
+msgid "Default Template"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:723
+msgid "Publish"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:724
+msgid "Pending Review"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:725
+msgid "Draft"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:726
+msgid "Future"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:727
+msgid "Private"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:728
+msgid "Revision"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:729
+msgid "Trash"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:742
+msgid "Super Admin"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_group.php:757
+#: advanced-custom-fields/core/controllers/field_group.php:778
+#: advanced-custom-fields/core/controllers/field_group.php:785
+#: advanced-custom-fields/core/fields/file.php:186
+#: advanced-custom-fields/core/fields/image.php:170
+#: advanced-custom-fields/core/fields/page_link.php:109
+#: advanced-custom-fields/core/fields/post_object.php:274
+#: advanced-custom-fields/core/fields/post_object.php:298
+#: advanced-custom-fields/core/fields/relationship.php:601
+#: advanced-custom-fields/core/fields/relationship.php:625
+#: advanced-custom-fields/core/fields/user.php:276
+msgid "All"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:147
+#: devhelper/developers/config-adminbar.php:51
+msgid "Title"
+msgstr "Title"
+
+#: advanced-custom-fields/core/controllers/field_groups.php:216
+#: advanced-custom-fields/core/controllers/field_groups.php:253
+msgid "Changelog"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:217
+msgid "See what's new in"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:217
+msgid "version"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:219
+msgid "Resources"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:221
+msgid "Getting Started"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:222
+msgid "Field Types"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:223
+msgid "Functions"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:224
+msgid "Actions"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:225
+#: advanced-custom-fields/core/fields/relationship.php:644
+msgid "Filters"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:226
+msgid "'How to' guides"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:227
+msgid "Tutorials"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:232
+msgid "Created by"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:244
+msgid "Welcome to Advanced Custom Fields"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:245
+msgid "Thank you for updating to the latest version!"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:245
+msgid "is more polished and enjoyable than ever before. We hope you like it."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:252
+msgid "What’s New"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:255
+msgid "Download Add-ons"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:309
+msgid "Activation codes have grown into plugins!"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:310
+msgid ""
+"Add-ons are now activated by downloading and installing individual plugins. "
+"Although these plugins will not be hosted on the wordpress.org repository, "
+"each Add-on will continue to receive updates in the usual way."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:316
+msgid "All previous Add-ons have been successfully installed"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:320
+msgid "This website uses premium Add-ons which need to be downloaded"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:320
+msgid "Download your activated Add-ons"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:325
+msgid ""
+"This website does not use premium Add-ons and will not be affected by this "
+"change."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:335
+msgid "Easier Development"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:337
+msgid "New Field Types"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:339
+msgid "Taxonomy Field"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:340
+msgid "User Field"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:341
+msgid "Email Field"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:342
+msgid "Password Field"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:344
+msgid "Custom Field Types"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:345
+msgid ""
+"Creating your own field type has never been easier! Unfortunately, version 3 "
+"field types are not compatible with version 4."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:346
+msgid "Migrating your field types is easy, please"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:346
+msgid "follow this tutorial"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:346
+msgid "to learn more."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:348
+msgid "Actions &amp; Filters"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:349
+msgid ""
+"All actions & filters have received a major facelift to make customizing ACF "
+"even easier! Please"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:349
+msgid "read this guide"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:349
+msgid "to find the updated naming convention."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:351
+msgid "Preview draft is now working!"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:352
+msgid "This bug has been squashed along with many other little critters!"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:352
+msgid "See the full changelog"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:356
+msgid "Important"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:358
+msgid "Database Changes"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:359
+msgid ""
+"Absolutely <strong>no</strong> changes have been made to the database "
+"between versions 3 and 4. This means you can roll back to version 3 without "
+"any issues."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:361
+msgid "Potential Issues"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:362
+msgid ""
+"Do to the sizable changes surounding Add-ons, field types and action/"
+"filters, your website may not operate correctly. It is important that you "
+"read the full"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:362
+msgid "Migrating from v3 to v4"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:362
+msgid "guide to view the full list of changes."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:365
+msgid "Really Important!"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:365
+msgid ""
+"If you updated the ACF plugin without prior knowledge of such changes, "
+"please roll back to the latest"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:365
+msgid "version 3"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:365
+msgid "of this plugin."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:370
+msgid "Thank You"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:371
+msgid ""
+"A <strong>BIG</strong> thank you to everyone who has helped test the version "
+"4 beta and for all the support I have received."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:372
+msgid "Without you all, this release would not have been possible!"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:376
+msgid "Changelog for"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:393
+msgid "Learn more"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:399
+msgid "Overview"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:401
+msgid ""
+"Previously, all Add-ons were unlocked via an activation code (purchased from "
+"the ACF Add-ons store). New to v4, all Add-ons act as separate plugins which "
+"need to be individually downloaded, installed and updated."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:403
+msgid ""
+"This page will assist you in downloading and installing each available Add-"
+"on."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:405
+msgid "Available Add-ons"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:407
+msgid "The following Add-ons have been detected as activated on this website."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:420
+#: advanced-custom-fields/core/fields/file.php:109
+msgid "Name"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:421
+msgid "Activation Code"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:453
+msgid "Flexible Content"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:463
+msgid "Installation"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:465
+msgid "For each Add-on available, please perform the following:"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:467
+msgid "Download the Add-on plugin (.zip file) to your desktop"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:468
+msgid "Navigate to"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:468
+msgid "Plugins > Add New > Upload"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:469
+msgid "Use the uploader to browse, select and install your Add-on (.zip file)"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:470
+msgid ""
+"Once the plugin has been uploaded and installed, click the 'Activate Plugin' "
+"link"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:471
+msgid "The Add-on is now installed and activated!"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/field_groups.php:485
+msgid "Awesome. Let's get to work"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/input.php:63
+msgid "Expand Details"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/input.php:64
+msgid "Collapse Details"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/input.php:67
+msgid "Validation Failed. One or more fields below are required."
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/upgrade.php:77
+msgid "Upgrade"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/upgrade.php:599
+msgid "Modifying field group options 'show on page'"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/upgrade.php:653
+msgid "Modifying field option 'taxonomy'"
+msgstr ""
+
+#: advanced-custom-fields/core/controllers/upgrade.php:750
+msgid "Moving user custom fields from wp_options to wp_usermeta'"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/_base.php:124
+#: advanced-custom-fields/core/views/meta_box_location.php:74
+msgid "Basic"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/checkbox.php:19
+#: advanced-custom-fields/core/fields/taxonomy.php:323
+msgid "Checkbox"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/checkbox.php:20
+#: advanced-custom-fields/core/fields/radio.php:19
+#: advanced-custom-fields/core/fields/select.php:19
+#: advanced-custom-fields/core/fields/true_false.php:20
+msgid "Choice"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/checkbox.php:146
+#: advanced-custom-fields/core/fields/radio.php:147
+#: advanced-custom-fields/core/fields/select.php:177
+msgid "Choices"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/checkbox.php:147
+#: advanced-custom-fields/core/fields/select.php:178
+msgid "Enter each choice on a new line."
+msgstr ""
+
+#: advanced-custom-fields/core/fields/checkbox.php:148
+#: advanced-custom-fields/core/fields/select.php:179
+msgid "For more control, you may specify both a value and label like this:"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/checkbox.php:149
+#: advanced-custom-fields/core/fields/radio.php:153
+#: advanced-custom-fields/core/fields/select.php:180
+msgid "red : Red"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/checkbox.php:149
+#: advanced-custom-fields/core/fields/radio.php:154
+#: advanced-custom-fields/core/fields/select.php:180
+msgid "blue : Blue"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/checkbox.php:166
+#: advanced-custom-fields/core/fields/color_picker.php:89
+#: advanced-custom-fields/core/fields/email.php:106
+#: advanced-custom-fields/core/fields/number.php:116
+#: advanced-custom-fields/core/fields/radio.php:196
+#: advanced-custom-fields/core/fields/select.php:197
+#: advanced-custom-fields/core/fields/text.php:116
+#: advanced-custom-fields/core/fields/textarea.php:103
+#: advanced-custom-fields/core/fields/true_false.php:94
+#: advanced-custom-fields/core/fields/wysiwyg.php:277
+msgid "Default Value"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/checkbox.php:167
+#: advanced-custom-fields/core/fields/select.php:198
+msgid "Enter each default value on a new line"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/checkbox.php:183
+#: advanced-custom-fields/core/fields/message.php:20
+#: advanced-custom-fields/core/fields/radio.php:212
+#: advanced-custom-fields/core/fields/tab.php:20
+msgid "Layout"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/checkbox.php:194
+#: advanced-custom-fields/core/fields/radio.php:223
+msgid "Vertical"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/checkbox.php:195
+#: advanced-custom-fields/core/fields/radio.php:224
+msgid "Horizontal"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/color_picker.php:19
+msgid "Color Picker"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/color_picker.php:20
+#: advanced-custom-fields/core/fields/date_picker/date_picker.php:20
+#: advanced-custom-fields/core/fields/google-map.php:19
+msgid "jQuery"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/date_picker/date_picker.php:19
+msgid "Date Picker"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/date_picker/date_picker.php:55
+msgid "Done"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/date_picker/date_picker.php:56
+msgid "Today"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/date_picker/date_picker.php:59
+msgid "Show a different month"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/date_picker/date_picker.php:126
+msgid "Save format"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/date_picker/date_picker.php:127
+msgid ""
+"This format will determin the value saved to the database and returned via "
+"the API"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/date_picker/date_picker.php:128
+msgid "\"yymmdd\" is the most versatile save format. Read more about"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/date_picker/date_picker.php:128
+#: advanced-custom-fields/core/fields/date_picker/date_picker.php:144
+msgid "jQuery date formats"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/date_picker/date_picker.php:142
+msgid "Display format"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/date_picker/date_picker.php:143
+msgid "This format will be seen by the user when entering a value"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/date_picker/date_picker.php:144
+msgid ""
+"\"dd/mm/yy\" or \"mm/dd/yy\" are the most used display formats. Read more "
+"about"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/date_picker/date_picker.php:158
+msgid "Week Starts On"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/dummy.php:19
+msgid "Dummy"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/email.php:19
+msgid "Email"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/email.php:107
+#: advanced-custom-fields/core/fields/number.php:117
+#: advanced-custom-fields/core/fields/text.php:117
+#: advanced-custom-fields/core/fields/textarea.php:104
+#: advanced-custom-fields/core/fields/wysiwyg.php:278
+msgid "Appears when creating a new post"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/email.php:123
+#: advanced-custom-fields/core/fields/number.php:133
+#: advanced-custom-fields/core/fields/password.php:105
+#: advanced-custom-fields/core/fields/text.php:131
+#: advanced-custom-fields/core/fields/textarea.php:118
+msgid "Placeholder Text"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/email.php:124
+#: advanced-custom-fields/core/fields/number.php:134
+#: advanced-custom-fields/core/fields/password.php:106
+#: advanced-custom-fields/core/fields/text.php:132
+#: advanced-custom-fields/core/fields/textarea.php:119
+msgid "Appears within the input"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/email.php:138
+#: advanced-custom-fields/core/fields/number.php:148
+#: advanced-custom-fields/core/fields/password.php:120
+#: advanced-custom-fields/core/fields/text.php:146
+msgid "Prepend"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/email.php:139
+#: advanced-custom-fields/core/fields/number.php:149
+#: advanced-custom-fields/core/fields/password.php:121
+#: advanced-custom-fields/core/fields/text.php:147
+msgid "Appears before the input"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/email.php:153
+#: advanced-custom-fields/core/fields/number.php:163
+#: advanced-custom-fields/core/fields/password.php:135
+#: advanced-custom-fields/core/fields/text.php:161
+msgid "Append"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/email.php:154
+#: advanced-custom-fields/core/fields/number.php:164
+#: advanced-custom-fields/core/fields/password.php:136
+#: advanced-custom-fields/core/fields/text.php:162
+msgid "Appears after the input"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/file.php:19
+msgid "File"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/file.php:20
+#: advanced-custom-fields/core/fields/image.php:20
+#: advanced-custom-fields/core/fields/wysiwyg.php:37
+msgid "Content"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/file.php:26
+msgid "Select File"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/file.php:27
+msgid "Edit File"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/file.php:28
+msgid "Update File"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/file.php:29
+#: advanced-custom-fields/core/fields/image.php:30
+msgid "uploaded to this post"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/file.php:113
+msgid "Size"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/file.php:123
+msgid "No File Selected"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/file.php:123
+msgid "Add File"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/file.php:153
+#: advanced-custom-fields/core/fields/image.php:118
+#: advanced-custom-fields/core/fields/taxonomy.php:371
+msgid "Return Value"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/file.php:164
+msgid "File Object"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/file.php:165
+msgid "File URL"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/file.php:166
+msgid "File ID"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/file.php:175
+#: advanced-custom-fields/core/fields/image.php:158
+msgid "Library"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/file.php:187
+#: advanced-custom-fields/core/fields/image.php:171
+msgid "Uploaded to post"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/google-map.php:18
+msgid "Google Map"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/google-map.php:33
+msgid "Locating"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/google-map.php:34
+msgid "Sorry, this browser does not support geolocation"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/google-map.php:120
+msgid "Clear location"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/google-map.php:125
+msgid "Find current location"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/google-map.php:126
+msgid "Search for address..."
+msgstr ""
+
+#: advanced-custom-fields/core/fields/google-map.php:162
+msgid "Center"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/google-map.php:163
+msgid "Center the initial map"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/google-map.php:199
+msgid "Zoom"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/google-map.php:200
+msgid "Set the initial zoom level"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/google-map.php:217
+msgid "Height"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/google-map.php:218
+msgid "Customise the map height"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/image.php:19
+msgid "Image"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/image.php:27
+msgid "Select Image"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/image.php:28
+msgid "Edit Image"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/image.php:29
+msgid "Update Image"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/image.php:83
+msgid "Remove"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/image.php:84
+#: advanced-custom-fields/core/views/meta_box_fields.php:108
+msgid "Edit"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/image.php:90
+msgid "No image selected"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/image.php:90
+msgid "Add Image"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/image.php:119
+#: advanced-custom-fields/core/fields/relationship.php:576
+msgid "Specify the returned value on front end"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/image.php:129
+msgid "Image Object"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/image.php:130
+msgid "Image URL"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/image.php:131
+msgid "Image ID"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/image.php:139
+msgid "Preview Size"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/image.php:140
+msgid "Shown when entering data"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/image.php:159
+msgid "Limit the media library choice"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/message.php:19
+#: advanced-custom-fields/core/fields/message.php:70
+#: advanced-custom-fields/core/fields/true_false.php:79
+msgid "Message"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/message.php:71
+msgid "Text &amp; HTML entered here will appear inline with the fields"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/message.php:72
+msgid "Please note that all text will first be passed through the wp function "
+msgstr ""
+
+#: advanced-custom-fields/core/fields/number.php:19
+msgid "Number"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/number.php:178
+msgid "Minimum Value"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/number.php:194
+msgid "Maximum Value"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/number.php:210
+msgid "Step Size"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/page_link.php:18
+msgid "Page Link"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/page_link.php:19
+#: advanced-custom-fields/core/fields/post_object.php:19
+#: advanced-custom-fields/core/fields/relationship.php:19
+#: advanced-custom-fields/core/fields/taxonomy.php:19
+#: advanced-custom-fields/core/fields/user.php:19
+msgid "Relational"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/page_link.php:103
+#: advanced-custom-fields/core/fields/post_object.php:268
+#: advanced-custom-fields/core/fields/relationship.php:595
+#: advanced-custom-fields/core/fields/relationship.php:674
+#: advanced-custom-fields/core/views/meta_box_location.php:75
+msgid "Post Type"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/page_link.php:127
+#: advanced-custom-fields/core/fields/post_object.php:317
+#: advanced-custom-fields/core/fields/select.php:214
+#: advanced-custom-fields/core/fields/taxonomy.php:337
+#: advanced-custom-fields/core/fields/user.php:322
+msgid "Allow Null?"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/page_link.php:148
+#: advanced-custom-fields/core/fields/post_object.php:338
+#: advanced-custom-fields/core/fields/select.php:233
+msgid "Select multiple values?"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/password.php:19
+msgid "Password"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/post_object.php:18
+msgid "Post Object"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/post_object.php:292
+#: advanced-custom-fields/core/fields/relationship.php:619
+msgid "Filter from Taxonomy"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/radio.php:18
+msgid "Radio Button"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/radio.php:105
+#: advanced-custom-fields/core/views/meta_box_location.php:91
+msgid "Other"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/radio.php:148
+msgid "Enter your choices one per line"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/radio.php:150
+msgid "Red"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/radio.php:151
+msgid "Blue"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/radio.php:175
+msgid "Add 'other' choice to allow for custom values"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/radio.php:187
+msgid "Save 'other' values to the field's choices"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/relationship.php:18
+msgid "Relationship"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/relationship.php:29
+msgid "Maximum values reached ( {max} values )"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/relationship.php:429
+msgid "Search..."
+msgstr ""
+
+#: advanced-custom-fields/core/fields/relationship.php:440
+msgid "Filter by post type"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/relationship.php:575
+msgid "Return Format"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/relationship.php:586
+msgid "Post Objects"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/relationship.php:587
+msgid "Post IDs"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/relationship.php:653
+msgid "Search"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/relationship.php:654
+msgid "Post Type Select"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/relationship.php:662
+msgid "Elements"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/relationship.php:663
+msgid "Selected elements will be displayed in each result"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/relationship.php:672
+#: advanced-custom-fields/core/views/meta_box_options.php:106
+#: devhelper/customfields/developer-customposttypes.php:231
+msgid "Featured Image"
+msgstr "Featured Image"
+
+#: advanced-custom-fields/core/fields/relationship.php:673
+msgid "Post Title"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/relationship.php:685
+msgid "Maximum posts"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/select.php:18
+#: advanced-custom-fields/core/fields/select.php:109
+#: advanced-custom-fields/core/fields/taxonomy.php:328
+#: advanced-custom-fields/core/fields/user.php:313
+msgid "Select"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/tab.php:19
+msgid "Tab"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/tab.php:68
+msgid ""
+"Use \"Tab Fields\" to better organize your edit screen by grouping your "
+"fields together under separate tab headings."
+msgstr ""
+
+#: advanced-custom-fields/core/fields/tab.php:69
+msgid ""
+"All the fields following this \"tab field\" (or until another \"tab field\" "
+"is defined) will be grouped together."
+msgstr ""
+
+#: advanced-custom-fields/core/fields/tab.php:70
+msgid "Use multiple tabs to divide your fields into sections."
+msgstr ""
+
+#: advanced-custom-fields/core/fields/taxonomy.php:18
+#: advanced-custom-fields/core/fields/taxonomy.php:278
+msgid "Taxonomy"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/taxonomy.php:222
+#: advanced-custom-fields/core/fields/taxonomy.php:231
+msgid "None"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/taxonomy.php:312
+#: advanced-custom-fields/core/fields/user.php:298
+#: advanced-custom-fields/core/views/meta_box_fields.php:77
+#: advanced-custom-fields/core/views/meta_box_fields.php:159
+msgid "Field Type"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/taxonomy.php:322
+#: advanced-custom-fields/core/fields/user.php:307
+msgid "Multiple Values"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/taxonomy.php:324
+#: advanced-custom-fields/core/fields/user.php:309
+msgid "Multi Select"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/taxonomy.php:326
+#: advanced-custom-fields/core/fields/user.php:311
+msgid "Single Value"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/taxonomy.php:327
+msgid "Radio Buttons"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/taxonomy.php:356
+msgid "Load & Save Terms to Post"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/taxonomy.php:364
+msgid ""
+"Load value based on the post's terms and update the post's terms on save"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/taxonomy.php:381
+msgid "Term Object"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/taxonomy.php:382
+msgid "Term ID"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/text.php:19
+msgid "Text"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/text.php:176
+#: advanced-custom-fields/core/fields/textarea.php:164
+msgid "Formatting"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/text.php:177
+#: advanced-custom-fields/core/fields/textarea.php:165
+msgid "Effects value on front end"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/text.php:186
+#: advanced-custom-fields/core/fields/textarea.php:174
+msgid "No formatting"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/text.php:187
+#: advanced-custom-fields/core/fields/textarea.php:176
+msgid "Convert HTML into tags"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/text.php:195
+#: advanced-custom-fields/core/fields/textarea.php:133
+msgid "Character Limit"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/text.php:196
+#: advanced-custom-fields/core/fields/textarea.php:134
+msgid "Leave blank for no limit"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/textarea.php:19
+msgid "Text Area"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/textarea.php:148
+msgid "Rows"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/textarea.php:149
+msgid "Sets the textarea height"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/textarea.php:175
+msgid "Convert new lines into &lt;br /&gt; tags"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/true_false.php:19
+msgid "True / False"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/true_false.php:80
+msgid "eg. Show extra content"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/user.php:18
+#: advanced-custom-fields/core/views/meta_box_location.php:94
+msgid "User"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/user.php:271
+msgid "Filter by role"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/wysiwyg.php:36
+msgid "Wysiwyg Editor"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/wysiwyg.php:292
+msgid "Toolbar"
+msgstr ""
+
+#: advanced-custom-fields/core/fields/wysiwyg.php:324
+msgid "Show Media Upload Buttons?"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:24
+msgid "New Field"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:58
+msgid "Field type does not exist"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:74
+msgid "Field Order"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:75
+#: advanced-custom-fields/core/views/meta_box_fields.php:127
+msgid "Field Label"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:76
+#: advanced-custom-fields/core/views/meta_box_fields.php:143
+msgid "Field Name"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:78
+msgid "Field Key"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:90
+msgid ""
+"No fields. Click the <strong>+ Add Field</strong> button to create your "
+"first field."
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:105
+#: advanced-custom-fields/core/views/meta_box_fields.php:108
+msgid "Edit this Field"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:109
+msgid "Read documentation for this field"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:109
+msgid "Docs"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:110
+msgid "Duplicate this Field"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:110
+msgid "Duplicate"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:111
+msgid "Delete this Field"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:111
+msgid "Delete"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:128
+msgid "This is the name which will appear on the EDIT page"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:144
+msgid "Single word, no spaces. Underscores and dashes allowed"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:173
+msgid "Field Instructions"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:174
+msgid "Instructions for authors. Shown when submitting data"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:187
+msgid "Required?"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:210
+msgid "Conditional Logic"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:261
+#: advanced-custom-fields/core/views/meta_box_location.php:117
+msgid "is equal to"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:262
+#: advanced-custom-fields/core/views/meta_box_location.php:118
+msgid "is not equal to"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:280
+msgid "Show this field when"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:286
+msgid "all"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:287
+msgid "any"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:290
+msgid "these rules are met"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:304
+msgid "Close Field"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:317
+msgid "Drag and drop to reorder"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_fields.php:318
+msgid "+ Add Field"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_location.php:48
+msgid "Rules"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_location.php:49
+msgid ""
+"Create a set of rules to determine which edit screens will use these "
+"advanced custom fields"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_location.php:60
+msgid "Show this field group if"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_location.php:76
+msgid "Logged in User Type"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_location.php:78
+#: advanced-custom-fields/core/views/meta_box_location.php:79
+msgid "Post"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_location.php:80
+msgid "Post Category"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_location.php:81
+msgid "Post Format"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_location.php:82
+msgid "Post Status"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_location.php:83
+msgid "Post Taxonomy"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_location.php:85
+#: advanced-custom-fields/core/views/meta_box_location.php:86
+msgid "Page"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_location.php:87
+msgid "Page Type"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_location.php:88
+msgid "Page Parent"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_location.php:89
+msgid "Page Template"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_location.php:92
+msgid "Attachment"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_location.php:93
+msgid "Taxonomy Term"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_location.php:146
+msgid "and"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_location.php:161
+msgid "Add rule group"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:25
+msgid "Order No."
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:26
+msgid "Field groups are created in order <br />from lowest to highest"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:42
+msgid "Position"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:52
+msgid "High (after title)"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:53
+msgid "Normal (after content)"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:54
+msgid "Side"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:64
+msgid "Style"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:74
+msgid "Seamless (no metabox)"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:75
+msgid "Standard (WP metabox)"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:84
+msgid "Hide on screen"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:85
+msgid "<b>Select</b> items to <b>hide</b> them from the edit screen"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:86
+msgid ""
+"If multiple field groups appear on an edit screen, the first field group's "
+"options will be used. (the one with the lowest order number)"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:96
+msgid "Permalink"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:97
+msgid "Content Editor"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:98
+#: devhelper/customfields/developer-customposttypes.php:229
+msgid "Excerpt"
+msgstr "Excerpt"
+
+#: advanced-custom-fields/core/views/meta_box_options.php:100
+msgid "Discussion"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:101
+#: devhelper/customfields/developer-customposttypes.php:232
+msgid "Comments"
+msgstr "Comments"
+
+#: advanced-custom-fields/core/views/meta_box_options.php:102
+#: devhelper/customfields/developer-customposttypes.php:234
+msgid "Revisions"
+msgstr "Revisions"
+
+#: advanced-custom-fields/core/views/meta_box_options.php:103
+msgid "Slug"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:104
+#: devhelper/customfields/developer-customposttypes.php:230
+msgid "Author"
+msgstr "Author"
+
+#: advanced-custom-fields/core/views/meta_box_options.php:105
+msgid "Format"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:107
+msgid "Categories"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:108
+msgid "Tags"
+msgstr ""
+
+#: advanced-custom-fields/core/views/meta_box_options.php:109
+msgid "Send Trackbacks"
+msgstr ""
+
+#: devhelper/customfields/developer-customposttypes.php:6
+msgid "Configurações do Custom Post Type"
+msgstr "Custom Post Type Settings"
+
+#: devhelper/customfields/developer-customposttypes.php:10
+#: devhelper/customfields/developer-seo.php:30
+#: devhelper/developers/_config.php:65
+msgid "Geral"
+msgstr "General"
+
+#: devhelper/customfields/developer-customposttypes.php:16
+msgid "Post Slug"
+msgstr "Post Slug"
+
+#: devhelper/customfields/developer-customposttypes.php:19
+msgid ""
+"O campo é obrigatório.<br>\n"
+"\tNão use caracteres especiais.<br>\n"
+"\tQuando for fazer uma busca para este post você usará este slug.<br>\n"
+"\t<b>Exemplo se o slug for filmes:</b><br>\n"
+"\t<code>$sql_movies = new WP_Query( array('post_type'=>'filmes') );</code>"
+msgstr ""
+
+#: devhelper/customfields/developer-customposttypes.php:34
+msgid "Nome (Singular)"
+msgstr "Name (Singular)"
+
+#: devhelper/customfields/developer-customposttypes.php:37
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Filme"
+msgstr "The field is required.<br><b>Example:</b> Movie"
+
+#: devhelper/customfields/developer-customposttypes.php:48
+msgid "Nome (Plural)"
+msgstr "Name (Plural)"
+
+#: devhelper/customfields/developer-customposttypes.php:51
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Filmes"
+msgstr "The field is required.<br><b>Example:</b> Movies"
+
+#: devhelper/customfields/developer-customposttypes.php:62
+msgid "Rótulos"
+msgstr "Labels"
+
+#: devhelper/customfields/developer-customposttypes.php:68
+#: devhelper/developers/config-reordermenu.php:80
+msgid "Dica"
+msgstr "Tip"
+
+#: devhelper/customfields/developer-customposttypes.php:71
+msgid ""
+"Tirando o rótulo <b>Nome no Menu</b> todos eles já tem um valor predefinido. "
+"Caso queira você pode alterá-los, porém, não é preciso. De qualquer forma dê "
+"uma lida nos rótulos que construímos para o seu post type."
+msgstr ""
+
+#: devhelper/customfields/developer-customposttypes.php:75
+msgid "Nome no Menu"
+msgstr ""
+
+#: devhelper/customfields/developer-customposttypes.php:78
+msgid "Campo obrigatório.<br><b>Exemplo:</b> Filmes"
+msgstr "The field is required.<br><b>Example:</b> Movies"
+
+#: devhelper/customfields/developer-customposttypes.php:89
+#: devhelper/customfields/developer-customposttypes.php:94
+#: devhelper/developers/_config.php:245
+#: devhelper/developers/_configcodes.php:148
+msgid "Adicionar Novo"
+msgstr "Add New"
+
+#: devhelper/customfields/developer-customposttypes.php:92
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Adicionar Novo"
+msgstr "The field is required.<br><b>Example:</b> Add New"
+
+#: devhelper/customfields/developer-customposttypes.php:103
+#: devhelper/customfields/developer-customposttypes.php:108
+#: devhelper/developers/_configcodes.php:147
+msgid "Adicionar Novo Item"
+msgstr "Add New Item"
+
+#: devhelper/customfields/developer-customposttypes.php:106
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Adicionar Novo Item"
+msgstr "The field is required.<br><b>Example:</b> Add New Item"
+
+#: devhelper/customfields/developer-customposttypes.php:117
+#: devhelper/customfields/developer-customposttypes.php:122
+#: devhelper/developers/_configcodes.php:149
+msgid "Editar Item"
+msgstr "Edit Item"
+
+#: devhelper/customfields/developer-customposttypes.php:120
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Editar Item"
+msgstr "The field is required.<br><b>Example:</b> Edit Item"
+
+#: devhelper/customfields/developer-customposttypes.php:131
+#: devhelper/customfields/developer-customposttypes.php:136
+#: devhelper/developers/_configcodes.php:150
+msgid "Atualizar Item"
+msgstr "Update Item"
+
+#: devhelper/customfields/developer-customposttypes.php:134
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Atualizar Item"
+msgstr "The field is required.<br><b>Example:</b> Update Item"
+
+#: devhelper/customfields/developer-customposttypes.php:145
+#: devhelper/customfields/developer-customposttypes.php:150
+msgid "Ver Item"
+msgstr "View Item"
+
+#: devhelper/customfields/developer-customposttypes.php:148
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Ver Item"
+msgstr "The field is required.<br><b>Example:</b> See Items"
+
+#: devhelper/customfields/developer-customposttypes.php:159
+#: devhelper/customfields/developer-customposttypes.php:164
+msgid "Buscar Item"
+msgstr "Search Item"
+
+#: devhelper/customfields/developer-customposttypes.php:162
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Buscar Item"
+msgstr "The field is required.<br><b>Example:</b> Search Item"
+
+#: devhelper/customfields/developer-customposttypes.php:173
+#: devhelper/developers/_configcodes.php:146
+msgid "Todos Itens"
+msgstr "All Items"
+
+#: devhelper/customfields/developer-customposttypes.php:176
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Todos os Itens"
+msgstr "The field is required.<br><b>Example:</b> All Items"
+
+#: devhelper/customfields/developer-customposttypes.php:178
+msgid "Todos os Itens"
+msgstr "All Items"
+
+#: devhelper/customfields/developer-customposttypes.php:187
+msgid "Não Encontrado"
+msgstr "Not Found"
+
+#: devhelper/customfields/developer-customposttypes.php:190
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Não encontrado"
+msgstr "The field is required.<br><b>Example:</b> Not found"
+
+#: devhelper/customfields/developer-customposttypes.php:192
+msgid "Não encontrado"
+msgstr "Nothing found"
+
+#: devhelper/customfields/developer-customposttypes.php:201
+msgid "Não Encontrado na Lixeira"
+msgstr "Nothing found in Trash"
+
+#: devhelper/customfields/developer-customposttypes.php:204
+msgid "O campo é obrigatório.<br><b>Exemplo:</b> Nada encontrado na lixeira."
+msgstr "The field is required.<br><b>Example:</b> Nothing found in the trash."
+
+#: devhelper/customfields/developer-customposttypes.php:206
+#: devhelper/developers/_configcodes.php:110
+#: devhelper/developers/_configcodes.php:153
+msgid "Nada encontrado na lixeira"
+msgstr ""
+
+#: devhelper/customfields/developer-customposttypes.php:215
+msgid "Opções"
+msgstr "Options"
+
+#: devhelper/customfields/developer-customposttypes.php:221
+msgid "Suportes"
+msgstr "Supports"
+
+#: devhelper/customfields/developer-customposttypes.php:224
+msgid ""
+"Selecione pelo menos um suporte. Recomendamos que sempre selecione o suporte "
+"<b>Title</b>.<br>\n"
+"\tCampos customizados podem ser adicionados ao post type indo na página "
+"<b>Desenvolvedor</b> e clicando em <b>Custom Fields</b>.<br>\n"
+"\t<b>Obs:</b> O suporte a títulos já é automaticamente adicionado."
+msgstr ""
+
+#: devhelper/customfields/developer-customposttypes.php:228
+msgid "Content (Editor)"
+msgstr "Content (Editor)"
+
+#: devhelper/customfields/developer-customposttypes.php:233
+msgid "Trackbacks"
+msgstr "Trackbacks"
+
+#: devhelper/customfields/developer-customposttypes.php:236
+msgid "Page Attributes"
+msgstr "Page Attributes"
+
+#: devhelper/customfields/developer-customposttypes.php:242
+msgid "Excluir da Pesquisa"
+msgstr "Exclude From Search"
+
+#: devhelper/customfields/developer-customposttypes.php:245
+msgid "Posts desse tipo devem ser excluídos dos resultados de pesquisa."
+msgstr "Posts of this type should be excluded from search results."
+
+#: devhelper/customfields/developer-customposttypes.php:248
+#: devhelper/customfields/developer-customposttypes.php:264
+#: devhelper/customfields/developer-customposttypes.php:285
+#: devhelper/customfields/developer-seo.php:22
+#: devhelper/developers/config-seo.php:19
+#: devhelper/developers/config-themeoptions.php:19
+#: devhelper/developers/config-thumbnails.php:21
+msgid "Não"
+msgstr "no"
+
+#: devhelper/customfields/developer-customposttypes.php:249
+#: devhelper/customfields/developer-customposttypes.php:263
+#: devhelper/customfields/developer-customposttypes.php:284
+#: devhelper/customfields/developer-customposttypes.php:299
+#: devhelper/customfields/developer-seo.php:21
+#: devhelper/developers/config-seo.php:19
+#: devhelper/developers/config-themeoptions.php:19
+#: devhelper/developers/config-thumbnails.php:21
+msgid "Sim"
+msgstr "Yes"
+
+#: devhelper/customfields/developer-customposttypes.php:257
+msgid "Ativar Exportação"
+msgstr "Enable Export"
+
+#: devhelper/customfields/developer-customposttypes.php:260
+msgid "Permite à exportação do post type."
+msgstr "Allows export of the post type."
+
+#: devhelper/customfields/developer-customposttypes.php:272
+msgid "Visibilidade"
+msgstr "Visibility"
+
+#: devhelper/customfields/developer-customposttypes.php:278
+msgid "Mostrar na Barra do Admin"
+msgstr "Show in Admin Bar"
+
+#: devhelper/customfields/developer-customposttypes.php:281
+msgid "Mostrar o post type na barra de administração do usuário atual."
+msgstr "Show the post type in the admin bar of the current user."
+
+#: devhelper/customfields/developer-customposttypes.php:293
+msgid "Mostrar na Sidebar do Admin"
+msgstr "Show in the Admin Sidebar"
+
+#: devhelper/customfields/developer-customposttypes.php:296
+msgid "Mostrar o post type na sidebar do painel de administração."
+msgstr "Show the post type in the admin panel sidebar."
+
+#: devhelper/customfields/developer-customposttypes.php:308
+msgid "Posição na Sidebar"
+msgstr "Sidebar Position"
+
+#: devhelper/customfields/developer-customposttypes.php:311
+msgid "Escolha a posição do post type na sidebar do painel de administração."
+msgstr "Choose the position of the post type in the admin panel sidebar."
+
+#: devhelper/customfields/developer-customposttypes.php:325
+msgid "5 - below Posts"
+msgstr "5 - below Posts"
+
+#: devhelper/customfields/developer-customposttypes.php:326
+msgid "10 - below Posts"
+msgstr "10 - below Posts"
+
+#: devhelper/customfields/developer-customposttypes.php:327
+msgid "15 - below Links"
+msgstr "15 - below Links"
+
+#: devhelper/customfields/developer-customposttypes.php:328
+msgid "20 - below Pages"
+msgstr "20 - below Pages"
+
+#: devhelper/customfields/developer-customposttypes.php:329
+msgid "25 - below Comments"
+msgstr "25 - below Comments"
+
+#: devhelper/customfields/developer-customposttypes.php:330
+msgid "60 - below first separator"
+msgstr "60 - below first separator"
+
+#: devhelper/customfields/developer-customposttypes.php:331
+msgid "65 - below Plugins"
+msgstr "65 - below Plugins"
+
+#: devhelper/customfields/developer-customposttypes.php:332
+msgid "70 - below Users"
+msgstr "70 - below Users"
+
+#: devhelper/customfields/developer-customposttypes.php:333
+msgid "75 - below Tools"
+msgstr "75 - below Tools"
+
+#: devhelper/customfields/developer-customposttypes.php:334
+msgid "80 - below Settings"
+msgstr "80 - below Settings"
+
+#: devhelper/customfields/developer-customposttypes.php:335
+msgid "100 - below second separator"
+msgstr "100 - below second separator"
+
+#: devhelper/customfields/developer-customposttypes.php:343
+msgid "Permalinks"
+msgstr "Permalinks"
+
+#: devhelper/customfields/developer-customposttypes.php:349
+msgid "Default Permalinks"
+msgstr "Default Permalinks"
+
+#: devhelper/customfields/developer-customposttypes.php:352
+msgid ""
+"Os permalinks são montados com o valor que você inseriu em <b>Post Slug</b> "
+"na aba <b>Geral</b>.\n"
+"\t<b>Exemplo:</b> Se o post slug for filmes o permalink será http://meusite."
+"com/filmes/post-exemplo"
+msgstr ""
+
+#: devhelper/customfields/developer-customposttypes.php:357
+msgid "Capacidade"
+msgstr "Capacity"
+
+#: devhelper/customfields/developer-customposttypes.php:363
+msgid "Tipo de Capacidade Base"
+msgstr "Capacity Base Type"
+
+#: devhelper/customfields/developer-customposttypes.php:366
+msgid "Utilizado como uma base para a construção de capacidades."
+msgstr "Used as a basis for capacity building."
+
+#: devhelper/customfields/developer-customposttypes.php:369
+msgid "Posts"
+msgstr "Posts"
+
+#: devhelper/customfields/developer-customposttypes.php:370
+msgid "Pages"
+msgstr "Pages"
+
+#: devhelper/customfields/developer-seo.php:6
+msgid "por"
+msgstr "by"
+
+#: devhelper/customfields/developer-seo.php:10
+msgid "Ativar"
+msgstr "Enable"
+
+#: devhelper/customfields/developer-seo.php:16
+msgid "Ativar configurações de SEO para este post?"
+msgstr "Enable SEO settings for this post?"
+
+#: devhelper/customfields/developer-seo.php:47
+#: devhelper/customfields/developer-seo.php:89
+msgid "Título Forçado"
+msgstr "Forced Title"
+
+#: devhelper/customfields/developer-seo.php:50
+msgid ""
+"Caso não deseje que o título padrão que seria <b>Nome do Post - Nome do "
+"Site</b> apareça na tag title você pode alterar o valor aqui. Deixe em "
+"branco e o título padrão aparecerá. O número máximo de caracteres é de 64."
+msgstr ""
+
+#: devhelper/customfields/developer-seo.php:60
+msgid "Meta Descrição"
+msgstr "Meta Description"
+
+#: devhelper/customfields/developer-seo.php:63
+msgid ""
+"Escreva um resumo do post. Este texto é o que aparecerá no Google quando "
+"este post/página aparecer nos resultados de pesquisa. O número máximo de "
+"caracteres é de 150."
+msgstr ""
+
+#: devhelper/customfields/developer-seo.php:72
+msgid "Social Facebook e Google+"
+msgstr "Social Facebook and Google+"
+
+#: devhelper/customfields/developer-seo.php:92
+msgid ""
+"Se você não quiser usar o título padrão do post/página e sim outro nas redes "
+"sociais você deve inseri-lo aqui. O número máximo de caracteres é de 64."
+msgstr ""
+"If you do not want to use the default title of the post/page but other in "
+"the social networks you must enter it here. The maximum number of characters "
+"is 64."
+
+#: devhelper/customfields/developer-seo.php:102
+#: devhelper/customfields/themeoptions-create.php:133
+msgid "Descrição"
+msgstr "Description"
+
+#: devhelper/customfields/developer-seo.php:105
+msgid ""
+"Se você não quiser usar a meta descrição padrão do post/página e sim outro "
+"nas redes sociais você deve inseri-la aqui. O número máximo de caracteres é "
+"de 150."
+msgstr ""
+"If you do not want to use the default meta description of the post/page but "
+"other in the social networks you must enter it here. The maximum number of "
+"characters is 150."
+
+#: devhelper/customfields/developer-seo.php:114
+msgid "Imagem"
+msgstr "Image"
+
+#: devhelper/customfields/developer-seo.php:117
+msgid ""
+"Se você quiser selecionar uma imagem para as redes sociais referente a este "
+"post/página escolha uma imagem aqui. A imagem deve ser quadrada, caso o "
+"contrário o facebook ou o google+ poderá recortar a imagem."
+msgstr ""
+"If you want to select an image for social networks related to this post / "
+"page choose a picture here. The image must be square, otherwise if facebook "
+"or google + can crop the image."
+
+#: devhelper/customfields/themeoptions-create.php:19
+msgid "Detalhes da Opção"
+msgstr "Option Details"
+
+#: devhelper/customfields/themeoptions-create.php:30
+msgid "Básico"
+msgstr "Basic"
+
+#: devhelper/customfields/themeoptions-create.php:36
+msgid "Menu"
+msgstr "Menu"
+
+#: devhelper/customfields/themeoptions-create.php:39
+msgid ""
+"Para criar os menus você precisa ir em <b>Desenvolvedor</b>, depois "
+"<b>Opções do Tema</b>. Você não pode criar novas opções do tema sem antes "
+"criar os menus."
+msgstr ""
+"To create the menus you need to go in <b>Developer</b>, then <b>Theme</b> "
+"Options. You can not create new theme options without entering the menus."
+
+#: devhelper/customfields/themeoptions-create.php:48
+msgid "Slug / ID"
+msgstr "Slug / ID"
+
+#: devhelper/customfields/themeoptions-create.php:51
+msgid ""
+"<b>Exemplo:</b> telefone<br>\n"
+"\t\t<b>Atenção:</b> Não use caracteres especiais nem espaços neste campo. "
+"Para exibir os valores de um campo personalizado utilize a seguinte função "
+"no php: <i>echo options('field_id', false);</i>"
+msgstr ""
+
+#: devhelper/customfields/themeoptions-create.php:63
+#: devhelper/customfields/themeoptions-create.php:69
+msgid "Tipo"
+msgstr "Type"
+
+#: devhelper/customfields/themeoptions-create.php:74
+msgid "Texto"
+msgstr "Text"
+
+#: devhelper/customfields/themeoptions-create.php:75
+msgid "Textarea"
+msgstr "Textarea"
+
+#: devhelper/customfields/themeoptions-create.php:76
+msgid "Campo Repetido (Retorna um Array)"
+msgstr "Repeater Field (Returns an Array)"
+
+#: devhelper/customfields/themeoptions-create.php:77
+msgid "Seleção"
+msgstr ""
+
+#: devhelper/customfields/themeoptions-create.php:78
+msgid "Imagem (Retorna o ID)"
+msgstr "Image (Returns the ID)"
+
+#: devhelper/customfields/themeoptions-create.php:79
+msgid "Seleção de Cor"
+msgstr ""
+
+#: devhelper/customfields/themeoptions-create.php:87
+msgid "Valores"
+msgstr "Values"
+
+#: devhelper/customfields/themeoptions-create.php:90
+msgid ""
+"Separe os valores por vírgula. Exemplo: valor 1, valor 2, valor 3.<br>O "
+"campo é obrigatório."
+msgstr ""
+"Separate the values with commas. Example: value 1, value 2, value 3.<br>The "
+"field is required."
+
+#: devhelper/customfields/themeoptions-create.php:112
+msgid "Outros"
+msgstr "Others"
+
+#: devhelper/customfields/themeoptions-create.php:118
+msgid "Ordem"
+msgstr "Order"
+
+#: devhelper/customfields/themeoptions-create.php:121
+msgid ""
+"Escolha a ordem que o campo será exibido na seção escolhida no campo Menu."
+msgstr ""
+"Choose the order that the field will be displayed in the selected section in "
+"the menu field."
+
+#: devhelper/customfields/themeoptions-create.php:136
+msgid "A descrição do campo aparece abaixo dele. O campo é opcional."
+msgstr "The description of the field appears below it. The field is optional."
+
+#: devhelper/customfields/themeoptions-create.php:185
+#: devhelper/developers/_configthemeoptions.php:277
+#: devhelper/developers/_configthemeoptions.php:293
+msgid "Erro"
+msgstr "Error"
+
+#: devhelper/customfields/themeoptions-create.php:188
+msgid ""
+"Você não criou nenhum menu para as opções do tema. Vá para a página "
+"Desenvolvedor e na aba Opções do Tema crie pelo menos um menu."
+msgstr ""
+
+#: devhelper/developers/_config.php:9 devhelper/developers/_config.php:10
+#: devhelper/developers/config-removemenus.php:134
+#: devhelper/developers/config-reordermenu.php:17
+msgid "Desenvolvedor"
+msgstr "Developer"
+
+#: devhelper/developers/_config.php:34
+msgid "Opções do Desenvolvedor"
+msgstr "Developer Options"
+
+#: devhelper/developers/_config.php:42
+#: devhelper/developers/_configthemeoptions.php:228
+msgid "Alterações salvas com sucesso."
+msgstr "The changes have been saved."
+
+#: devhelper/developers/_config.php:49
+msgid "Precisa de ajuda?"
+msgstr "Need help?"
+
+#: devhelper/developers/_config.php:50
+msgid "Saiba mais sobre o Dev Helper"
+msgstr "Learn more about Dev Helper"
+
+#: devhelper/developers/_config.php:50
+msgid "Clique aqui"
+msgstr "Click here"
+
+#: devhelper/developers/_config.php:54 devhelper/developers/_config.php:103
+#: devhelper/developers/_configthemeoptions.php:239
+#: devhelper/developers/_configthemeoptions.php:321
+msgid "Salvar Alterações"
+msgstr "Save Changes"
+
+#: devhelper/developers/_config.php:66 devhelper/developers/config-seo.php:10
+msgid "SEO"
+msgstr "SEO"
+
+#: devhelper/developers/_config.php:67
+#: devhelper/developers/config-thumbnails.php:10
+msgid "Thumbnails"
+msgstr "Thumbnails"
+
+#: devhelper/developers/_config.php:69
+#: devhelper/developers/_configthemeoptions.php:17
+#: devhelper/developers/_configthemeoptions.php:18
+#: devhelper/developers/_configthemeoptions.php:220
+#: devhelper/developers/config-themeoptions.php:10
+#: devhelper/developers/config-themeoptions.php:46
 msgid "Opções do Tema"
 msgstr "Theme Options"
 
-#: ../developers/_configthemeoptions.php:48
-#: ../developers/_configthemeoptions.php:53
+#: devhelper/developers/_config.php:70
+#: devhelper/developers/config-customposttypes.php:4
+msgid "Custom Post Types"
+msgstr "Custom Post Types"
+
+#: devhelper/developers/_config.php:73
+#: devhelper/developers/config-wplogin.php:10
+msgid "WP Login"
+msgstr "WP Login"
+
+#: devhelper/developers/_config.php:74
+#: devhelper/developers/config-footer.php:10
+msgid "Rodapé"
+msgstr "Footer"
+
+#: devhelper/developers/_config.php:76
+#: devhelper/developers/config-removemenus.php:54
+#: devhelper/developers/config-reordermenu.php:71
+#: devhelper/developers/config-reordermenu.php:76
+msgid "Remover Menus"
+msgstr "Remove Menus"
+
+#: devhelper/developers/_config.php:77
+#: devhelper/developers/config-reordermenu.php:45
+msgid "Reordenar Menu"
+msgstr "Menu Reorder"
+
+#: devhelper/developers/_config.php:79
+#: devhelper/developers/config-adminbar.php:10
+msgid "Admin Bar"
+msgstr "Admin Bar"
+
+#: devhelper/developers/_config.php:80
+#: devhelper/developers/config-advanced.php:10
+msgid "Avançado"
+msgstr "Advanced"
+
+#: devhelper/developers/_config.php:99
+msgid "Este é um projeto Open Source. Ajude-nos a melhorá-lo"
+msgstr ""
+
+#: devhelper/developers/_config.php:227 devhelper/developers/_config.php:239
+#: devhelper/developers/_config.php:389 devhelper/developers/_config.php:414
+msgid "Remover"
+msgstr "Remove"
+
+#: devhelper/developers/_config.php:249 devhelper/developers/_config.php:423
+msgid "Obs"
+msgstr "Note"
+
+#: devhelper/developers/_config.php:249 devhelper/developers/_config.php:423
+msgid "Deixe um valor em branco e ele será excluído automaticamente."
+msgstr "Leave a blank value and it will automatically be deleted."
+
+#: devhelper/developers/_config.php:265 devhelper/developers/_config.php:285
+msgid "O desenvolvedor do site não especificou os valores para este campo."
+msgstr "The developer of the site did not specify the values ​​for this field."
+
+#: devhelper/developers/_config.php:323
+msgid "Enviar Imagem"
+msgstr "Send an Image"
+
+#: devhelper/developers/_config.php:324
+msgid "Limpar"
+msgstr "Clean up"
+
+#: devhelper/developers/_configcodes.php:102
+#: devhelper/developers/config-themeoptions.php:44
+msgid "Gerenciar Opções"
+msgstr "Manage Options"
+
+#: devhelper/developers/_configcodes.php:103
+msgid "Todas as Opções"
+msgstr "All Options"
+
+#: devhelper/developers/_configcodes.php:104
+msgid "Adicionar Nova Opção"
+msgstr "Add New Option"
+
+#: devhelper/developers/_configcodes.php:105
+msgid "Adicionar Nova"
+msgstr "Add New"
+
+#: devhelper/developers/_configcodes.php:106
+msgid "Editar Opção"
+msgstr "Edit Option"
+
+#: devhelper/developers/_configcodes.php:107
+msgid "Atualizar Opção"
+msgstr "Upgrade Option"
+
+#: devhelper/developers/_configcodes.php:108
+msgid "Buscar Opções"
+msgstr "Search Options"
+
+#: devhelper/developers/_configcodes.php:109
+#: devhelper/developers/_configcodes.php:152
+msgid "Nada encontrado"
+msgstr "Nothing found"
+
+#: devhelper/developers/_configcodes.php:115
+msgid "Opções do Tema."
+msgstr "Theme Options."
+
+#: devhelper/developers/_configcodes.php:145
+msgid "Custom Post Type"
+msgstr "Custom Post Type"
+
+#: devhelper/developers/_configcodes.php:151
+msgid "Buscar Itens"
+msgstr "Search Items"
+
+#: devhelper/developers/_configcodes.php:158
+msgid "Tipos de post customizados."
+msgstr "Custom post types."
+
+#: devhelper/developers/_configcodes.php:307
+#: devhelper/developers/_configcodes.php:440
+#: devhelper/developers/config-wplogin.php:67
+msgid "Dev Helper - Construindo temas de forma simples e eficaz!"
+msgstr ""
+
+#: devhelper/developers/_configcodes.php:323
+msgid "Obrigado por criar com"
+msgstr ""
+
+#: devhelper/developers/_configcodes.php:436
+msgid "Dev Helper"
+msgstr "Dev Helper"
+
+#: devhelper/developers/_configthemeoptions.php:48
+#: devhelper/developers/_configthemeoptions.php:53
 #, php-format
 msgid "The \"%s\" options group has been removed. Use another settings group."
 msgstr ""
 
-#: ../developers/_configthemeoptions.php:69
+#: devhelper/developers/_configthemeoptions.php:69
 msgid ""
 "The miscellaneous options group has been removed. Use another settings group."
 msgstr ""
 
-#: ../developers/_configthemeoptions.php:74
+#: devhelper/developers/_configthemeoptions.php:74
 msgid "The privacy options group has been removed. Use another settings group."
 msgstr ""
 
-#: ../developers/_configthemeoptions.php:172
-#: ../developers/_configthemeoptions.php:295
+#: devhelper/developers/_configthemeoptions.php:172
+#: devhelper/developers/_configthemeoptions.php:294
 msgid ""
 "As opções do tema não estão configuradas corretamente ou não foram criadas "
 "pelo desenvolvedor."
@@ -108,36 +2626,140 @@ msgstr ""
 "The theme options are not configured properly or were not created by the "
 "developer."
 
-#: ../developers/_configthemeoptions.php:229 ../developers/_config.php:43
-msgid "Alterações salvas com sucesso."
-msgstr "The changes have been saved."
-
-#: ../developers/_configthemeoptions.php:236
+#: devhelper/developers/_configthemeoptions.php:235
 msgid ""
 "Aqui você pode alterar algumas opções do tema criadas pelo desenvolvedor."
 msgstr "Here you can change some theme options created by the developer."
 
-#: ../developers/_configthemeoptions.php:240
-#: ../developers/_configthemeoptions.php:322 ../developers/_config.php:55
-#: ../developers/_config.php:104
-msgid "Salvar Alterações"
-msgstr "Save Changes"
-
-#: ../developers/_configthemeoptions.php:278
-#: ../developers/_configthemeoptions.php:294
-#: ../customfields/themeoptions-create.php:185
-msgid "Erro"
-msgstr "Error"
-
-#: ../developers/_configthemeoptions.php:318
+#: devhelper/developers/_configthemeoptions.php:317
 msgid "Opções criadas com o"
 msgstr "Options created with the"
 
-#: ../developers/config-customposttypes.php:4 ../developers/_config.php:71
-msgid "Custom Post Types"
-msgstr "Custom Post Types"
+#: devhelper/developers/config-adminbar.php:19
+msgid ""
+"Selecione os itens que deseja remover da barra de ferramentas. Os itens que "
+"você selecionar acima servem para todos os tipos de usuários."
+msgstr ""
+"Select the items you want to remove the toolbar. The items you select above "
+"serve all types of users."
 
-#: ../developers/config-customposttypes.php:7
+#: devhelper/developers/config-adminbar.php:21
+msgid "Dev Helper Link"
+msgstr "Dev Helper Link"
+
+#: devhelper/developers/config-adminbar.php:22
+msgid "Logo do WordPress"
+msgstr "Logo of WordPress"
+
+#: devhelper/developers/config-adminbar.php:24
+msgid "Comentários"
+msgstr "Comments"
+
+#: devhelper/developers/config-adminbar.php:25
+msgid "Novo"
+msgstr "New"
+
+#: devhelper/developers/config-adminbar.php:28
+msgid "Remover Itens"
+msgstr "Remove Items"
+
+#: devhelper/developers/config-adminbar.php:37
+msgid ""
+"Os campos ID, Conteúdo e Href são obrigatórios. Se deixar algum deles em "
+"branco não ativaremos o link. Em location(campo opcional)\n"
+"\t\t\t\t\t   os valores aceitos são <b>before</b> ou <b>after</b>."
+msgstr ""
+
+#: devhelper/developers/config-adminbar.php:40
+msgid "Shortcodes disponíveis para usar nos campos Conteúdo e Href:"
+msgstr "Shortcodes available for use in the Contents and Href fields:"
+
+#: devhelper/developers/config-adminbar.php:47
+msgid "ID"
+msgstr "ID"
+
+#: devhelper/developers/config-adminbar.php:48
+msgid "Conteúdo"
+msgstr "Content"
+
+#: devhelper/developers/config-adminbar.php:49
+msgid "Href"
+msgstr "Href"
+
+#: devhelper/developers/config-adminbar.php:50
+msgid "Target"
+msgstr "Target"
+
+#: devhelper/developers/config-adminbar.php:52
+msgid "Class"
+msgstr "Class"
+
+#: devhelper/developers/config-adminbar.php:56
+msgid "Adicionar Links"
+msgstr "Add Links"
+
+#: devhelper/developers/config-advanced.php:19
+msgid ""
+"A função WP Head que é chamada dentro da tag <head></head> do site cria "
+"algumas tags, caso você não deseje que estas tags \n"
+"\t\t\t\t\t\tapareçam você pode marcá-las acima."
+msgstr ""
+
+#: devhelper/developers/config-advanced.php:30
+msgid "WP Head"
+msgstr "WP Head"
+
+#: devhelper/developers/config-advanced.php:39
+msgid ""
+"Quando você se cadastra no Google Analytics você recebe um script do "
+"analytics, insira o script completo aqui."
+msgstr ""
+
+#: devhelper/developers/config-advanced.php:40
+#: devhelper/developers/config-seo.php:87
+msgid "Campo opcional."
+msgstr "Optional field."
+
+#: devhelper/developers/config-advanced.php:43
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: devhelper/developers/config-customfields.php:4
+msgid "O plugin"
+msgstr "The plugin"
+
+#: devhelper/developers/config-customfields.php:5
+#: devhelper/developers/config-customposttypes.php:19
+#: devhelper/developers/config-seo.php:21
+msgid "Abrir em nova guia."
+msgstr "Open in new tab."
+
+#: devhelper/developers/config-customfields.php:6
+msgid ""
+"está implementado automaticamente no tema. Para um painel de administração "
+"mais limpo decidimos retirar os links do plugin do menu do WordPress e "
+"colocá-los aqui."
+msgstr ""
+"is automatically implemented in the theme. For a panel cleaner "
+"administration decided to remove the links from the WordPress plugin menu "
+"and put them here."
+
+#: devhelper/developers/config-customfields.php:8
+msgid ""
+"Caso queira você pode instalar o plugin através de plugins e os links do "
+"plugin iram aparecer no menu do WordPress, porém, nós não recomendamos isso "
+"pois não irá acrescentar em nada\n"
+"\tno seu tema já que o plugin completo está implementado no tema. Para "
+"exibir os links no menu do WordPress recomendamos que abra o arquivo \n"
+"\t<b>_framework/framework.php</b> e mude o valor da constante <b>ACF_LITE</"
+"b> na linha <b>59</b> para <b>false</b>."
+msgstr ""
+
+#: devhelper/developers/config-customfields.php:12
+msgid "Campos Personalizados"
+msgstr "Custom Fields"
+
+#: devhelper/developers/config-customposttypes.php:7
 msgid ""
 "Os Tipos de Post Customizados(Custom Post Types) são muito úteis para o \n"
 "\t\tdesenvolvimento de um Website, porém, você precisa digitar alguns "
@@ -151,223 +2773,98 @@ msgid ""
 "\t\tclique no botão abaixo."
 msgstr ""
 
-#: ../developers/config-customposttypes.php:15
+#: devhelper/developers/config-customposttypes.php:15
 msgid "Página de Custom Post Types"
 msgstr "Config Custom Post Types"
 
-#: ../developers/config-customposttypes.php:18
+#: devhelper/developers/config-customposttypes.php:18
 msgid ""
 "Depois de criar os Custom Post Types você precisa criar os campos dele, para "
 "isso existe o plugin"
 msgstr ""
 
-#: ../developers/config-customposttypes.php:19 ../developers/config-seo.php:21
-#: ../developers/config-customfields.php:5
-msgid "Abrir em nova guia."
-msgstr "Open in new tab."
-
-#: ../developers/config-customposttypes.php:20
+#: devhelper/developers/config-customposttypes.php:20
 msgid ""
 "que já vem instalado no tema automaticamente. Clique na aba Custom Fields "
 "para saber mais sobre o plugin."
 msgstr ""
 
-#: ../developers/config-advanced.php:11 ../developers/_config.php:81
-msgid "Avançado"
-msgstr "Advanced"
+#: devhelper/developers/config-footer.php:19
+msgid "Você pode usar HTML aqui."
+msgstr "You can use HTML here."
 
-#: ../developers/config-advanced.php:20
+#: devhelper/developers/config-footer.php:21
+msgid "Texto do Rodapé"
+msgstr "Footer Text"
+
+#: devhelper/developers/config-general.php:2
+msgid "Visão Geral"
+msgstr "Overview"
+
+#: devhelper/developers/config-general.php:5
+msgid "Bem-vindo"
+msgstr "Welcome"
+
+#: devhelper/developers/config-general.php:6
 msgid ""
-"A função WP Head que é chamada dentro da tag <head></head> do site cria "
-"algumas tags, caso você não deseje que estas tags \n"
-"\t\t\t\t\t\tapareçam você pode marcá-las acima."
+"Você está utilizando o plugin Dev Helper para facilitar o desenvolvimento de "
+"temas no WordPress"
 msgstr ""
 
-#: ../developers/config-advanced.php:31
-msgid "WP Head"
-msgstr "WP Head"
-
-#: ../developers/config-advanced.php:40
+#: devhelper/developers/config-general.php:7
 msgid ""
-"Quando você se cadastra no Google Analytics você recebe um script do "
-"analytics, insira o script completo aqui."
+"Navegue pelo menu a esquerda para ver e configurar as funcionalidades do "
+"plugin"
 msgstr ""
 
-#: ../developers/config-advanced.php:41 ../developers/config-seo.php:87
-msgid "Campo opcional."
-msgstr "Optional field."
-
-#: ../developers/config-advanced.php:44
-msgid "Google Analytics"
-msgstr "Google Analytics"
-
-#: ../developers/config-seo.php:10 ../developers/_config.php:67
-msgid "SEO"
-msgstr "SEO"
-
-#: ../developers/config-seo.php:19 ../developers/config-thumbnails.php:21
-#: ../developers/config-themeoptions.php:19
-#: ../customfields/developer-customposttypes.php:248
-#: ../customfields/developer-customposttypes.php:264
-#: ../customfields/developer-customposttypes.php:285
-#: ../customfields/developer-seo.php:22
-msgid "Não"
-msgstr "no"
-
-#: ../developers/config-seo.php:19 ../developers/config-thumbnails.php:21
-#: ../developers/config-themeoptions.php:19
-#: ../customfields/developer-customposttypes.php:249
-#: ../customfields/developer-customposttypes.php:263
-#: ../customfields/developer-customposttypes.php:284
-#: ../customfields/developer-customposttypes.php:299
-#: ../customfields/developer-seo.php:21
-msgid "Sim"
-msgstr "Yes"
-
-#: ../developers/config-seo.php:20 ../developers/config-reordermenu.php:75
-msgid "Atenção"
-msgstr "Caution"
-
-#: ../developers/config-seo.php:20
-msgid "Caso esteja usando algum plugin para SEO como por exemplo o"
-msgstr "If you are using a plugin for SEO such as"
-
-#: ../developers/config-seo.php:22
-msgid "deixe a opção marcada como não."
-msgstr "leave the option not marked."
-
-#: ../developers/config-seo.php:24
-msgid "Ativar SEO"
-msgstr "Enable SEO"
-
-#: ../developers/config-seo.php:49
-msgid ""
-"Insira os post types que você quer que os campos de SEO apareçam. Insira os "
-"post types separados por vírgula."
-msgstr ""
-"Insert the post types you want the SEO fields appear. Insert the post types "
-"separated by commas."
-
-#: ../developers/config-seo.php:50
-msgid "Os post types atuais no seu tema são:"
-msgstr "The current post types in your theme are:"
-
-#: ../developers/config-seo.php:51
-msgid ""
-"Os post types citados acima servem de exemplo de como devem ser inseridos no "
-"input com a vírgula."
-msgstr ""
-"The post types mentioned above serve as examples of how they should be "
-"entered in the input with a comma."
-
-#: ../developers/config-seo.php:53
-msgid "Post Types"
-msgstr "Post Types"
-
-#: ../developers/config-seo.php:62
-msgid "Caso tenha uma página ou conta no facebook insira a url aqui."
-msgstr "If you have a page or facebook account enter the url here."
-
-#: ../developers/config-seo.php:63 ../developers/config-seo.php:75
-#: ../developers/config-thumbnails.php:32
-msgid "Exemplo"
-msgstr "Example"
-
-#: ../developers/config-seo.php:65
-msgid "Página no Facebook"
-msgstr "Facebook Page"
-
-#: ../developers/config-seo.php:74
-msgid "Caso tenha uma página no Google+ insira a url aqui."
-msgstr "If you have a Google+ page enter the url here."
-
-#: ../developers/config-seo.php:77
-msgid "Página no Google+"
-msgstr "Google+ Page"
-
-#: ../developers/config-seo.php:86
-msgid ""
-"Quando você se cadastra no Google Webmaster você recebe um arquivo com um "
-"código(ou apenas o código), você pode inserir apenas este código aqui."
-msgstr ""
-"When you register in Google Webmaster you receive a file with a code(or just "
-"the code), you can just enter this code here."
-
-#: ../developers/config-seo.php:89
-msgid "Google Webmasters"
-msgstr "Google Webmasters"
-
-#: ../developers/config-seo.php:96
-msgid ""
-"As configurações de SEO do Dev Helper incluem: <i>Título Forçado</i>, "
-"<i>Meta Description</i> e <i>configurações para Facebook e para o Google+</"
-"i>."
-msgstr ""
-"The settings of the Dev Helper SEO include: <i>Forced title</i>, <i>Meta "
-"Description</i> and <i>settings for Facebook and Google+</i>"
-
-#: ../developers/config-seo.php:100
-msgid ""
-"As configurações citadas acima junto com as configurações nesta página só "
-"terão efeito se você marcar a opção <b>Ativar SEO</b> como <b>Sim</b>."
-msgstr ""
-"The settings listed above along with the settings on this page will only "
-"take effect if you select the <b>Enable SEO</b> option to <b>Yes</b>."
-
-#: ../developers/config-removemenus.php:54 ../developers/_config.php:77
-#: ../developers/config-reordermenu.php:71
-#: ../developers/config-reordermenu.php:76
-msgid "Remover Menus"
-msgstr "Remove Menus"
-
-#: ../developers/config-removemenus.php:63
+#: devhelper/developers/config-removemenus.php:63
 msgid ""
 "Selecione os tipos de usuários que você deseja que os menus e submenus sejam "
 "removidos."
 msgstr "Select the types of users you want the menus and submenus are removed."
 
-#: ../developers/config-removemenus.php:65
+#: devhelper/developers/config-removemenus.php:65
 msgid "Administrador"
 msgstr "Administrator"
 
-#: ../developers/config-removemenus.php:66
+#: devhelper/developers/config-removemenus.php:66
 msgid "Editor"
 msgstr "Editor"
 
-#: ../developers/config-removemenus.php:67
+#: devhelper/developers/config-removemenus.php:67
 msgid "Autor"
 msgstr "Author"
 
-#: ../developers/config-removemenus.php:68
+#: devhelper/developers/config-removemenus.php:68
 msgid "Colaborador"
 msgstr "Contributor"
 
-#: ../developers/config-removemenus.php:69
+#: devhelper/developers/config-removemenus.php:69
 msgid "Assinante"
 msgstr "Subscriber"
 
-#: ../developers/config-removemenus.php:72
-#: ../developers/config-removemenus.php:127
-#: ../developers/config-reordermenu.php:69
+#: devhelper/developers/config-removemenus.php:72
+#: devhelper/developers/config-removemenus.php:127
+#: devhelper/developers/config-reordermenu.php:69
 msgid "Usuários"
 msgstr "Users"
 
-#: ../developers/config-removemenus.php:85
+#: devhelper/developers/config-removemenus.php:85
 msgid "Menu Itens"
 msgstr "Menu Items"
 
-#: ../developers/config-removemenus.php:94
+#: devhelper/developers/config-removemenus.php:94
 msgid ""
 "Caso algum menu não apareça nas opções acima você pode removê-lo por aqui. "
 "Insira uma url de página por vez. Você deve inserir o nome da página depois "
 "de /wp-admin/ na url. Exemplo de remoção:"
 msgstr ""
 
-#: ../developers/config-removemenus.php:96
+#: devhelper/developers/config-removemenus.php:96
 msgid "Menu Itens Manual"
 msgstr "Menu Items - Manual"
 
-#: ../developers/config-removemenus.php:105
+#: devhelper/developers/config-removemenus.php:105
 msgid ""
 "Caso algum submenu não apareça nas opções acima você pode removê-lo por "
 "aqui. Insira uma url de página por vez. Para remover um submenu insira o "
@@ -375,16 +2872,16 @@ msgid ""
 "\t\t\t\t\t\tdo menu pai e do link que deseja remover. Exemplo: "
 msgstr ""
 
-#: ../developers/config-removemenus.php:108
+#: devhelper/developers/config-removemenus.php:108
 msgid "Submenu Itens Manual"
 msgstr "Submenu Items - Manual"
 
-#: ../developers/config-removemenus.php:119
-#: ../developers/config-themeoptions.php:34
+#: devhelper/developers/config-removemenus.php:119
+#: devhelper/developers/config-themeoptions.php:34
 msgid "Menus"
 msgstr "Menus"
 
-#: ../developers/config-removemenus.php:120
+#: devhelper/developers/config-removemenus.php:120
 msgid ""
 "No wordpress existe uma função para remover links do menu lateral chamada "
 "<b>remove_menu_page</b>. Basta você chamar a função no seu arquivo "
@@ -397,7 +2894,7 @@ msgid ""
 "\t"
 msgstr ""
 
-#: ../developers/config-removemenus.php:128
+#: devhelper/developers/config-removemenus.php:128
 msgid ""
 "Em Usuários você precisa selecionar quais tipos de usuários terão o menu "
 "lateral alterado, em muitas vezes o desenvolvedor cria um usuário para o "
@@ -406,151 +2903,200 @@ msgid ""
 "\t"
 msgstr ""
 
-#: ../developers/config-removemenus.php:134 ../developers/_config.php:9
-#: ../developers/_config.php:10 ../developers/config-reordermenu.php:17
-msgid "Desenvolvedor"
-msgstr "Developer"
-
-#: ../developers/config-removemenus.php:135
+#: devhelper/developers/config-removemenus.php:135
 msgid ""
 "Você não pode desabilitar o item Desenvolvedor do menu por aqui, para fazer "
 "isso chame a função <b>hide_developer();</b> no arquivo functions.php do seu "
 "tema."
 msgstr ""
 
-#: ../developers/config-adminbar.php:10 ../developers/_config.php:80
-msgid "Admin Bar"
-msgstr "Admin Bar"
+#: devhelper/developers/config-reordermenu.php:14
+msgid "Separador"
+msgstr "Separator"
 
-#: ../developers/config-adminbar.php:19
+#: devhelper/developers/config-reordermenu.php:57
+msgid "Reordenar"
+msgstr "Reorder"
+
+#: devhelper/developers/config-reordermenu.php:70
 msgid ""
-"Selecione os itens que deseja remover da barra de ferramentas. Os itens que "
-"você selecionar acima servem para todos os tipos de usuários."
-msgstr ""
-"Select the items you want to remove the toolbar. The items you select above "
-"serve all types of users."
+"A ordem que você define aqui se aplicará aos tipos de usuários que você "
+"escolher na aba"
+msgstr "The order you set here apply to the types of users you choose the tab"
 
-#: ../developers/config-adminbar.php:21 ../developers/_config.php:100
-#: ../developers/_configcodes.php:321 ../developers/_configcodes.php:428
-#: ../developers/_configcodes.php:432
-msgid "Agência Leggo"
-msgstr "Leggo Agency"
+#: devhelper/developers/config-reordermenu.php:75
+#: devhelper/developers/config-seo.php:20
+msgid "Atenção"
+msgstr "Caution"
 
-#: ../developers/config-adminbar.php:22
-msgid "Logo do WordPress"
-msgstr "Logo of WordPress"
+#: devhelper/developers/config-reordermenu.php:76
+msgid "Depois que você remover os menus na aba"
+msgstr "After you remove the menus tab"
 
-#: ../developers/config-adminbar.php:24
-msgid "Comentários"
-msgstr "Comments"
+#: devhelper/developers/config-reordermenu.php:76
+msgid "você precisa salvar as alterações para alterar a ordem deles aqui."
+msgstr "you need to save changes to change the order of them here."
 
-#: ../developers/config-adminbar.php:25
-msgid "Novo"
-msgstr "New"
-
-#: ../developers/config-adminbar.php:28
-msgid "Remover Itens"
-msgstr "Remove Items"
-
-#: ../developers/config-adminbar.php:37
+#: devhelper/developers/config-reordermenu.php:81
 msgid ""
-"Os campos ID, Conteúdo e Href são obrigatórios. Se deixar algum deles em "
-"branco não ativaremos o link. Em location(campo opcional) \n"
-"\t\t\t\t\t   os valores aceitos são <b>before</b> ou <b>after</b>."
+"O link para a página Desenvolvedor só aparece para os administradores, caso "
+"retire alguns itens do menu apenas para outros tipos de usuários você "
+"precisa marcar administrador também e salvar as alterações para que os links "
+"apareçam aqui, então você pode reordená-los, salvar as alterações e depois "
+"desmarcar Administrador em Remover Menus."
+msgstr ""
+"The link to the Developer page only appears for administrators, if you "
+"remove some menu items only for other types of users you need to score "
+"administrator and also save changes to the links that appear here, then you "
+"can reorder them, save changes and then uncheck Administrator in Remove "
+"Menus."
+
+#: devhelper/developers/config-seo.php:20
+msgid "Caso esteja usando algum plugin para SEO como por exemplo o"
+msgstr "If you are using a plugin for SEO such as"
+
+#: devhelper/developers/config-seo.php:22
+msgid "deixe a opção marcada como não."
+msgstr "leave the option not marked."
+
+#: devhelper/developers/config-seo.php:24
+msgid "Ativar SEO"
+msgstr "Enable SEO"
+
+#: devhelper/developers/config-seo.php:49
+msgid ""
+"Insira os post types que você quer que os campos de SEO apareçam. Insira os "
+"post types separados por vírgula."
+msgstr ""
+"Insert the post types you want the SEO fields appear. Insert the post types "
+"separated by commas."
+
+#: devhelper/developers/config-seo.php:50
+msgid "Os post types atuais no seu tema são:"
+msgstr "The current post types in your theme are:"
+
+#: devhelper/developers/config-seo.php:51
+msgid ""
+"Os post types citados acima servem de exemplo de como devem ser inseridos no "
+"input com a vírgula."
+msgstr ""
+"The post types mentioned above serve as examples of how they should be "
+"entered in the input with a comma."
+
+#: devhelper/developers/config-seo.php:53
+msgid "Post Types"
+msgstr "Post Types"
+
+#: devhelper/developers/config-seo.php:62
+msgid "Caso tenha uma página ou conta no facebook insira a url aqui."
+msgstr "If you have a page or facebook account enter the url here."
+
+#: devhelper/developers/config-seo.php:63
+#: devhelper/developers/config-seo.php:75
+#: devhelper/developers/config-thumbnails.php:32
+msgid "Exemplo"
+msgstr "Example"
+
+#: devhelper/developers/config-seo.php:65
+msgid "Página no Facebook"
+msgstr "Facebook Page"
+
+#: devhelper/developers/config-seo.php:74
+msgid "Caso tenha uma página no Google+ insira a url aqui."
+msgstr "If you have a Google+ page enter the url here."
+
+#: devhelper/developers/config-seo.php:77
+msgid "Página no Google+"
+msgstr "Google+ Page"
+
+#: devhelper/developers/config-seo.php:86
+msgid ""
+"Quando você se cadastra no Google Webmaster você recebe um arquivo com um "
+"código(ou apenas o código), você pode inserir apenas este código aqui."
+msgstr ""
+"When you register in Google Webmaster you receive a file with a code(or just "
+"the code), you can just enter this code here."
+
+#: devhelper/developers/config-seo.php:89
+msgid "Google Webmasters"
+msgstr "Google Webmasters"
+
+#: devhelper/developers/config-seo.php:96
+msgid ""
+"As configurações de SEO do Dev Helper incluem: <i>Título Forçado</i>, "
+"<i>Meta Description</i> e <i>configurações para Facebook e para o Google+</"
+"i>."
+msgstr ""
+"The settings of the Dev Helper SEO include: <i>Forced title</i>, <i>Meta "
+"Description</i> and <i>settings for Facebook and Google+</i>"
+
+#: devhelper/developers/config-seo.php:100
+msgid ""
+"As configurações citadas acima junto com as configurações nesta página só "
+"terão efeito se você marcar a opção <b>Ativar SEO</b> como <b>Sim</b>."
+msgstr ""
+"The settings listed above along with the settings on this page will only "
+"take effect if you select the <b>Enable SEO</b> option to <b>Yes</b>."
+
+#: devhelper/developers/config-themeoptions.php:20
+msgid ""
+"As opções do tema já vem ativadas por padrão, porém, não vem com nenhum dado "
+"e também não é exibida no menu de administração. Marque\n"
+"\t\t\t\t\t   esta opção com <b>Sim</b> o link para as opções do tema "
+"aparecerá no menu lateral."
 msgstr ""
 
-#: ../developers/config-adminbar.php:40
-msgid "Shortcodes disponíveis para usar nos campos Conteúdo e Href:"
-msgstr "Shortcodes available for use in the Contents and Href fields:"
+#: devhelper/developers/config-themeoptions.php:23
+msgid "Mostrar"
+msgstr "Show"
 
-#: ../developers/config-adminbar.php:47
-msgid "ID"
-msgstr "ID"
+#: devhelper/developers/config-themeoptions.php:32
+msgid ""
+"Crie um menu por vez. Antes de criar opções para o tema você precisa criar "
+"pelo menus um menu."
+msgstr ""
+"Create a menu at a time. Before creating options for the theme you need to "
+"create menus for a menu."
 
-#: ../developers/config-adminbar.php:48
-msgid "Conteúdo"
-msgstr "Content"
+#: devhelper/developers/config-themeoptions.php:43
+msgid "Clique no botão acima para adicionar/editar/excluir opções do tema."
+msgstr "Click the button above to add/edit/delete theme options."
 
-#: ../developers/config-adminbar.php:49
-msgid "Href"
-msgstr "Href"
+#: devhelper/developers/config-themeoptions.php:53
+msgid ""
+"As opções do tema são muito úteis em qualquer site. Você pode criar valores "
+"que são alterados direto pelo painel e chamá-los utilizar a seguinte\n"
+"\t\tfunção no php: "
+msgstr ""
 
-#: ../developers/config-adminbar.php:50
-msgid "Target"
-msgstr "Target"
+#: devhelper/developers/config-themeoptions.php:55
+msgid "para exibir o valor e"
+msgstr ""
 
-#: ../developers/config-adminbar.php:51
-msgid "Title"
-msgstr "Title"
-
-#: ../developers/config-adminbar.php:52
-msgid "Class"
-msgstr "Class"
-
-#: ../developers/config-adminbar.php:53
-msgid "Location"
-msgstr "Location"
-
-#: ../developers/config-adminbar.php:56
-msgid "Adicionar Links"
-msgstr "Add Links"
-
-#: ../developers/config-footer.php:11 ../developers/_config.php:75
-msgid "Rodapé"
-msgstr "Footer"
-
-#: ../developers/config-footer.php:20
-msgid "Você pode usar HTML aqui."
-msgstr "You can use HTML here."
-
-#: ../developers/config-footer.php:21
-msgid "Por padrão o texto é"
-msgstr "By default the text is"
-
-#: ../developers/config-footer.php:21 ../developers/_configcodes.php:320
-msgid "Tema"
-msgstr "Theme"
-
-#: ../developers/config-footer.php:22 ../developers/_configcodes.php:321
-msgid "Por"
-msgstr "By"
-
-#: ../developers/config-footer.php:22
-msgid "Agência"
-msgstr "Agency"
-
-#: ../developers/config-footer.php:24
-msgid "Texto do Rodapé"
-msgstr "Footer Text"
-
-#: ../developers/config-thumbnails.php:10 ../developers/_config.php:68
-msgid "Thumbnails"
-msgstr "Thumbnails"
-
-#: ../developers/config-thumbnails.php:19
+#: devhelper/developers/config-thumbnails.php:19
 msgid "Marque sim se deseja ativar as Thumbnails nativas do WordPress."
 msgstr "Check yes if you want to enable native WordPress Thumbnails."
 
-#: ../developers/config-thumbnails.php:22
+#: devhelper/developers/config-thumbnails.php:22
 msgid "Ativar Thumbnails"
 msgstr "Enable Thumbnails"
 
-#: ../developers/config-thumbnails.php:31
+#: devhelper/developers/config-thumbnails.php:31
 msgid ""
 "Adicione um tamanho por vez separando com / os valores. Os valores são id/"
 "largura/altura/cortar"
 msgstr ""
 
-#: ../developers/config-thumbnails.php:34
+#: devhelper/developers/config-thumbnails.php:34
 msgid "Tamanhos"
 msgstr "Sizes"
 
-#: ../developers/config-thumbnails.php:42
-#: ../developers/config-thumbnails.php:64
+#: devhelper/developers/config-thumbnails.php:42
+#: devhelper/developers/config-thumbnails.php:64
 msgid "Thumbnails Nativas"
 msgstr "Native thumbnails"
 
-#: ../developers/config-thumbnails.php:43
+#: devhelper/developers/config-thumbnails.php:43
 msgid ""
 "O WordPress tem suporte a thumbnails, você pode criar diversos tamanhos para "
 "suas imagens, porém todas as imagens enviadas serão cortadas, gerando assim "
@@ -567,7 +3113,7 @@ msgstr ""
 "To create the thumbnails below has a field called Thumbnails with WordPress "
 "as explanations sizes must be created, you can create different sizes there."
 
-#: ../developers/config-thumbnails.php:48
+#: devhelper/developers/config-thumbnails.php:48
 msgid ""
 "Uma opção que criamos é a de utilizar o TimThumb. TimThumb é uma classe php "
 "que gera miniaturas na hora que uma primeira pessoa acessa página, ele cria "
@@ -578,11 +3124,11 @@ msgid ""
 "automaticamente depois."
 msgstr ""
 
-#: ../developers/config-thumbnails.php:52
+#: devhelper/developers/config-thumbnails.php:52
 msgid "Utilizando o TimThumb"
 msgstr "Using timthumb"
 
-#: ../developers/config-thumbnails.php:53
+#: devhelper/developers/config-thumbnails.php:53
 msgid ""
 "Para utilizar o TimThumb antes de tudo você deve dar permissão de "
 "escrita(777) na pasta <b>_framework/thumb/cache/</b> do seu tema caso o seu "
@@ -591,769 +3137,130 @@ msgid ""
 "imagem, largura, altura, como cortá-la)."
 msgstr ""
 
-#: ../developers/config-thumbnails.php:54
+#: devhelper/developers/config-thumbnails.php:54
 msgid ""
 "Abaixo segue os exemplos de como deve ser usada a função <b>thumb</b>. Para "
 "ler a documentação de \"crop\""
 msgstr ""
 
-#: ../developers/config-thumbnails.php:55
+#: devhelper/developers/config-thumbnails.php:55
 msgid "clique aqui"
 msgstr "click here"
 
-#: ../developers/config-thumbnails.php:57
+#: devhelper/developers/config-thumbnails.php:57
 msgid "Será gerada uma imagem de 300x300 cortada."
 msgstr "An image of 300x300 cut will be generated."
 
-#: ../developers/config-thumbnails.php:58
+#: devhelper/developers/config-thumbnails.php:58
 msgid ""
 "A imagem terá 300x300 porém não será cortada e terá uma borda se preciso."
 msgstr ""
 "The image will be 300x300 but will not be cut and will have an edge if "
 "required."
 
-#: ../developers/config-thumbnails.php:59
+#: devhelper/developers/config-thumbnails.php:59
 msgid "Gera uma imagem com no máximo 300 de largura e 300 de altura."
 msgstr "Generating an image with a maximum width 300 and height 300."
 
-#: ../developers/config-thumbnails.php:64
+#: devhelper/developers/config-thumbnails.php:64
 msgid "Utilizando"
 msgstr ""
 
-#: ../developers/config-thumbnails.php:65
+#: devhelper/developers/config-thumbnails.php:65
 msgid ""
 "Você pode ativar e configurar as thumbnails nativas do WordPress através dos "
 "campos abaixo. Leia as explicações abaixo deles para entender melhor o que "
 "deve ser feito."
 msgstr ""
 
-#: ../developers/_config.php:35
-msgid "Opções do Desenvolvedor"
-msgstr "Developer Options"
+#: devhelper/developers/config-wplogin.php:21
+msgid "Escolha a cor de fundo da página de login."
+msgstr "Choose the background color of the login page."
 
-#: ../developers/_config.php:50
-msgid "Precisa de ajuda?"
-msgstr "Need help?"
+#: devhelper/developers/config-wplogin.php:21
+#: devhelper/developers/config-wplogin.php:33
+msgid "Por padrão a cor é:"
+msgstr "By default the color is:"
 
-#: ../developers/_config.php:51
-msgid "Saiba mais sobre o Dev Helper"
-msgstr "Learn more about Dev Helper"
+#: devhelper/developers/config-wplogin.php:22
+msgid "Cor de Fundo"
+msgstr "Background Color"
 
-#: ../developers/_config.php:51
-msgid "Clique aqui"
-msgstr "Click here"
+#: devhelper/developers/config-wplogin.php:33
+msgid "Escolha uma cor para o botão e <b>hover</b> dos links."
+msgstr "Choose a color for the button and <b>hover</b> of the links."
 
-#: ../developers/_config.php:66
-#: ../customfields/developer-customposttypes.php:10
-#: ../customfields/developer-seo.php:30
-msgid "Geral"
-msgstr "General"
+#: devhelper/developers/config-wplogin.php:34
+msgid "Cor do Botão e Links"
+msgstr "Color for Buttons and Links"
 
-#: ../developers/_config.php:72 ../developers/config-customfields.php:2
-#: ../customfields/developer-customposttypes.php:235
-msgid "Custom Fields"
-msgstr "Custom Fields"
+#: devhelper/developers/config-wplogin.php:44
+msgid "Envie uma imagem para aparecer na tela de login do WordPress."
+msgstr "Send an image to appear in the WordPress login screen."
 
-#: ../developers/_config.php:78 ../developers/config-reordermenu.php:45
-msgid "Reordenar Menu"
-msgstr "Menu Reorder"
+#: devhelper/developers/config-wplogin.php:45
+msgid "Imagem do Login"
+msgstr "Login Image"
 
-#: ../developers/_config.php:100
-msgid "Um desenvolvimento"
-msgstr "A development"
-
-#: ../developers/_config.php:228 ../developers/_config.php:240
-#: ../developers/_config.php:390 ../developers/_config.php:415
-msgid "Remover"
-msgstr "Remove"
-
-#: ../developers/_config.php:246 ../developers/_configcodes.php:144
-#: ../customfields/developer-customposttypes.php:89
-#: ../customfields/developer-customposttypes.php:94
-msgid "Adicionar Novo"
-msgstr "Add New"
-
-#: ../developers/_config.php:250 ../developers/_config.php:424
-msgid "Obs"
-msgstr "Note"
-
-#: ../developers/_config.php:250 ../developers/_config.php:424
-msgid "Deixe um valor em branco e ele será excluído automaticamente."
-msgstr "Leave a blank value and it will automatically be deleted."
-
-#: ../developers/_config.php:266 ../developers/_config.php:286
-msgid "O desenvolvedor do site não especificou os valores para este campo."
-msgstr "The developer of the site did not specify the values ​​for this field."
-
-#: ../developers/_config.php:324
-msgid "Enviar Imagem"
-msgstr "Send an Image"
-
-#: ../developers/_config.php:325
-msgid "Limpar"
-msgstr "Clean up"
-
-#: ../developers/config-themeoptions.php:20
+#: devhelper/developers/config-wplogin.php:55
 msgid ""
-"As opções do tema já vem ativadas por padrão, porém, não vem com nenhum dado "
-"e também não é exibida no menu de administração. Marque\n"
-"\t\t\t\t\t   esta opção com <b>Sim</b> o link para as opções do tema "
-"aparecerá no menu lateral."
+"Quando clicar na logo do login o usuário vai para o site da Agência Leggo, "
+"você pode mudar essa url aqui."
 msgstr ""
-
-#: ../developers/config-themeoptions.php:23
-msgid "Mostrar"
-msgstr "Show"
-
-#: ../developers/config-themeoptions.php:32
-msgid ""
-"Crie um menu por vez. Antes de criar opções para o tema você precisa criar "
-"pelo menus um menu."
-msgstr ""
-"Create a menu at a time. Before creating options for the theme you need to "
-"create menus for a menu."
-
-#: ../developers/config-themeoptions.php:43
-msgid "Clique no botão acima para adicionar/editar/excluir opções do tema."
-msgstr "Click the button above to add/edit/delete theme options."
-
-#: ../developers/config-themeoptions.php:44 ../developers/_configcodes.php:98
-msgid "Gerenciar Opções"
-msgstr "Manage Options"
-
-#: ../developers/config-themeoptions.php:53
-msgid ""
-"As opções do tema são muito úteis em qualquer site. Você pode criar valores "
-"que são alterados direto pelo painel e chamá-los utilizar a seguinte\n"
-"\t\tfunção no php: "
-msgstr ""
-
-#: ../developers/config-themeoptions.php:55
-msgid "para exibir o valor e"
-msgstr ""
-
-#: ../developers/config-reordermenu.php:14
-msgid "Separador"
-msgstr "Separator"
-
-#: ../developers/config-reordermenu.php:57
-msgid "Reordenar"
-msgstr "Reorder"
-
-#: ../developers/config-reordermenu.php:70
-msgid ""
-"A ordem que você define aqui se aplicará aos tipos de usuários que você "
-"escolher na aba"
-msgstr "The order you set here apply to the types of users you choose the tab"
-
-#: ../developers/config-reordermenu.php:76
-msgid "Depois que você remover os menus na aba"
-msgstr "After you remove the menus tab"
-
-#: ../developers/config-reordermenu.php:76
-msgid "você precisa salvar as alterações para alterar a ordem deles aqui."
-msgstr "you need to save changes to change the order of them here."
-
-#: ../developers/config-reordermenu.php:80
-#: ../customfields/developer-customposttypes.php:68
-msgid "Dica"
-msgstr "Tip"
-
-#: ../developers/config-reordermenu.php:81
-msgid ""
-"O link para a página Desenvolvedor só aparece para os administradores, caso "
-"retire alguns itens do menu apenas para outros tipos de usuários você "
-"precisa marcar administrador também e salvar as alterações para que os links "
-"apareçam aqui, então você pode reordená-los, salvar as alterações e depois "
-"desmarcar Administrador em Remover Menus."
-msgstr ""
-"The link to the Developer page only appears for administrators, if you "
-"remove some menu items only for other types of users you need to score "
-"administrator and also save changes to the links that appear here, then you "
-"can reorder them, save changes and then uncheck Administrator in Remove "
-"Menus."
-
-#: ../developers/config-customfields.php:4
-msgid "O plugin"
-msgstr "The plugin"
-
-#: ../developers/config-customfields.php:6
-msgid ""
-"está implementado automaticamente no tema. Para um painel de administração "
-"mais limpo decidimos retirar os links do plugin do menu do WordPress e "
-"colocá-los aqui."
-msgstr ""
-"is automatically implemented in the theme. For a panel cleaner "
-"administration decided to remove the links from the WordPress plugin menu "
-"and put them here."
-
-#: ../developers/config-customfields.php:8
-msgid ""
-"Caso queira você pode instalar o plugin através de plugins e os links do "
-"plugin iram aparecer no menu do WordPress, porém, nós não recomendamos isso "
-"pois não irá acrescentar em nada\n"
-"\tno seu tema já que o plugin completo está implementado no tema. Para "
-"exibir os links no menu do WordPress recomendamos que abra o arquivo \n"
-"\t<b>_framework/framework.php</b> e mude o valor da constante <b>ACF_LITE</"
-"b> na linha <b>59</b> para <b>false</b>."
-msgstr ""
-
-#: ../developers/config-customfields.php:12
-msgid "Campos Personalizados"
-msgstr "Custom Fields"
-
-#: ../developers/config-general.php:2
-msgid "Visão Geral"
-msgstr "Overview"
-
-#: ../developers/config-general.php:5
-msgid "Bem-vindo"
-msgstr "Welcome"
-
-#: ../developers/config-general.php:6
-msgid ""
-"Você está utilizando o Dev Helper versão 0.9.0 (Versão de Testes) para "
-"facilitar o desenvolvimento de temas no WordPress"
-msgstr ""
-"You are using Dev Helper version 0.9.0(Beta) to facilitate the development "
-"of themes in WordPress"
-
-#: ../developers/config-general.php:7
-msgid ""
-"Navegue pelo menu a esquerda para ver e configurar as funcionalidades do WP "
-"Starter"
-msgstr ""
-"Scroll through the menu to the left to view and configure the features of WP "
-"Starter"
-
-#: ../developers/_configcodes.php:99
-msgid "Todas as Opções"
-msgstr "All Options"
-
-#: ../developers/_configcodes.php:100
-msgid "Adicionar Nova Opção"
-msgstr "Add New Option"
-
-#: ../developers/_configcodes.php:101
-msgid "Adicionar Nova"
-msgstr "Add New"
-
-#: ../developers/_configcodes.php:102
-msgid "Editar Opção"
-msgstr "Edit Option"
-
-#: ../developers/_configcodes.php:103
-msgid "Atualizar Opção"
-msgstr "Upgrade Option"
-
-#: ../developers/_configcodes.php:104
-msgid "Buscar Opções"
-msgstr "Search Options"
-
-#: ../developers/_configcodes.php:105 ../developers/_configcodes.php:148
-msgid "Nada encontrado"
-msgstr "Nothing found"
-
-#: ../developers/_configcodes.php:106 ../developers/_configcodes.php:149
-#: ../customfields/developer-customposttypes.php:206
-msgid "Nada encontrado na lixeira"
-msgstr ""
-
-#: ../developers/_configcodes.php:111
-msgid "Opções do Tema."
-msgstr "Theme Options."
-
-#: ../developers/_configcodes.php:141
-msgid "Custom Post Type"
-msgstr "Custom Post Type"
-
-#: ../developers/_configcodes.php:142
-#: ../customfields/developer-customposttypes.php:173
-msgid "Todos Itens"
-msgstr "All Items"
-
-#: ../developers/_configcodes.php:143
-#: ../customfields/developer-customposttypes.php:103
-#: ../customfields/developer-customposttypes.php:108
-msgid "Adicionar Novo Item"
-msgstr "Add New Item"
-
-#: ../developers/_configcodes.php:145
-#: ../customfields/developer-customposttypes.php:117
-#: ../customfields/developer-customposttypes.php:122
-msgid "Editar Item"
-msgstr "Edit Item"
-
-#: ../developers/_configcodes.php:146
-#: ../customfields/developer-customposttypes.php:131
-#: ../customfields/developer-customposttypes.php:136
-msgid "Atualizar Item"
-msgstr "Update Item"
-
-#: ../developers/_configcodes.php:147
-msgid "Buscar Itens"
-msgstr "Search Items"
-
-#: ../developers/_configcodes.php:154
-msgid "Tipos de post customizados."
-msgstr "Custom post types."
-
-#: ../customfields/themeoptions-create.php:19
-msgid "Detalhes da Opção"
-msgstr "Option Details"
-
-#: ../customfields/themeoptions-create.php:30
-msgid "Básico"
-msgstr "Basic"
-
-#: ../customfields/themeoptions-create.php:36
-msgid "Menu"
-msgstr "Menu"
-
-#: ../customfields/themeoptions-create.php:39
-msgid ""
-"Para criar os menus você precisa ir em <b>Desenvolvedor</b>, depois "
-"<b>Opções do Tema</b>. Você não pode criar novas opções do tema sem antes "
-"criar os menus."
-msgstr ""
-"To create the menus you need to go in <b>Developer</b>, then <b>Theme</b> "
-"Options. You can not create new theme options without entering the menus."
-
-#: ../customfields/themeoptions-create.php:48
-msgid "Slug / ID"
-msgstr "Slug / ID"
-
-#: ../customfields/themeoptions-create.php:51
-msgid ""
-"<b>Exemplo:</b> telefone<br>\n"
-"\t\t<b>Atenção:</b> Não use caracteres especiais nem espaços neste campo. "
-"Para exibir os valores de um campo personalizado utilize a seguinte função "
-"no php: <i>echo options('field_id', false);</i>"
-msgstr ""
-
-#: ../customfields/themeoptions-create.php:63
-#: ../customfields/themeoptions-create.php:69
-msgid "Tipo"
-msgstr "Type"
-
-#: ../customfields/themeoptions-create.php:74
-msgid "Texto"
-msgstr "Text"
-
-#: ../customfields/themeoptions-create.php:75
-msgid "Textarea"
-msgstr ""
-
-#: ../customfields/themeoptions-create.php:76
-msgid "Campo Repetido (Retorna um Array)"
-msgstr "Repeater Field (Returns an Array)"
-
-#: ../customfields/themeoptions-create.php:77
-msgid "Seleção"
-msgstr ""
-
-#: ../customfields/themeoptions-create.php:78
-msgid "Imagem (Retorna o ID)"
-msgstr "Image (Returns the ID)"
-
-#: ../customfields/themeoptions-create.php:79
-msgid "Seleção de Cor"
-msgstr ""
-
-#: ../customfields/themeoptions-create.php:87
-msgid "Valores"
-msgstr "Values"
-
-#: ../customfields/themeoptions-create.php:90
-msgid ""
-"Separe os valores por vírgula. Exemplo: valor 1, valor 2, valor 3.<br>O "
-"campo é obrigatório."
-msgstr ""
-"Separate the values with commas. Example: value 1, value 2, value 3.<br>The "
-"field is required."
-
-#: ../customfields/themeoptions-create.php:112
-msgid "Outros"
-msgstr "Others"
-
-#: ../customfields/themeoptions-create.php:118
-msgid "Ordem"
-msgstr "Order"
-
-#: ../customfields/themeoptions-create.php:121
-msgid ""
-"Escolha a ordem que o campo será exibido na seção escolhida no campo Menu."
-msgstr ""
-"Choose the order that the field will be displayed in the selected section in "
-"the menu field."
-
-#: ../customfields/themeoptions-create.php:133
-#: ../customfields/developer-seo.php:102
-msgid "Descrição"
-msgstr "Description"
-
-#: ../customfields/themeoptions-create.php:136
-msgid "A descrição do campo aparece abaixo dele. O campo é opcional."
-msgstr "The description of the field appears below it. The field is optional."
-
-#: ../customfields/themeoptions-create.php:188
-msgid ""
-"Você não criou nenhum menu para as opções do tema. Vá para a página "
-"Desenvolvedor e na aba Opções do Tema crie pelo menos um menu."
-msgstr ""
-
-#: ../customfields/developer-customposttypes.php:6
-msgid "Configurações do Custom Post Type"
-msgstr "Custom Post Type Settings"
-
-#: ../customfields/developer-customposttypes.php:16
-msgid "Post Slug"
-msgstr "Post Slug"
-
-#: ../customfields/developer-customposttypes.php:34
-msgid "Nome (Singular)"
-msgstr "Name (Singular)"
-
-#: ../customfields/developer-customposttypes.php:37
-msgid "O campo é obrigatório.<br><b>Exemplo:</b> Filme"
-msgstr "The field is required.<br><b>Example:</b> Movie"
-
-#: ../customfields/developer-customposttypes.php:48
-msgid "Nome (Plural)"
-msgstr "Name (Plural)"
-
-#: ../customfields/developer-customposttypes.php:51
-msgid "O campo é obrigatório.<br><b>Exemplo:</b> Filmes"
-msgstr "The field is required.<br><b>Example:</b> Movies"
-
-#: ../customfields/developer-customposttypes.php:62
-msgid "Rótulos"
-msgstr "Labels"
-
-#: ../customfields/developer-customposttypes.php:71
-msgid ""
-"Tirando o rótulo <b>Nome no Menu</b> todos eles já tem um valor predefinido. "
-"Caso queira você pode alterá-los, porém, não é preciso. De qualquer forma dê "
-"uma lida nos rótulos que construímos para o seu post type."
-msgstr ""
-
-#: ../customfields/developer-customposttypes.php:75
-msgid "Nome no Menu"
-msgstr ""
-
-#: ../customfields/developer-customposttypes.php:78
-msgid "Campo obrigatório.<br><b>Exemplo:</b> Filmes"
-msgstr "The field is required.<br><b>Example:</b> Movies"
-
-#: ../customfields/developer-customposttypes.php:92
-msgid "O campo é obrigatório.<br><b>Exemplo:</b> Adicionar Novo"
-msgstr "The field is required.<br><b>Example:</b> Add New"
-
-#: ../customfields/developer-customposttypes.php:106
-msgid "O campo é obrigatório.<br><b>Exemplo:</b> Adicionar Novo Item"
-msgstr "The field is required.<br><b>Example:</b> Add New Item"
-
-#: ../customfields/developer-customposttypes.php:120
-msgid "O campo é obrigatório.<br><b>Exemplo:</b> Editar Item"
-msgstr "The field is required.<br><b>Example:</b> Edit Item"
-
-#: ../customfields/developer-customposttypes.php:134
-msgid "O campo é obrigatório.<br><b>Exemplo:</b> Atualizar Item"
-msgstr "The field is required.<br><b>Example:</b> Update Item"
-
-#: ../customfields/developer-customposttypes.php:145
-#: ../customfields/developer-customposttypes.php:150
-msgid "Ver Item"
-msgstr "View Item"
-
-#: ../customfields/developer-customposttypes.php:148
-msgid "O campo é obrigatório.<br><b>Exemplo:</b> Ver Item"
-msgstr "The field is required.<br><b>Example:</b> See Items"
-
-#: ../customfields/developer-customposttypes.php:159
-#: ../customfields/developer-customposttypes.php:164
-msgid "Buscar Item"
-msgstr "Search Item"
-
-#: ../customfields/developer-customposttypes.php:162
-msgid "O campo é obrigatório.<br><b>Exemplo:</b> Buscar Item"
-msgstr "The field is required.<br><b>Example:</b> Search Item"
-
-#: ../customfields/developer-customposttypes.php:176
-msgid "O campo é obrigatório.<br><b>Exemplo:</b> Todos os Itens"
-msgstr "The field is required.<br><b>Example:</b> All Items"
-
-#: ../customfields/developer-customposttypes.php:178
-msgid "Todos os Itens"
-msgstr "All Items"
-
-#: ../customfields/developer-customposttypes.php:187
-msgid "Não Encontrado"
-msgstr "Not Found"
-
-#: ../customfields/developer-customposttypes.php:190
-msgid "O campo é obrigatório.<br><b>Exemplo:</b> Não encontrado"
-msgstr "The field is required.<br><b>Example:</b> Not found"
-
-#: ../customfields/developer-customposttypes.php:192
-msgid "Não encontrado"
-msgstr "Nothing found"
-
-#: ../customfields/developer-customposttypes.php:201
-msgid "Não Encontrado na Lixeira"
-msgstr "Nothing found in Trash"
-
-#: ../customfields/developer-customposttypes.php:204
-msgid "O campo é obrigatório.<br><b>Exemplo:</b> Nada encontrado na lixeira."
-msgstr "The field is required.<br><b>Example:</b> Nothing found in the trash."
-
-#: ../customfields/developer-customposttypes.php:215
-msgid "Opções"
-msgstr "Options"
-
-#: ../customfields/developer-customposttypes.php:221
-msgid "Suportes"
-msgstr "Supports"
-
-#: ../customfields/developer-customposttypes.php:224
-msgid ""
-"Selecione pelo menos um suporte. Recomendamos que sempre selecione o suporte "
-"<b>Title</b>.<br>\n"
-"\tCampos customizados podem ser adicionados ao post type indo na página "
-"<b>Desenvolvedor</b> e clicando em <b>Custom Fields</b>.<br>\n"
-"\t<b>Obs:</b> O suporte a títulos já é automaticamente adicionado."
-msgstr ""
-
-#: ../customfields/developer-customposttypes.php:228
-msgid "Content (Editor)"
-msgstr "Content (Editor)"
-
-#: ../customfields/developer-customposttypes.php:229
-msgid "Excerpt"
-msgstr "Excerpt"
-
-#: ../customfields/developer-customposttypes.php:230
-msgid "Author"
-msgstr "Author"
-
-#: ../customfields/developer-customposttypes.php:231
-msgid "Featured Image"
-msgstr "Featured Image"
-
-#: ../customfields/developer-customposttypes.php:232
-msgid "Comments"
-msgstr "Comments"
-
-#: ../customfields/developer-customposttypes.php:233
-msgid "Trackbacks"
-msgstr "Trackbacks"
-
-#: ../customfields/developer-customposttypes.php:234
-msgid "Revisions"
-msgstr "Revisions"
-
-#: ../customfields/developer-customposttypes.php:236
-msgid "Page Attributes"
-msgstr "Page Attributes"
-
-#: ../customfields/developer-customposttypes.php:242
-msgid "Excluir da Pesquisa"
-msgstr "Exclude From Search"
-
-#: ../customfields/developer-customposttypes.php:245
-msgid "Posts desse tipo devem ser excluídos dos resultados de pesquisa."
-msgstr "Posts of this type should be excluded from search results."
-
-#: ../customfields/developer-customposttypes.php:257
-msgid "Ativar Exportação"
-msgstr "Enable Export"
-
-#: ../customfields/developer-customposttypes.php:260
-msgid "Permite à exportação do post type."
-msgstr "Allows export of the post type."
-
-#: ../customfields/developer-customposttypes.php:272
-msgid "Visibilidade"
-msgstr "Visibility"
-
-#: ../customfields/developer-customposttypes.php:278
-msgid "Mostrar na Barra do Admin"
-msgstr "Show in Admin Bar"
-
-#: ../customfields/developer-customposttypes.php:281
-msgid "Mostrar o post type na barra de administração do usuário atual."
-msgstr "Show the post type in the admin bar of the current user."
-
-#: ../customfields/developer-customposttypes.php:293
-msgid "Mostrar na Sidebar do Admin"
-msgstr "Show in the Admin Sidebar"
-
-#: ../customfields/developer-customposttypes.php:296
-msgid "Mostrar o post type na sidebar do painel de administração."
-msgstr "Show the post type in the admin panel sidebar."
-
-#: ../customfields/developer-customposttypes.php:300
-msgid "No"
-msgstr "Não"
-
-#: ../customfields/developer-customposttypes.php:308
-msgid "Posição na Sidebar"
-msgstr "Sidebar Position"
-
-#: ../customfields/developer-customposttypes.php:311
-msgid "Escolha a posição do post type na sidebar do painel de administração."
-msgstr "Choose the position of the post type in the admin panel sidebar."
-
-#: ../customfields/developer-customposttypes.php:325
-msgid "5 - below Posts"
-msgstr "5 - below Posts"
-
-#: ../customfields/developer-customposttypes.php:326
-msgid "10 - below Posts"
-msgstr "10 - below Posts"
-
-#: ../customfields/developer-customposttypes.php:327
-msgid "15 - below Links"
-msgstr "15 - below Links"
-
-#: ../customfields/developer-customposttypes.php:328
-msgid "20 - below Pages"
-msgstr "20 - below Pages"
-
-#: ../customfields/developer-customposttypes.php:329
-msgid "25 - below Comments"
-msgstr "25 - below Comments"
-
-#: ../customfields/developer-customposttypes.php:330
-msgid "60 - below first separator"
-msgstr "60 - below first separator"
-
-#: ../customfields/developer-customposttypes.php:331
-msgid "65 - below Plugins"
-msgstr "65 - below Plugins"
-
-#: ../customfields/developer-customposttypes.php:332
-msgid "70 - below Users"
-msgstr "70 - below Users"
-
-#: ../customfields/developer-customposttypes.php:333
-msgid "75 - below Tools"
-msgstr "75 - below Tools"
-
-#: ../customfields/developer-customposttypes.php:334
-msgid "80 - below Settings"
-msgstr "80 - below Settings"
-
-#: ../customfields/developer-customposttypes.php:335
-msgid "100 - below second separator"
-msgstr "100 - below second separator"
-
-#: ../customfields/developer-customposttypes.php:343
-msgid "Permalinks"
-msgstr "Permalinks"
-
-#: ../customfields/developer-customposttypes.php:349
-msgid "Default Permalinks"
-msgstr "Default Permalinks"
-
-#: ../customfields/developer-customposttypes.php:352
-msgid ""
-"Os permalinks são montados com o valor que você inseriu em <b>Post Slug</b> "
-"na aba <b>Geral</b>.\n"
-"\t<b>Exemplo:</b> Se o post slug for filmes o permalink será http://meusite."
-"com/filmes/post-exemplo"
-msgstr ""
-
-#: ../customfields/developer-customposttypes.php:357
-msgid "Capacidade"
-msgstr "Capacity"
-
-#: ../customfields/developer-customposttypes.php:363
-msgid "Tipo de Capacidade Base"
-msgstr "Capacity Base Type"
-
-#: ../customfields/developer-customposttypes.php:366
-msgid "Utilizado como uma base para a construção de capacidades."
-msgstr "Used as a basis for capacity building."
-
-#: ../customfields/developer-customposttypes.php:369
-msgid "Posts"
-msgstr "Posts"
-
-#: ../customfields/developer-customposttypes.php:370
-msgid "Pages"
-msgstr "Pages"
-
-#: ../customfields/developer-seo.php:6
-msgid "por"
-msgstr "by"
-
-#: ../customfields/developer-seo.php:10
-msgid "Ativar"
-msgstr "Enable"
-
-#: ../customfields/developer-seo.php:16
-msgid "Ativar configurações de SEO para este post?"
-msgstr "Enable SEO settings for this post?"
-
-#: ../customfields/developer-seo.php:47 ../customfields/developer-seo.php:89
-msgid "Título Forçado"
-msgstr "Forced Title"
-
-#: ../customfields/developer-seo.php:50
-msgid ""
-"Caso não deseje que o título padrão que seria <b>Nome do Post - Nome do "
-"Site</b> apareça na tag title você pode alterar o valor aqui. Deixe em "
-"branco e o título padrão aparecerá. O número máximo de caracteres é de 64."
-msgstr ""
-
-#: ../customfields/developer-seo.php:60
-msgid "Meta Descrição"
-msgstr "Meta Description"
-
-#: ../customfields/developer-seo.php:63
-msgid ""
-"Escreva um resumo do post. Este texto é o que aparecerá no Google quando "
-"este post/página aparecer nos resultados de pesquisa. O número máximo de "
-"caracteres é de 150."
-msgstr ""
-
-#: ../customfields/developer-seo.php:72
-msgid "Social Facebook e Google+"
-msgstr "Social Facebook and Google+"
-
-#: ../customfields/developer-seo.php:92
-msgid ""
-"Se você não quiser usar o título padrão do post/página e sim outro nas redes "
-"sociais você deve inseri-lo aqui. O número máximo de caracteres é de 64."
-msgstr ""
-"If you do not want to use the default title of the post/page but other in "
-"the social networks you must enter it here. The maximum number of characters "
-"is 64."
-
-#: ../customfields/developer-seo.php:105
-msgid ""
-"Se você não quiser usar a meta descrição padrão do post/página e sim outro "
-"nas redes sociais você deve inseri-la aqui. O número máximo de caracteres é "
-"de 150."
-msgstr ""
-"If you do not want to use the default meta description of the post/page but "
-"other in the social networks you must enter it here. The maximum number of "
-"characters is 150."
-
-#: ../customfields/developer-seo.php:114
-msgid "Imagem"
-msgstr "Image"
-
-#: ../customfields/developer-seo.php:117
-msgid ""
-"Se você quiser selecionar uma imagem para as redes sociais referente a este "
-"post/página escolha uma imagem aqui. A imagem deve ser quadrada, caso o "
-"contrário o facebook ou o google+ poderá recortar a imagem."
-msgstr ""
-"If you want to select an image for social networks related to this post / "
-"page choose a picture here. The image must be square, otherwise if facebook "
-"or google + can crop the image."
+"When you click on login then the user goes to the website of the Leggo "
+"Agency, you can change the url here."
+
+#: devhelper/developers/config-wplogin.php:56
+#: devhelper/developers/config-wplogin.php:67
+msgid "Valor padrão"
+msgstr "Default value"
+
+#: devhelper/developers/config-wplogin.php:57
+msgid "URL da Logo"
+msgstr "Logo URL"
+
+#: devhelper/developers/config-wplogin.php:67
+msgid "Este título aparece quando o usuário passa o mouse na imagem"
+msgstr "This title appears when the user hovers the image"
+
+#: devhelper/developers/config-wplogin.php:68
+msgid "Título da Logo"
+msgstr "Title Logo"
+
+#~ msgid "Um desenvolvimento Agência Leggo"
+#~ msgstr "A development Leggo Agency"
+
+#~ msgid "Agência Leggo"
+#~ msgstr "Leggo Agency"
+
+#~ msgid "Por padrão o texto é"
+#~ msgstr "By default the text is"
+
+#~ msgid "Tema"
+#~ msgstr "Theme"
+
+#~ msgid "Por"
+#~ msgstr "By"
+
+#~ msgid "Agência"
+#~ msgstr "Agency"
+
+#~ msgid "Um desenvolvimento"
+#~ msgstr "A development"
+
+#~ msgid ""
+#~ "Você está utilizando o Dev Helper versão 0.9.0 (Versão de Testes) para "
+#~ "facilitar o desenvolvimento de temas no WordPress"
+#~ msgstr ""
+#~ "You are using Dev Helper version 0.9.0(Beta) to facilitate the "
+#~ "development of themes in WordPress"
+
+#~ msgid ""
+#~ "Navegue pelo menu a esquerda para ver e configurar as funcionalidades do "
+#~ "WP Starter"
+#~ msgstr ""
+#~ "Scroll through the menu to the left to view and configure the features of "
+#~ "WP Starter"
 
 #~ msgid "customposttypes"
 #~ msgstr "customposttypes"

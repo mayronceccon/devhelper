@@ -53,7 +53,7 @@ function devhelperDeveloper_wplogin_settings(){
 		'name'      => 'wplogin_url',
 		'label_for' => 'wplogin_url',
 		'desc'      => __('Quando clicar na logo do login o usuário vai para o site da Agência Leggo, você pode mudar essa url aqui.', 'devhelper').
-					   '<br>'.__('Valor padrão', 'devhelper').': https://mattdeveloper.github.com/wpstarter'
+					   '<br>'.__('Valor padrão', 'devhelper').': https://mattdeveloper.github.com/devhelper'
 	); add_settings_field( 'wplogin_url', __('URL da Logo', 'devhelper'), 'devhelper_developer_display_setting', 'devhelper_page', 'developer-wplogin', $field_args );
 
 	/* ===============================================================

@@ -179,7 +179,7 @@ function devhelper_developer_display_setting($args)
 {
 	extract($args);
 
-	if( isset($themeopt) AND $themeopt == true ){ $option_name = 'wpstarterThemeOptions'; }else{ $option_name = 'devhelperDeveloper'; }
+	if( isset($themeopt) AND $themeopt == true ){ $option_name = 'devhelperThemeOptions'; }else{ $option_name = 'devhelperDeveloper'; }
 	$options = get_option( $option_name );
 
 	switch($type){

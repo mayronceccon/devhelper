@@ -1,7 +1,7 @@
 <?php
-$wp_starter_css = array();
-$wp_starter_use_css = array();
-$wp_starter_condition_css = array();
+$devhelper_css = array();
+$devhelper_use_css = array();
+$devhelper_condition_css = array();
 
 
 
@@ -9,15 +9,15 @@ $wp_starter_condition_css = array();
 	REGISTER CSS
 =============================================================== */
 function new_css($name='', $path='', $footer=false){
-	global $wp_starter_css;
+	global $devhelper_css;
 
 	if( $name != '' AND $path != '' ){
-		$wp_starter_css[$name] = $path;
+		$devhelper_css[$name] = $path;
 
 		if( $footer == true ){
-			$wp_starter_css[$name.'_footer'] = true;
+			$devhelper_css[$name.'_footer'] = true;
 		}else{
-			$wp_starter_css[$name.'_footer'] = false;
+			$devhelper_css[$name.'_footer'] = false;
 		}
 	}
 }
@@ -28,19 +28,19 @@ function new_css($name='', $path='', $footer=false){
 	USE CSS
 =============================================================== */
 function use_css($name='', $condition='', $validate=''){
-	global $wp_starter_css, $wp_starter_use_css, $wp_starter_condition_css;
+	global $devhelper_css, $devhelper_use_css, $devhelper_condition_css;
 
 	if( $name != '' ){
 		if( $condition != '' ){ // If have a condition to insert the CSS
 			$generate_id = uniqid(); // Get a New ID
-			$wp_starter_condition_css[$generate_id]['name']      = $name.$generate_id;
-			$wp_starter_condition_css[$generate_id]['original']  = $name;
-			$wp_starter_condition_css[$generate_id]['condition'] = $condition;
-			$wp_starter_condition_css[$generate_id]['validate']  = $validate;
+			$devhelper_condition_css[$generate_id]['name']      = $name.$generate_id;
+			$devhelper_condition_css[$generate_id]['original']  = $name;
+			$devhelper_condition_css[$generate_id]['condition'] = $condition;
+			$devhelper_condition_css[$generate_id]['validate']  = $validate;
 		}else{ // Don't have any conditions
 			$generate_id = uniqid(); // Get a New ID
-			$wp_starter_use_css[$generate_id]['name'] = $name.$generate_id;
-			$wp_starter_use_css[$generate_id]['path'] = $wp_starter_css[$name];
+			$devhelper_use_css[$generate_id]['name'] = $name.$generate_id;
+			$devhelper_use_css[$generate_id]['path'] = $devhelper_css[$name];
 		}
 	}
 }
@@ -50,12 +50,12 @@ function use_css($name='', $condition='', $validate=''){
 /* ===============================================================
 	INSERT ON HEAD
 =============================================================== */
-add_action( 'wp_enqueue_scripts', 'wp_starter_css_styles' );
-function wp_starter_css_styles(){
-	global $wp_starter_css, $wp_starter_use_css;
+add_action( 'wp_enqueue_scripts', 'devhelper_css_styles' );
+function devhelper_css_styles(){
+	global $devhelper_css, $devhelper_use_css;
 
 	/* Register Styles */
-	foreach( $wp_starter_use_css as $css ){
+	foreach( $devhelper_use_css as $css ){
 		$name = $css['name'];
 		$path = $css['path'];
 
@@ -64,7 +64,7 @@ function wp_starter_css_styles(){
 	}
 
 	/* Enqueue Styles */
-	foreach( $wp_starter_use_css as $name ){
+	foreach( $devhelper_use_css as $name ){
 		wp_enqueue_style( $name );
 	}
 }
@@ -76,9 +76,9 @@ function wp_starter_css_styles(){
 =============================================================== */
 add_action('wp', 'use_css_condition');
 function use_css_condition(){
-	global $wp_starter_condition_css;
+	global $devhelper_condition_css;
 
-	foreach($wp_starter_condition_css as $css){
+	foreach($devhelper_condition_css as $css){
 		$css_name      = $css['name'];
 		$css_original  = $css['original'];
 		$css_condition = $css['condition'];
