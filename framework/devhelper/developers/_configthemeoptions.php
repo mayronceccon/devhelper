@@ -211,7 +211,7 @@ function devhelper_themeoptions_page(){
 global $wpstarterversion;
 ?>
 <div class="wrap">
-	<form class="wpstarter-developer" method="post" enctype="multipart/form-data" action="options.php">
+	<form class="devhelper-developer" method="post" enctype="multipart/form-data" action="options.php">
 
 
 		<!-- TITLE -->
@@ -325,7 +325,7 @@ global $wpstarterversion;
 		</div><!-- end .buttons -->
 
 
-	</form><!-- end .wpstarter-developer -->
+	</form><!-- end .devhelper-developer -->
 </div><!-- end .wrap -->
 
 <?php

@@ -1,7 +1,7 @@
 /* ===============================================================
 	DEVELOPER
 =============================================================== */
-.wpstarter-developer {
+.devhelper-developer {
 	background: #fff;
 	color: #777;
 	border: 1px solid #dedede;
@@ -14,7 +14,7 @@
 			border-radius: 5px;
 }
 
-.wpstarter-developer * {
+.devhelper-developer * {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 			box-sizing: border-box;
@@ -23,17 +23,17 @@
 
 
 /* ----- TITLE ----- */
-.wpstarter-developer .title {	
+.devhelper-developer .title {	
 	padding: 10px;
 }
 
-	.wpstarter-developer .title i {
+	.devhelper-developer .title i {
 		font-size: 29px;
 		margin-right: 10px;
 		display: inline-block;
 	}
 
-	.wpstarter-developer .title span {
+	.devhelper-developer .title span {
 		font-size: 14px;
 		font-weight: 100;
 		margin-left: 6px;
@@ -43,7 +43,7 @@
 
 
 /* ----- UPDATED TRUE ----- */
-.wpstarter-developer .updated-true {
+.devhelper-developer .updated-true {
 	background: #dff0d8;
 	border-top: 1px solid #dedede;
 
@@ -57,7 +57,7 @@
 
 
 /* ----- BUTTONS ----- */
-.wpstarter-developer .buttons {
+.devhelper-developer .buttons {
 	background: #f1f1f1;
 	border-top: 1px solid #dedede;
 	border-bottom: 1px solid #dedede;
@@ -68,22 +68,22 @@
 }
 
 	/* -- Left -- */
-	.wpstarter-developer .buttons .left {
+	.devhelper-developer .buttons .left {
 		width: 50%;
 		float: left;
 		text-align: left;
 	}
 
-		.wpstarter-developer .buttons a {
+		.devhelper-developer .buttons a {
 			text-decoration: none;	
 		}
 
-			.wpstarter-developer .buttons a i {
+			.devhelper-developer .buttons a i {
 				font-size: 32px;
 			}
 
 	/* -- Right -- */
-	.wpstarter-developer .buttons .right {
+	.devhelper-developer .buttons .right {
 		width: 50%;
 		float: right;
 	}
@@ -91,38 +91,38 @@
 
 
 /* ----- CONTENT ----- */
-.wpstarter-developer .content {
+.devhelper-developer .content {
 	background: #f1f1f1;
 	overflow: hidden;
 }
 
 	/* -- Sidebar -- */
-	.wpstarter-developer .content .sidebar {
+	.devhelper-developer .content .sidebar {
 		background: #f1f1f1;
 		width: 200px;
 		min-height: 700px;
 		position: absolute;
 	}
 
-		.wpstarter-developer .content .sidebar ul {
+		.devhelper-developer .content .sidebar ul {
 			margin: 0;
 			padding: 0;
 		}
 
-			.wpstarter-developer .content .sidebar ul li {
+			.devhelper-developer .content .sidebar ul li {
 				border-top: 1px solid #f9f9f9;
 				border-bottom: 1px solid #e7e7e7;
 				margin: 0;
 			}
 
-			.wpstarter-developer .content .sidebar ul li:hover {
+			.devhelper-developer .content .sidebar ul li:hover {
 				background: #eaeaea;
 			}
 
-			.wpstarter-developer .content .sidebar ul li.divider { height: 10px; }
-			.wpstarter-developer .content .sidebar ul li.divider:hover { background: none; }
+			.devhelper-developer .content .sidebar ul li.divider { height: 10px; }
+			.devhelper-developer .content .sidebar ul li.divider:hover { background: none; }
 
-				.wpstarter-developer .content .sidebar ul li a {
+				.devhelper-developer .content .sidebar ul li a {
 					color: #777;
 					outline: none;
 
@@ -133,12 +133,12 @@
 					text-decoration: none;
 				}
 
-				.wpstarter-developer .content .sidebar ul li.active a {
+				.devhelper-developer .content .sidebar ul li.active a {
 					background: #fff;
 				}
 
 	/* -- Fields/Article -- */
-	.wpstarter-developer .content .fields {
+	.devhelper-developer .content .fields {
 		background: #fff;
 		height: 100%;
 		min-height: 700px;
@@ -148,11 +148,11 @@
 	} 
 
 		/* -- Hide Article -- */
-		.wpstarter-developer .content .fields article { display: none; }
-		.wpstarter-developer .content .fields .developer-general { display: block; }
+		.devhelper-developer .content .fields article { display: none; }
+		.devhelper-developer .content .fields .developer-general { display: block; }
 
 		/* -- Article Title -- */
-		.wpstarter-developer .content .fields article h3 {
+		.devhelper-developer .content .fields article h3 {
 			border-bottom: 1px solid #e7e7e7;
 
 			margin: 0 0 20px 0;
@@ -163,22 +163,22 @@
 		}
 
 		/* -- Input's -- */
-		.wpstarter-developer .content .fields article input[type=text], .wpstarter-developer .content .fields article select, .wpstarter-developer .content .fields article textarea {
+		.devhelper-developer .content .fields article input[type=text], .devhelper-developer .content .fields article select, .devhelper-developer .content .fields article textarea {
 			width: 100%;
 			margin-bottom: 5px;
 		}
 
-			.wpstarter-developer .content .fields article input.image-url {
+			.devhelper-developer .content .fields article input.image-url {
 				width: 20%;
 			}
 
 		/* -- Description -- */
-		.wpstarter-developer .content .fields article .description {
+		.devhelper-developer .content .fields article .description {
 			line-height: 21px;
 		}
 
 		/* -- Image -- */
-		.wpstarter-developer .content .fields article .img-preview {
+		.devhelper-developer .content .fields article .img-preview {
 			display: none;
 			margin-top: 10px;
 		}
@@ -190,43 +190,43 @@
 		}
 
 			/* Select Color / Current Color */
-			.wpstarter-developer .content .fields article .wp-color-result {
+			.devhelper-developer .content .fields article .wp-color-result {
 				width: 205px;
 				height: 24px;
 				display: block !important;
 			}
 
 			/* Block: Current Hexadecimal Color & Default Color */
-			.wpstarter-developer .content .fields article .wp-picker-input-wrap {
+			.devhelper-developer .content .fields article .wp-picker-input-wrap {
 				display: block;
 				width: 250px;
 			}
 
 				/* Hexadecimal */
-				.wpstarter-developer .content .fields article .color-field {
+				.devhelper-developer .content .fields article .color-field {
 					width: 100px !important;
 					margin-right: 5px;
 				}
 
 				/* Color Default */
-				.wpstarter-developer .content .fields article .wp-picker-default {
+				.devhelper-developer .content .fields article .wp-picker-default {
 					width: 100px;
 					margin: 0;
 					display: inline-block;
 				}
 
 		/* -- Repeater Field -- */
-		.wpstarter-developer .content .fields article .repeater-fileds div {
+		.devhelper-developer .content .fields article .repeater-fileds div {
 			margin-bottom: 10px;
 		}
 
 			/* Input */
-			.wpstarter-developer .content .fields article .repeater-fileds div input {
+			.devhelper-developer .content .fields article .repeater-fileds div input {
 				margin-bottom: 0;
 			}
 
 			/* Remove */
-			.wpstarter-developer .content .fields article .repeater-fileds div a {
+			.devhelper-developer .content .fields article .repeater-fileds div a {
 				color: #f00;
 				font-size: 12px;
 				text-decoration: none;
@@ -235,51 +235,51 @@
 				display: inline-block;
 			}
 
-				.wpstarter-developer .content .fields article .repeater-fileds div a:hover {
+				.devhelper-developer .content .fields article .repeater-fileds div a:hover {
 					text-decoration: underline;
 				}
 
 		/* -- Checkbox -- */
-		.wpstarter-developer .content ul.checkbox {
+		.devhelper-developer .content ul.checkbox {
 			margin: 0;
 			padding: 0;
 		}
 
-			.wpstarter-developer .content ul.checkbox li {
+			.devhelper-developer .content ul.checkbox li {
 				font-size: 13px;
 				display: inline-block;
 				margin-right: 20px;
 			}
 
-				.wpstarter-developer .content ul.checkbox li input[type=checkbox] {
+				.devhelper-developer .content ul.checkbox li input[type=checkbox] {
 					margin-right: 5px;
 				}
 
 		/* -- Checkbox For MENU ITEMS -- */
-		.wpstarter-developer .content ul.checkbox-menu-items {
+		.devhelper-developer .content ul.checkbox-menu-items {
 
 		}
 
-			.wpstarter-developer .content ul.checkbox-menu-items li {
+			.devhelper-developer .content ul.checkbox-menu-items li {
 				display: block;
 				margin-top: 30px;
 			}
 
-			.wpstarter-developer .content ul.checkbox-menu-items li:first-child {
+			.devhelper-developer .content ul.checkbox-menu-items li:first-child {
 				margin-top: 0;
 			}
 
-			.wpstarter-developer .content ul.checkbox-menu-items li.sub {
+			.devhelper-developer .content ul.checkbox-menu-items li.sub {
 				margin: 0 0 0 30px;
 			}
 
 		/* -- List For REORDER MENU -- */
-		.wpstarter-developer .content ul.reordermenu {
+		.devhelper-developer .content ul.reordermenu {
 			margin: 0;
 			padding: 0;
 		}
 
-			.wpstarter-developer .content ul.reordermenu li {
+			.devhelper-developer .content ul.reordermenu li {
 				background: #fdfdfd;
 				border: 1px solid #eee;
 
