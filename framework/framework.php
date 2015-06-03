@@ -37,10 +37,9 @@ function hide_developers(){ // Cal this function to remove developer from admin 
 
 
 /* ===============================================================
-	01. VERSION/LANGUAGE
+	01. LANGUAGE
 =============================================================== */
-$wpstarterversion = '0.9.0';
-load_theme_textdomain( 'devhelper', DEVHELPER__PLUGIN_DIR.'framework/languages' );
+load_theme_textdomain( 'devhelper', DEVHELPER__PLUGIN_DIR.'languages' );
 
 
 

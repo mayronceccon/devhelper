@@ -196,7 +196,7 @@ if( devOpt('wplogin_image', false) != '' ){
 	$devhelper_login['img'] = wp_get_attachment_image_src( devOpt('wplogin_image', false), 'full' );
 	$devhelper_login['img'] = $devhelper_login['img'][0];
 }else{
-	$devhelper_login['img'] = THEMEROOT.'/_framework/wpstarter/_assets/img/wplogin-wpstarter.png';
+	$devhelper_login['img'] = THEMEROOT.'/_framework/wpstarter/_assets/img/wplogin-devhelper.png';
 }
 
 /* ----- CSS: Background Color ----- */
@@ -295,7 +295,7 @@ function devhelper_login_css(){
 }
 
 /* ----- LOGO: URL ----- */
-if( str_replace(' ', '', devOpt('wplogin_url', false)) != '' ){ $devhelper_login['url'] = devOpt('wplogin_url', false); }else{ $devhelper_login['url'] = 'https://mattdeveloper.github.com/wpstarter'; }
+if( str_replace(' ', '', devOpt('wplogin_url', false)) != '' ){ $devhelper_login['url'] = devOpt('wplogin_url', false); }else{ $devhelper_login['url'] = 'https://mattdeveloper.github.com/devhelper'; }
 
 add_filter('login_headerurl', 'devhelper_login_logo_url');
 function devhelper_login_logo_url(){
@@ -320,7 +320,7 @@ function devhelper_login_logo_url_title(){
 if( str_replace(' ', '', devOpt('developer_footer_text', false)) != '' ){
 	$devhelper_footer_txt = devOpt('developer_footer_text', false);
 }else{
-	$devhelper_footer_txt = __('Obrigado por criar com', 'devhelper').'<a href="http://wordpress.org" target="_blank">WordPress</a>.';
+	$devhelper_footer_txt = __('Obrigado por criar com', 'devhelper').' <a href="http://wordpress.org" target="_blank">WordPress</a>.';
 }
 
 add_filter('admin_footer_text', 'devhelper_footer_admin');
